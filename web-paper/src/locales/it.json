@@ -1,0 +1,958 @@
+{
+  "meta": {
+    "lang": "it",
+    "title": "Tech jobs evolution",
+    "titleDisplay": [
+      "TECH_JOBS",
+      "EVOLUTION"
+    ],
+    "subtitle": "A perspective on the market's current state and what will change",
+    "kicker": "Working paper · Mercato del lavoro tecnologico ed economia dell’AI",
+    "author": "Raffaele",
+    "affiliation": "Università degli Studi di Cagliari",
+    "date": "Ottobre 2026",
+    "version": "v1.0",
+    "status": "Working paper",
+    "readingTime": "≈ 28 min di lettura",
+    "dataCutoff": "Dati aggiornati al 26 ottobre 2026",
+    "pageTitle": "Tech jobs evolution — A perspective on the market's current state and what will change",
+    "description": "Interactive whitepaper sull’evoluzione dei ruoli tecnologici (SWE, AI/ML, Data, MLOps) basato su Stack Overflow, GitHub Octoverse, WEF, BLS, Stanford AI Index e Gartner."
+  },
+  "ui": {
+    "skipToContent": "Vai al contenuto",
+    "nav": {
+      "abstract": "Abstract",
+      "market": "Mercato",
+      "roles": "Ruoli",
+      "future": "Proiezioni",
+      "sources": "Fonti"
+    },
+    "toc": "Indice",
+    "language": "Lingua",
+    "languages": {
+      "it": "Italiano",
+      "en": "English",
+      "fr": "Français",
+      "es": "Español",
+      "de": "Deutsch"
+    },
+    "languageBeta": "beta",
+    "translationNotice": "La traduzione è in corso: alcune sezioni sono mostrate in italiano.",
+    "cite": "Cita",
+    "citeCopied": "Citazione copiata",
+    "backToTop": "Torna su",
+    "source": "Fonte",
+    "sources": "Fonti",
+    "figure": "Fig.",
+    "table": "Tab.",
+    "reported": "Dato riportato",
+    "derived": "Stima dell’autore",
+    "projection": "Proiezione",
+    "observed": "Osservato",
+    "proxy": "proxy",
+    "all": "Tutti",
+    "openSource": "Apri fonte",
+    "sectionsCount": "Sezioni",
+    "sourcesCount": "Fonti certificate",
+    "figuresCount": "Figure interattive",
+    "readingProgress": "Avanzamento lettura",
+    "generatedAt": "Dataset generato il",
+    "units": {
+      "M": "M",
+      "B$": "Mld $",
+      "%": "%",
+      "pp": "p.p."
+    },
+    "search": "Cerca",
+    "filterRoles": "Filtra i ruoli"
+  },
+  "hero": {
+    "lead": "Il mercato del lavoro tecnologico non si sta restringendo: si sta ricomponendo. Questo paper misura dove si sposta la domanda, quali attività l’AI generativa sta già assorbendo e quali competenze definiranno i ruoli tra il 2027 e il 2031.",
+    "featuredTag": "Key findings",
+    "featuredTagAccent": "Nuovo",
+    "featuredTitle": "Ricomposizione, non contrazione",
+    "featuredText": "Occupazione aggregata ancora in crescita, ma proiezioni BLS per gli sviluppatori più che dimezzate in quattro cicli, ingressi junior in calo e adozione dell’AI quasi universale.",
+    "stats": [
+      {
+        "value": "10%",
+        "label": "Crescita SWE USA 2025–35",
+        "ref": 7
+      },
+      {
+        "value": "−15 p.p.",
+        "label": "Revisione vs ciclo 2022–32",
+        "ref": 7
+      },
+      {
+        "value": "≈ −20%",
+        "label": "Occupazione dev 22–25 anni",
+        "ref": 10
+      },
+      {
+        "value": "66%",
+        "label": "Usa assistenti o agenti di coding",
+        "ref": 3
+      }
+    ]
+  },
+  "figures": {
+    "adoption": {
+      "title": "Adozione degli strumenti AI tra gli sviluppatori, 2023–2030",
+      "caption": "Area e punti in ciano: quota di sviluppatori che usa strumenti AI (Stack Overflow), osservata fino al 2026. Dal 2026 in avanti la linea tratteggiata indigo è la proiezione logistica, con la banda degli scenari a capacità di saturazione K ∈ {0,87; 0,92; 0,97}. La linea ambra punteggiata, con marcatori quadrati, è la quota che dichiarava di pianificarne l’uso, rilevata fino al 2025. La linea bianca tratto-punto, con marcatori triangolari, è la quota che non li usa: nel 2026 è il valore effettivamente rilevato (17,2%), da cui è derivata la quota «usa». Il pulsante «Mostra riferimenti esterni» aggiunge due termini di confronto misurati su popolazioni diverse: l’adozione dell’AI nelle organizzazioni (AI Index) e l’obiettivo Gartner per gli ingegneri enterprise.",
+      "yAxis": "% di sviluppatori",
+      "gartnerTarget": "Obiettivo Gartner",
+      "using": "Usa strumenti AI",
+      "planning": "Pianifica di usarli",
+      "notUsing": "Non li usa",
+      "projection": "Proiezione (K = 0,92)",
+      "band": "Banda scenari",
+      "org": "Organizzazioni con AI (AI Index)",
+      "gartner": "Gartner: SWE enterprise con code assistant",
+      "toggleOrg": "Mostra riferimenti esterni",
+      "note": "Nel 2026 la domanda è cambiata: la quota “usa” è calcolata come 100% − 17,2% di non utilizzatori e la quota “pianifica” non è rilevata."
+    },
+    "employment": {
+      "title": "Occupazione e salari USA nei ruoli tecnologici",
+      "caption": "Tab A: traiettorie implicite nelle proiezioni BLS 2025–35 (indice 2025 = 100, crescita composta costante). Tab B: crescita decennale prevista per gli sviluppatori software in quattro cicli di proiezione consecutivi. Tab C: salario mediano annuo degli sviluppatori software (OEWS), con trend lineare e prosecuzione al CAGR 2023–25.",
+      "tabs": {
+        "trajectories": "A · Traiettorie 2025–35",
+        "revisions": "B · Revisioni BLS",
+        "wages": "C · Salari SWE"
+      },
+      "index": "Indice (2025 = 100)",
+      "growth": "Crescita prevista a 10 anni",
+      "wage": "Salario mediano",
+      "trendLinear": "Trend lineare 2021–25",
+      "trendRecent": "Prosecuzione CAGR 2023–25",
+      "occupations": {
+        "data_scientists": "Data Scientists",
+        "research_scientists": "Research Scientists (proxy AI/ML)",
+        "infosec_analysts": "Information Security",
+        "software_developers": "Software Developers",
+        "database_architects": "Database Architects (proxy DE)",
+        "network_architects": "Network Architects (proxy Cloud)",
+        "web_developers": "Web Developers",
+        "computer_programmers": "Computer Programmers"
+      }
+    },
+    "radar": {
+      "title": "Profilo comparato dei ruoli: domanda, compensi ed esposizione all’AI",
+      "caption": "Cinque assi normalizzati sul valore massimo tra i ruoli (= 100). L’asse “Penetrazione AI” è l’indice composito descritto in §1.3, espresso direttamente in 0–100. Seleziona i ruoli da confrontare.",
+      "axes": {
+        "bls_growth": "Crescita USA (BLS)",
+        "wef_growth": "Crescita globale (WEF)",
+        "us_pay": "Salario USA (BLS)",
+        "global_pay": "Salario globale (SO)",
+        "ai_exposure": "Penetrazione AI"
+      }
+    },
+    "salary": {
+      "title": "Salario mediano: Stati Uniti vs campione globale",
+      "caption": "Barre: salario mediano USA da BLS (maggio 2025, occupazione o proxy) e mediana globale dei rispondenti Stack Overflow 2025 per tipo di sviluppatore. L’etichetta riporta il rapporto USA/globale.",
+      "us": "USA (BLS, mag 2025)",
+      "global": "Globale (SO 2025)",
+      "ratio": "Rapporto"
+    },
+    "wef": {
+      "title": "I 15 lavori a crescita più rapida, 2025–2030",
+      "caption": "Crescita netta percentuale attesa dai datori di lavoro (WEF, Future of Jobs Report 2025). In ciano i ruoli tecnologici e digitali.",
+      "tech": "Ruolo tecnologico",
+      "other": "Altro",
+      "growth": "Crescita netta",
+      "jobs": {
+        "Big Data Specialists": "Specialisti di big data",
+        "FinTech Engineers": "Ingegneri FinTech",
+        "AI and Machine Learning Specialists": "Specialisti di AI e machine learning",
+        "Software and Applications Developers": "Sviluppatori di software e applicazioni",
+        "Security Management Specialists": "Specialisti di gestione della sicurezza",
+        "Data Warehousing Specialists": "Specialisti di data warehousing",
+        "Autonomous and Electric Vehicle Specialists": "Specialisti di veicoli autonomi ed elettrici",
+        "UI and UX Designers": "Designer UI e UX",
+        "Light Truck or Delivery Services Drivers": "Autisti di furgoni e servizi di consegna",
+        "Internet of Things Specialists": "Specialisti di Internet of Things",
+        "Data Analysts and Scientists": "Analisti e scienziati dei dati",
+        "Environmental Engineers": "Ingegneri ambientali",
+        "Information Security Analysts": "Analisti della sicurezza informatica",
+        "DevOps Engineers": "Ingegneri DevOps",
+        "Renewable Energy Engineers": "Ingegneri delle energie rinnovabili"
+      }
+    },
+    "exposure": {
+      "title": "Indice di penetrazione dell’AI nei task, per ruolo",
+      "caption": "Stima dell’autore: media dei tassi d’uso dell’AI per tipo di attività (Stack Overflow 2026) ponderata per il mix di attività tipico di ciascun ruolo. Un valore più alto indica che una quota maggiore del lavoro quotidiano ricade in attività dove l’AI è già usata in modo diffuso.",
+      "tasks": {
+        "code_generation": "Generazione di codice",
+        "debug_refactor": "Debug e refactoring",
+        "testing": "Test",
+        "knowledge_qna": "Domande tecniche",
+        "design_architecture": "Design e architettura",
+        "communication": "Comunicazione",
+        "ops_production": "Operazioni in produzione"
+      },
+      "topTasks": "Task che pesano di più"
+    },
+    "gartner": {
+      "title": "Previsioni Gartner sull’ingegneria del software agentica",
+      "caption": "Ogni riga riporta il valore previsto per l’anno obiettivo e, quando disponibile, il valore di partenza dichiarato. Le previsioni non sono misure ma ipotesi di analisti.",
+      "baseline": "Partenza",
+      "target": "Obiettivo",
+      "topics": {
+        "code_assistants": "Ingegneri software enterprise che usano assistenti AI al codice",
+        "upskill": "Forza lavoro ingegneristica che dovrà riqualificarsi per la GenAI",
+        "task_agents": "App enterprise con agenti AI specifici per task",
+        "agentic_apps": "Software enterprise che integra AI agentica",
+        "autonomous_decisions": "Decisioni lavorative quotidiane prese in autonomia da AI agentica",
+        "agentic_canceled": "Progetti di AI agentica cancellati entro fine 2027",
+        "small_teams": "Organizzazioni con team di software engineering ridotti su scala",
+        "fde_abandon": "Imprese che abbandoneranno l’AI agentica costruita dal forward-deployed engineering dei vendor"
+      },
+      "noBaseline": "Cerchio vuoto = valore di partenza dichiarato; dove manca, la fonte non ne indica uno."
+    }
+  },
+  "roles": {
+    "filters": {
+      "all": "Tutti",
+      "core": "Software",
+      "ai": "AI / ML",
+      "data": "Data & Platform"
+    },
+    "families": {
+      "core": "Software",
+      "ai": "AI / ML",
+      "data": "Data & Platform"
+    },
+    "labels": {
+      "swe": "Software Engineer / Full-stack",
+      "frontend": "Frontend Developer",
+      "backend": "Backend Developer",
+      "ai_ml": "AI / ML Engineer",
+      "data_scientist": "Data Scientist",
+      "data_engineer": "Data Engineer",
+      "mlops_cloud": "MLOps / Cloud Architect"
+    },
+    "metrics": {
+      "usPay": "Salario USA",
+      "globalPay": "Salario globale",
+      "blsGrowth": "BLS 2025–35",
+      "wefGrowth": "WEF 2025–30",
+      "aiIndex": "Penetrazione AI",
+      "jobs": "Occupati USA"
+    },
+    "table": {
+      "title": "Confronto granulare per ruolo",
+      "caption": "Valori riportati dalle fonti, tranne l’indice di penetrazione AI (stima). † = occupazione BLS usata come proxy.",
+      "role": "Ruolo",
+      "blsOccupation": "Occupazione BLS",
+      "demand": "Domanda",
+      "pay": "Compensi",
+      "automation": "Automazione",
+      "skills": "Skill chiave"
+    },
+    "details": {
+      "swe": {
+        "summary": "Il ruolo più numeroso e il più esposto alla commoditizzazione dell’implementazione.",
+        "skills": [
+          "System design",
+          "TypeScript / Python",
+          "Test e verifica",
+          "Revisione di codice AI",
+          "Sicurezza applicativa"
+        ]
+      },
+      "frontend": {
+        "summary": "Massima penetrazione dell’AI nei task; crescita BLS contenuta, ma salari globali in forte risalita.",
+        "skills": [
+          "TypeScript",
+          "Design system",
+          "Accessibilità",
+          "Performance",
+          "UX per interfacce AI"
+        ]
+      },
+      "backend": {
+        "summary": "Più esposizione a dati, integrazione e operazioni, dove l’AI è meno pervasiva.",
+        "skills": [
+          "API e contratti",
+          "Database",
+          "Osservabilità",
+          "Sicurezza",
+          "Integrazione LLM"
+        ]
+      },
+      "ai_ml": {
+        "summary": "Domanda tra le più dinamiche, con competenze che migrano dal training al prodotto: RAG, valutazione, agenti.",
+        "skills": [
+          "Python",
+          "RAG",
+          "Valutazione (evals)",
+          "Framework agentici",
+          "Costi di inferenza"
+        ]
+      },
+      "data_scientist": {
+        "summary": "La crescita BLS più alta tra le professioni analizzate (+35%), con un lavoro che si sposta verso il disegno degli esperimenti e la comunicazione.",
+        "skills": [
+          "Statistica",
+          "Disegno sperimentale",
+          "SQL",
+          "Causal inference",
+          "Comunicazione"
+        ]
+      },
+      "data_engineer": {
+        "summary": "Infrastruttura dati come prerequisito di ogni sistema AI; salario USA tra i più alti.",
+        "skills": [
+          "Pipeline e orchestrazione",
+          "Data warehousing",
+          "Qualità e governance",
+          "Streaming",
+          "Data contract"
+        ]
+      },
+      "mlops_cloud": {
+        "summary": "Il ruolo meno esposto: le operazioni in produzione restano l’attività con la minore adozione di AI.",
+        "skills": [
+          "Cloud e container",
+          "IaC",
+          "Affidabilità (SRE)",
+          "FinOps / costi token",
+          "Sicurezza della supply chain"
+        ]
+      }
+    }
+  },
+  "emerging": [
+    {
+      "id": "orchestrator",
+      "title": "Agent Orchestration Engineer",
+      "tag": "Orchestrazione",
+      "text": "Progetta flussi multi-agente, divide il lavoro tra agenti e umani, definisce permessi, passaggi di consegna e criteri di arresto.",
+      "signal": "Agentic AI: da 0,06% a 0,23% delle offerte USA in un anno [10]; 33% del software enterprise con AI agentica entro il 2028 [13].",
+      "skills": [
+        "Workflow agentici",
+        "Tool calling",
+        "Gestione dello stato"
+      ]
+    },
+    {
+      "id": "evals",
+      "title": "AI Evaluation & Reliability Engineer",
+      "tag": "Verifica",
+      "text": "Costruisce suite di valutazione, test di regressione sul comportamento dei modelli e metriche di affidabilità per sistemi non deterministici.",
+      "signal": "Gli agenti falliscono ancora circa un tentativo su tre sui benchmark strutturati [10]; solo il 6,6% dei developer si fida dell’AI per decisioni importanti [3].",
+      "skills": [
+        "Eval harness",
+        "Statistica",
+        "Red teaming"
+      ]
+    },
+    {
+      "id": "finops",
+      "title": "AI FinOps / Token Economist",
+      "tag": "Costi",
+      "text": "Governa il consumo di token, sceglie il modello giusto per ogni task e misura il ritorno economico dell’automazione.",
+      "signal": "Gartner prevede che entro il 2028 la spesa in AI coding supererà lo stipendio medio di uno sviluppatore [15].",
+      "skills": [
+        "Cost modeling",
+        "Routing dei modelli",
+        "Metriche di valore"
+      ]
+    },
+    {
+      "id": "context",
+      "title": "Context & Knowledge Engineer",
+      "tag": "Contesto",
+      "text": "Cura requisiti, documentazione e basi di conoscenza come input operativi per gli agenti, con tracciabilità delle fonti.",
+      "signal": "Il 93% dei developer chiede l’attribuzione delle fonti per fidarsi dell’AI; il contesto più affidabile sono obiettivi e requisiti di progetto (85%) [3].",
+      "skills": [
+        "Specifiche",
+        "Knowledge graph",
+        "Retrieval"
+      ]
+    },
+    {
+      "id": "security",
+      "title": "AI Security Engineer",
+      "tag": "Sicurezza",
+      "text": "Mette in sicurezza codice generato, agenti con accesso a strumenti e catena di fornitura dei modelli.",
+      "signal": "Security management specialists +55% (WEF) [6]; information security analysts +21% negli USA [7]; repository segnalati per Broken Access Control +172% [5].",
+      "skills": [
+        "Threat modeling",
+        "Prompt injection",
+        "Supply chain"
+      ]
+    },
+    {
+      "id": "applied",
+      "title": "Applied / Forward-Deployed AI Engineer",
+      "tag": "Prodotto",
+      "text": "Porta i sistemi AI dentro i processi del cliente, unendo ingegneria, conoscenza di dominio e gestione del cambiamento.",
+      "signal": "Ruolo in forte espansione ma esposto: Gartner prevede che il 70% delle imprese abbandonerà entro il 2028 l’AI agentica costruita dal forward-deployed engineering dei vendor [17].",
+      "skills": [
+        "Dominio",
+        "Integrazione",
+        "Change management"
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "base",
+      "name": "Base",
+      "tag": "Riferimento",
+      "adoption": "≈ 90% entro il 2028",
+      "text": "L’adozione segue la curva logistica centrale. L’occupazione degli sviluppatori cresce vicino alla proiezione BLS (+10% al 2035), ma la composizione cambia: meno ingressi junior, più ruoli di revisione, dati e piattaforma.",
+      "indicators": [
+        "Uso quotidiano > 75%",
+        "Proiezione BLS SWE stabile",
+        "Quota di team ridotti verso il 60% [16]"
+      ]
+    },
+    {
+      "id": "accelerated",
+      "name": "Accelerato",
+      "tag": "Agenti affidabili",
+      "adoption": "≈ 93–96% entro il 2030",
+      "text": "Gli agenti diventano affidabili su task di più ore. Si diffondono team di 2–5 persone, la domanda di implementatori cala più rapidamente e cresce quella di orchestratori, valutatori e architetti.",
+      "indicators": [
+        "SWE-bench Verified oltre il 90%",
+        "Agenti in produzione su larga scala",
+        "Nuova revisione al ribasso BLS"
+      ]
+    },
+    {
+      "id": "friction",
+      "name": "Frizione",
+      "tag": "Costi e rischi",
+      "adoption": "plateau ≈ 87%",
+      "text": "Costi dei token, cancellazioni dei progetti agentici e incidenti di sicurezza rallentano l’integrazione. L’AI resta un assistente e il mercato torna a premiare l’esperienza diretta di sviluppo.",
+      "indicators": [
+        "Cancellazioni oltre il 40% [13]",
+        "Budget AI coding sotto controllo stretto",
+        "Sentiment in calo sotto il 55%"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "abstract",
+      "number": "01",
+      "navKey": "abstract",
+      "kicker": "Abstract & Metodologia",
+      "title": "Sintesi esecutiva e metodo",
+      "blocks": [
+        {
+          "type": "h3",
+          "id": "abstract-summary",
+          "text": "1.1 Abstract"
+        },
+        {
+          "type": "p",
+          "lead": true,
+          "text": "Tra il 2024 e il 2026 il mercato del lavoro tecnologico è passato dall’eccesso di assunzioni del periodo pandemico a una fase di **normalizzazione strutturale**. I dati disponibili non mostrano un crollo dell’occupazione aggregata: gli sviluppatori software negli Stati Uniti passano da 1,36 a 1,66 milioni tra il 2021 e il 2023 [8] e il BLS prevede ancora una crescita del 10% al 2035 [7]. Mostrano però una **ricomposizione**: la crescita attesa per gli sviluppatori è scesa dal 25% al 10% in quattro cicli di proiezione [7], i programmatori sono previsti in calo del 7% per effetto dell’automazione [7] e l’occupazione degli sviluppatori tra i 22 e i 25 anni è diminuita di quasi il 20% [10]."
+        },
+        {
+          "type": "p",
+          "text": "Nello stesso periodo l’AI generativa è diventata infrastruttura di lavoro. La quota di sviluppatori che usa strumenti AI sale dal 44% del 2023 al 78,5% del 2025 [1, 2]; nel 2026 il 66% usa assistenti o agenti di coding e il 73% di questi lo fa ogni giorno [3]. La fiducia segue la traiettoria opposta: chi si fida dell’accuratezza dell’AI scende dal 43% al 32,7% in un anno [1, 2]. Il presente lavoro confronta sette ruoli lungo domanda, compensi ed esposizione all’automazione, e propone tre scenari al 2031 in cui il valore professionale si sposta dalla scrittura del codice alla **specifica, orchestrazione e verifica** di sistemi multi-agente."
+        },
+        {
+          "type": "keywords",
+          "label": "Parole chiave",
+          "items": [
+            "mercato del lavoro ICT",
+            "AI generativa",
+            "agenti AI",
+            "software engineering",
+            "entry-level",
+            "skill shift"
+          ]
+        },
+        {
+          "type": "h3",
+          "id": "abstract-method",
+          "text": "1.2 Fonti e metodologia"
+        },
+        {
+          "type": "p",
+          "text": "L’analisi si basa esclusivamente su sei famiglie di fonti pubbliche e verificabili: le **Stack Overflow Developer Survey** 2024, 2025 e 2026 [1, 2, 3], i rapporti **GitHub Octoverse** 2024 e 2025 [4, 5], il **WEF Future of Jobs Report 2025** [6], l’**Occupational Outlook Handbook** e le statistiche OEWS del **U.S. Bureau of Labor Statistics** [7, 8], lo **Stanford AI Index** 2025 e 2026 [9, 10] e le previsioni pubblicate da **Gartner** tra il 2024 e il 2026 [11–17]."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Estrazione.** Ogni valore è stato trascritto manualmente dal report originale in un file CSV con il proprio identificativo di fonte (`data-pipeline/raw/`).",
+            "**Separazione tra dato e stima.** La pipeline Python distingue i valori *riportati* da quelli *derivati*; nelle figure i secondi sono marcati come stima o proiezione.",
+            "**Proxy dichiarati.** Il BLS non ha categorie per AI/ML engineer, data engineer e cloud architect: si usano rispettivamente Computer and Information Research Scientists, Database Architects e Computer Network Architects.",
+            "**Proiezioni.** L’adozione dell’AI è modellata con una curva logistica a capacità fissata (tre scenari); le traiettorie occupazionali derivano dai tassi decennali BLS convertiti in crescita composta annua."
+          ]
+        },
+        {
+          "type": "h3",
+          "id": "abstract-index",
+          "text": "1.3 L’indice di penetrazione AI"
+        },
+        {
+          "type": "p",
+          "text": "Nessuna delle fonti pubblica un «tasso di automazione del codice» per ruolo. Per colmare la lacuna in modo verificabile si costruisce un **indice composito**: per sette attività (generazione di codice, debug, test, domande tecniche, design, comunicazione, operazioni in produzione) si usa la quota di sviluppatori che impiega o trova utile l’AI secondo l’indagine 2026 [3]; a ogni ruolo è associato un vettore di pesi che approssima la distribuzione attesa delle sue attività. L’indice misura quindi *quanto del lavoro ricade in attività dove l’AI è già diffusa*, non quanto lavoro sia stato sostituito.",
+          "note": "I pesi sono ipotesi dell’autore e sono pubblicati in role_task_weights.csv: modificarli e rieseguire la pipeline aggiorna automaticamente figure e tabelle."
+        },
+        {
+          "type": "figure",
+          "chart": "exposure"
+        },
+        {
+          "type": "callout",
+          "tag": "Limiti",
+          "title": "Cosa questi dati non dicono",
+          "text": "Le survey Stack Overflow sono auto-selezionate e il campione si è ridotto (oltre 65.000 rispondenti nel 2024, oltre 30.000 da 169 paesi nel 2026) [1, 3]; nel 2026 alcune domande sull’AI sono cambiate. I dati BLS riguardano solo gli Stati Uniti, mentre il WEF raccoglie aspettative dei datori di lavoro a livello globale. Le previsioni Gartner sono giudizi di analisti, non misure. I conteggi dei licenziamenti dei tracker privati sono esclusi per coerenza con il perimetro delle fonti."
+        }
+      ]
+    },
+    {
+      "id": "market",
+      "number": "02",
+      "navKey": "market",
+      "kicker": "Stato attuale del mercato",
+      "title": "2024–2026: dopo la bolla, una normalizzazione selettiva",
+      "blocks": [
+        {
+          "type": "h3",
+          "id": "market-normalization",
+          "text": "2.1 Dalla bolla pandemica alla normalizzazione"
+        },
+        {
+          "type": "p",
+          "text": "La lettura più diffusa del periodo 2022–2024, quella di un settore in contrazione, è solo parzialmente supportata dai dati ufficiali. Le stime OEWS (*Occupational Employment and Wage Statistics*) registrano una crescita continua degli sviluppatori software negli Stati Uniti: **1.364.180** nel maggio 2021, **1.534.790** nel 2022 e **1.656.880** nel 2023 [8]. I licenziamenti dell’ondata 2022–2023 hanno quindi colpito soprattutto le grandi piattaforme e gli eccessi di organico, senza invertire la tendenza aggregata."
+        },
+        {
+          "type": "p",
+          "text": "Il segnale di normalizzazione emerge invece nelle **aspettative** e nei **prezzi**. La crescita decennale prevista dal BLS per gli sviluppatori scende dal 25% (ciclo 2022–32) al 17%, al 15% e infine al 10% (ciclo 2025–35) [7]. Il salario mediano cresce da 120.730 a 135.980 dollari tra il 2021 e il 2025 [7, 8], ma il ritmo annuo si dimezza: dal 3,0% medio dell’intero periodo all’1,4% del biennio 2023–25, sotto l’inflazione.",
+          "note": "Tassi di crescita composti annui (CAGR) calcolati dalla pipeline sui salari mediani nominali OEWS/OOH; valori derivati."
+        },
+        {
+          "type": "figure",
+          "chart": "employment"
+        },
+        {
+          "type": "h3",
+          "id": "market-entry",
+          "text": "2.2 La contrazione dei ruoli junior ed entry-level"
+        },
+        {
+          "type": "p",
+          "text": "La ricomposizione è più visibile all’ingresso della professione. Secondo l’AI Index 2026, che riprende le analisi su dati di payroll ADP, l’occupazione degli sviluppatori software tra i 22 e i 25 anni è calata di **quasi il 20%**, mentre l’occupazione dei lavoratori più esperti nelle stesse occupazioni esposte all’AI è rimasta stabile o in crescita [10]. Il BLS prevede un calo del 7% per i *computer programmers*, attribuendolo esplicitamente all’uso di tecnologie, inclusa l’AI, per automatizzare i compiti di programmazione ripetitivi [7]."
+        },
+        {
+          "type": "p",
+          "text": "Il meccanismo è coerente con l’indice di penetrazione: le attività tradizionalmente affidate ai profili junior, cioè codice di routine, test e correzione di bug, sono proprio quelle dove l’uso dell’AI è più alto (69,3% per la generazione di codice in aree note, 58,1% per i test) [3]. Gartner avverte che entro il 2028 le organizzazioni che useranno l’AI per tagliare i ruoli junior **svuoteranno la propria pipeline di talenti** [16]. Un segnale di ricollocazione emerge dall’indagine 2026: la quota di freelance e organizzazioni di una sola persona sale dal 4% all’11% [3]."
+        },
+        {
+          "type": "kpis",
+          "items": [
+            {
+              "value": "≈ −20%",
+              "label": "Occupazione sviluppatori 22–25 anni",
+              "ref": 10
+            },
+            {
+              "value": "−7%",
+              "label": "Computer programmers 2025–35",
+              "ref": 7
+            },
+            {
+              "value": "4% → 11%",
+              "label": "Freelance e solo-founder",
+              "ref": 3
+            },
+            {
+              "value": "2028",
+              "label": "Pipeline junior a rischio (Gartner)",
+              "ref": 16
+            }
+          ]
+        },
+        {
+          "type": "h3",
+          "id": "market-genai",
+          "text": "2.3 Il consolidamento dell’AI generativa nei flussi di lavoro"
+        },
+        {
+          "type": "p",
+          "text": "In tre anni l’AI passa da sperimentazione a strumento quotidiano. Gli sviluppatori che la usano salgono dal 44% (2023) al 61,8% (2024) e al 78,5% (2025) [1, 2]; nel 2025 il 50,6% dei professionisti la usa ogni giorno [2]. Nel 2026 la categoria dominante sono gli **assistenti e agenti di coding** (66%), usati quotidianamente dal 73% di chi li adotta; il 31% degli utenti giornalieri vi dedica quattro o più ore al giorno [3]."
+        },
+        {
+          "type": "figure",
+          "chart": "adoption"
+        },
+        {
+          "type": "p",
+          "text": "GitHub conferma lo spostamento dal lato della produzione. Nel 2024 Python supera JavaScript come linguaggio più usato e i progetti pubblici di AI generativa crescono del 98% [4]. Nel 2025 la piattaforma supera i **180 milioni** di sviluppatori, con 36 milioni di nuovi account in un anno; circa l’80% dei nuovi sviluppatori usa Copilot nella prima settimana e i repository pubblici che importano un SDK di LLM superano 1,1 milioni (+178%) [5]. TypeScript diventa il primo linguaggio per contributori, un effetto che GitHub collega ai linguaggi tipizzati, più adatti al codice generato [5]."
+        },
+        {
+          "type": "p",
+          "text": "Sul fronte delle capacità, l’AI Index documenta un salto netto: i sistemi risolvevano il 4,4% dei problemi di SWE-bench nel 2023 e il 71,7% nel 2024 [9]; a febbraio 2026 il miglior risultato su SWE-bench Verified è circa il 76,8%, mentre Terminal-Bench 2.0 passa dal 20% al 77,3% in un anno [10]. Nelle organizzazioni l’uso dell’AI in almeno una funzione sale dal 55% (2023) al 78% (2024) e all’88% (2025) [9, 10]."
+        },
+        {
+          "type": "h3",
+          "id": "market-trust",
+          "text": "2.4 Il paradosso della fiducia"
+        },
+        {
+          "type": "p",
+          "text": "All’aumento dell’uso non corrisponde un aumento della fiducia. Il sentiment favorevole scende dal 71,9% (2024) al 59,7% (2025) [1, 2], per poi risalire al 62% nel 2026 [3]. Chi si fida dell’accuratezza passa dal 43% al 32,7%, mentre la sfiducia sale al 45,7% [1, 2]. Nel 2026 il 48% dichiara di fidarsi dell’AI solo quando le risposte sono facili da verificare e appena il **6,6%** per decisioni importanti [3]."
+        },
+        {
+          "type": "p",
+          "text": "Anche l’evidenza sulla produttività è eterogenea. Tra gli studi raccolti dall’AI Index 2026, un esperimento su GitHub Copilot misura un aumento del 26% delle pull request completate, mentre uno studio METR rileva un rallentamento del 19% per sviluppatori open source esperti [10]. Il quadro suggerisce che il valore dipenda meno dallo strumento e più dalla **capacità di verificarne l’output**, un punto centrale per le proiezioni del §4."
+        },
+        {
+          "type": "callout",
+          "tag": "Lettura",
+          "title": "Uso quasi universale, fiducia condizionata",
+          "text": "L’adozione quasi universale si accompagna a una fiducia condizionata: l’uso è intensivo, la verifica resta sistematica. È questa combinazione, più che l’automazione in sé, a ridefinire le competenze richieste."
+        }
+      ]
+    },
+    {
+      "id": "roles",
+      "number": "03",
+      "navKey": "roles",
+      "kicker": "Analisi granulare per ruolo",
+      "title": "Domanda, competenze, compensi e automazione in sette ruoli",
+      "blocks": [
+        {
+          "type": "p",
+          "lead": true,
+          "text": "I sette ruoli analizzati sono raggruppati in tre famiglie: **Software** (SWE/Full-stack, Frontend, Backend), **AI/ML** e **Data & Platform** (Data Scientist, Data Engineer, MLOps/Cloud Architect). Per ciascuno si incrociano la crescita prevista negli Stati Uniti (BLS) e a livello globale (WEF), il salario mediano USA (BLS) e globale (Stack Overflow) e l’indice di penetrazione AI."
+        },
+        {
+          "type": "roleCards"
+        },
+        {
+          "type": "h3",
+          "id": "roles-swe",
+          "text": "3.1 Software Engineer, Full-stack, Frontend e Backend"
+        },
+        {
+          "type": "p",
+          "text": "Gli sviluppatori software restano la professione tecnologica più numerosa negli Stati Uniti: **1.717.800 occupati** nel 2025, salario mediano di 135.980 dollari e una crescita prevista del 10% al 2035, pari a 174.700 posti [7]. I *web developers* crescono meno (+4%) con un mediano di 92.650 dollari [7]. A livello globale il WEF colloca *Software and Applications Developers* al quarto posto per crescita percentuale (+60%) e tra i ruoli con la maggiore crescita assoluta [6]."
+        },
+        {
+          "type": "p",
+          "text": "Il campione globale Stack Overflow mostra salari molto più bassi ma in risalita nel 2025: full-stack 72.509 dollari (+12,5%), back-end 79.742 (+15,1%), front-end 62.015 (+24%) [2]. Sono anche i ruoli con l’indice di penetrazione AI più alto: frontend 60,0, SWE 59,4 e backend 57,6. Le competenze il cui valore relativo aumenta sono plausibilmente quelle che l’AI non sostituisce ma rende più necessarie: **design di sistema, test, revisione e sicurezza**. GitHub segnala un aumento del 172% dei repository con vulnerabilità di tipo *Broken Access Control* [5]; il dato è compatibile con un costo di verifica crescente a valle di una produzione di codice più rapida, ma le fonti non stabiliscono un nesso causale."
+        },
+        {
+          "type": "h3",
+          "id": "roles-ai",
+          "text": "3.2 AI Engineer e ML Engineer"
+        },
+        {
+          "type": "p",
+          "text": "Il BLS non ha ancora una categoria per l’AI engineer; il proxy più vicino, *Computer and Information Research Scientists*, ha un salario mediano di 140.300 dollari e una crescita prevista del 22% [7]. Il WEF colloca gli *AI and Machine Learning Specialists* al terzo posto tra i lavori a crescita più rapida (+85%) [6] e già nel 2024 il 56% dei responsabili di ingegneria indicava l’AI/ML engineer come il ruolo più richiesto [12]."
+        },
+        {
+          "type": "p",
+          "text": "La domanda si sposta dal *training* al **prodotto**. Nel 2025 le offerte USA con competenze di AI generativa sono 138.188 (+111%), Python è la competenza specialistica più richiesta con 258.674 offerte e il cluster *Agentic AI* passa dallo 0,06% allo 0,23% di tutte le offerte, circa 90.000 posizioni [10]. Gartner descrive l’AI engineer come «una nuova specie di professionista del software» che unisce ingegneria, data science e AI/ML, con competenze come RAG e prompt engineering [12]. Anche questo ruolo, però, non è immune: su MLE-bench gli agenti passano dal 17% al 64,4% di successo in compiti di ingegneria ML [10].",
+          "note": "Il salario globale SO per AI/ML engineer (89.427 $) è il più alto tra i ruoli individuali di sviluppo, dopo il cloud infrastructure engineer [2]."
+        },
+        {
+          "type": "h3",
+          "id": "roles-data",
+          "text": "3.3 Data Scientist, Data Engineer e MLOps / Cloud Architect"
+        },
+        {
+          "type": "p",
+          "text": "I data scientist hanno la crescita prevista più alta di tutto il perimetro BLS considerato: **+35%** al 2035, 275.600 occupati e un mediano di 120.230 dollari [7]. Il WEF conferma la direzione con i *Big Data Specialists* in testa alla classifica (+110%), seguiti tra gli altri da *Data Warehousing Specialists* (+50%), *Data Analysts and Scientists* (+40%) e *DevOps Engineers* (+40%) [6]."
+        },
+        {
+          "type": "p",
+          "text": "Per i ruoli di piattaforma i proxy BLS mostrano crescite moderate ma salari elevati: database architects +9% e 139.500 dollari, network architects +8% e 134.050 dollari, con la domanda trainata dall’espansione del cloud [7]. Nel campione globale il *cloud infrastructure engineer* ha il mediano più alto tra i ruoli individuali (103.113 dollari) [2]. L’elemento discriminante è il grado di automazione: solo il 20% degli sviluppatori usa l’AI per operare sistemi in produzione [3] e nel 2025 il 75,8% non prevedeva di usarla per deploy e monitoraggio [2]. Ne risulta l’indice più basso del campione (**45,5** per MLOps/Cloud)."
+        },
+        {
+          "type": "figure",
+          "chart": "wef"
+        },
+        {
+          "type": "h3",
+          "id": "roles-synthesis",
+          "text": "3.4 Sintesi comparativa"
+        },
+        {
+          "type": "roleTable"
+        },
+        {
+          "type": "figure",
+          "chart": "radar"
+        },
+        {
+          "type": "p",
+          "text": "Il confronto evidenzia, sulle sette osservazioni disponibili, un’associazione inversa tra **esposizione all’AI** e **crescita della domanda**: i ruoli di sviluppo applicativo hanno l’indice più alto e le proiezioni BLS più basse; data science e AI/ML combinano crescita elevata e indice intermedio; MLOps/Cloud ha la minore esposizione e compensi globali più alti. Il divario salariale tra Stati Uniti e campione globale varia da 1,3 a 1,9 volte e si riduce proprio nei ruoli di piattaforma, segno di un mercato più internazionale per queste competenze."
+        },
+        {
+          "type": "figure",
+          "chart": "salary"
+        }
+      ]
+    },
+    {
+      "id": "future",
+      "number": "04",
+      "navKey": "future",
+      "kicker": "Proiezioni future · orizzonte 3–5 anni",
+      "title": "Dallo scrivere codice all’orchestrare sistemi multi-agente",
+      "blocks": [
+        {
+          "type": "h3",
+          "id": "future-agents",
+          "text": "4.1 Dall’assistente all’agente"
+        },
+        {
+          "type": "p",
+          "lead": true,
+          "text": "La traiettoria più netta nei dati è il passaggio dall’autocompletamento all’**agente**. Gartner prevede che il 40% delle applicazioni enterprise includa agenti specifici per task entro il 2026, contro meno del 5% nel 2025 [14]; che entro il 2028 il 33% del software enterprise integri AI agentica e il 15% delle decisioni lavorative quotidiane sia preso in autonomia [13]. Nel medio periodo, secondo Gartner, la maggior parte del codice sarà generato dall’AI anziché scritto da persone [12]."
+        },
+        {
+          "type": "p",
+          "text": "La proiezione logistica di questo paper è coerente con queste previsioni: nello scenario centrale l’uso degli strumenti AI tra gli sviluppatori raggiunge circa il **90% nel 2028** e si stabilizza attorno al 92% nel 2030, sopra l’obiettivo Gartner del 75% per gli ingegneri enterprise [11]. Il limite non sarà quindi l’adozione, ma l’affidabilità: Gartner prevede che oltre il 40% dei progetti di AI agentica venga cancellato entro la fine del 2027 per costi, valore poco chiaro o controlli inadeguati [13].",
+          "note": "Parametri del fit (scenario centrale): K = 0,92; r ≈ 0,79; RMSE ≈ 1,6 p.p. su quattro osservazioni. La proiezione è illustrativa."
+        },
+        {
+          "type": "figure",
+          "chart": "gartner"
+        },
+        {
+          "type": "h3",
+          "id": "future-reviewer",
+          "text": "4.2 L’ascesa del revisore architetturale"
+        },
+        {
+          "type": "p",
+          "text": "Se la generazione di codice diventa abbondante, la risorsa scarsa diventa la **verifica**. Il 93% degli sviluppatori chiede l’attribuzione delle fonti per fidarsi dell’AI e il contesto considerato più affidabile sono gli obiettivi e i requisiti di progetto (85%) [3]. Il 72,6% di chi utilizza la code review di Copilot dichiara un miglioramento dell’efficacia del proprio lavoro [5]: la revisione non scompare, si sposta di livello."
+        },
+        {
+          "type": "p",
+          "text": "Il risultato è un profilo qui definito **revisore architetturale**: definisce contratti e invarianti, progetta i casi di test e le suite di valutazione, mantiene il modello delle minacce e decide che cosa un agente può modificare. Gartner prevede che entro il 2029 il 60% delle organizzazioni adotti su scala team di ingegneria più piccoli, oggi tipicamente di 4–5 persone, contro il 15% del 2026 [16]. In team di questa dimensione le funzioni di revisione del lavoro prodotto da agenti tendono a ricadere su ciascun componente."
+        },
+        {
+          "type": "callout",
+          "tag": "Skill shift",
+          "title": "Le competenze che salgono di valore",
+          "text": "Specifica dei requisiti · design di sistema · test e valutazione · sicurezza del codice generato · governo dei costi · comunicazione con il dominio. Gartner stima che l’80% della forza lavoro ingegneristica dovrà riqualificarsi entro il 2027 [12]; il 79% degli sviluppatori dichiara di volersi aggiornare sull’AI [3]."
+        },
+        {
+          "type": "h3",
+          "id": "future-emerging",
+          "text": "4.3 Nuove figure emergenti"
+        },
+        {
+          "type": "p",
+          "text": "Le figure seguenti non sono ancora categorie statistiche ufficiali. Ciascuna è ancorata a un segnale misurabile nelle fonti; i nomi sono convenzionali e varieranno tra organizzazioni."
+        },
+        {
+          "type": "emerging"
+        },
+        {
+          "type": "h3",
+          "id": "future-scenarios",
+          "text": "4.4 Tre scenari al 2031"
+        },
+        {
+          "type": "p",
+          "text": "Gli scenari combinano la proiezione di adozione (§2.3), le traiettorie occupazionali BLS (§2.1) e le previsioni Gartner. Per ciascuno si indicano gli indicatori da monitorare nelle prossime edizioni delle fonti."
+        },
+        {
+          "type": "scenarios"
+        },
+        {
+          "type": "h3",
+          "id": "future-implications",
+          "text": "4.5 Implicazioni per chi entra nel mercato"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Mostrare capacità di verifica, non solo di produzione.** Test, valutazioni e code review sono la prova più credibile di competenza quando il codice è generato.",
+            "**Privilegiare le attività a bassa penetrazione dell’AI.** Dati, piattaforma e operazioni in produzione combinano domanda solida ed esposizione minore.",
+            "**Imparare a lavorare con agenti.** Framework di orchestrazione, gestione del contesto e controllo dei costi stanno entrando nelle offerte di lavoro [10].",
+            "**Investire nel dominio.** I ruoli che collegano AI e processi reali crescono, ma premiano chi capisce il problema prima dello strumento."
+          ]
+        },
+        {
+          "type": "h3",
+          "id": "future-conclusions",
+          "text": "4.6 Conclusioni"
+        },
+        {
+          "type": "p",
+          "text": "I dati 2024–2026 descrivono un mercato che non sta perdendo lavoro tecnologico in termini aggregati, ma lo sta **ridistribuendo**: dall’implementazione verso dati, piattaforma, sicurezza e verifica; dai profili junior verso quelli esperti; dai team numerosi verso team ridotti affiancati da agenti. Le prossime edizioni delle fonti diranno quale scenario prevale. Il metodo proposto, con dati riportati separati dalle stime e una pipeline riproducibile, consente di aggiornare l’analisi a ogni nuova release."
+        }
+      ]
+    },
+    {
+      "id": "sources",
+      "number": "05",
+      "navKey": "sources",
+      "kicker": "Fonti certificate & bibliografia",
+      "title": "Riferimenti",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Tutte le fonti sono pubbliche e sono state consultate a ottobre 2026. I valori estratti, con il relativo identificativo di fonte, sono disponibili nei file CSV della pipeline e nel dataset `market_data.json`."
+        },
+        {
+          "type": "references"
+        },
+        {
+          "type": "cite",
+          "label": "Come citare",
+          "text": "Raffaele (2026). Tech jobs evolution — A perspective on the market's current state and what will change. Working paper v1.0, ottobre 2026."
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": 1,
+      "authors": "Stack Overflow",
+      "title": "2024 Developer Survey — AI",
+      "year": 2024,
+      "url": "https://survey.stackoverflow.co/2024/ai",
+      "note": "Uso, sentiment e fiducia negli strumenti AI."
+    },
+    {
+      "id": 2,
+      "authors": "Stack Overflow",
+      "title": "2025 Developer Survey — AI; Work",
+      "year": 2025,
+      "url": "https://survey.stackoverflow.co/2025/ai",
+      "note": "Frequenza d’uso, agenti, fiducia; salari mediani per tipo di sviluppatore (survey.stackoverflow.co/2025/work)."
+    },
+    {
+      "id": 3,
+      "authors": "Stack Overflow",
+      "title": "2026 Developer Survey — Results; AI",
+      "year": 2026,
+      "url": "https://survey.stackoverflow.co/2026/ai",
+      "note": "Pubblicata il 6 ottobre 2026; oltre 30.000 rispondenti da 169 paesi."
+    },
+    {
+      "id": 4,
+      "authors": "GitHub",
+      "title": "Octoverse 2024: AI leads Python to top language as the number of global developers surges",
+      "year": 2024,
+      "url": "https://github.blog/news-insights/octoverse/octoverse-2024/",
+      "note": "Python primo linguaggio; progetti GenAI +98%."
+    },
+    {
+      "id": 5,
+      "authors": "GitHub",
+      "title": "Octoverse 2025: A new developer joins GitHub every second as AI leads TypeScript to #1",
+      "year": 2025,
+      "url": "https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/",
+      "note": "Periodo 1 set 2024 – 31 ago 2025."
+    },
+    {
+      "id": 6,
+      "authors": "World Economic Forum",
+      "title": "The Future of Jobs Report 2025",
+      "year": 2025,
+      "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/",
+      "note": "Oltre 1.000 imprese, 22 cluster industriali, 14 milioni di lavoratori rappresentati."
+    },
+    {
+      "id": 7,
+      "authors": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Outlook Handbook — Computer and Information Technology; Data Scientists (proiezioni 2025–35, salari maggio 2025)",
+      "year": 2026,
+      "url": "https://www.bls.gov/ooh/computer-and-information-technology/",
+      "note": "Include i tassi di crescita dei cicli precedenti (2022–32, 2023–33, 2024–34)."
+    },
+    {
+      "id": 8,
+      "authors": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Employment and Wage Statistics — 15-1252 Software Developers, May 2021–May 2023",
+      "year": 2024,
+      "url": "https://www.bls.gov/oes/2023/may/oes151252.htm",
+      "note": "Occupazione e salario mediano nazionali."
+    },
+    {
+      "id": 9,
+      "authors": "Stanford Institute for Human-Centered AI",
+      "title": "Artificial Intelligence Index Report 2025",
+      "year": 2025,
+      "url": "https://hai.stanford.edu/ai-index/2025",
+      "note": "SWE-bench 2023–2024; adozione AI nelle organizzazioni."
+    },
+    {
+      "id": 10,
+      "authors": "Stanford Institute for Human-Centered AI",
+      "title": "Artificial Intelligence Index Report 2026 — Ch. 2 Technical Performance; Ch. 4 Economy",
+      "year": 2026,
+      "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
+      "note": "Offerte di lavoro (Lightcast), occupazione early-career, studi di produttività, benchmark di coding."
+    },
+    {
+      "id": 11,
+      "authors": "Gartner",
+      "title": "Gartner Says 75% of Enterprise Software Engineers Will Use AI Code Assistants by 2028",
+      "year": 2024,
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2024-04-11-gartner-says-75-percent-of-enterprise-software-engineers-will-use-ai-code-assistants-by-2028",
+      "note": "Press release, 11 aprile 2024."
+    },
+    {
+      "id": 12,
+      "authors": "Gartner",
+      "title": "Gartner Says Generative AI will Require 80% of Engineering Workforce to Upskill Through 2027",
+      "year": 2024,
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2024-10-03-gartner-says-generative-ai-will-require-80-percent-of-engineering-workforce-to-upskill-through-2027",
+      "note": "Press release, 3 ottobre 2024."
+    },
+    {
+      "id": 13,
+      "authors": "Gartner",
+      "title": "Gartner Predicts Over 40% of Agentic AI Projects Will Be Canceled by End of 2027",
+      "year": 2025,
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027",
+      "note": "Press release, 25 giugno 2025."
+    },
+    {
+      "id": 14,
+      "authors": "Gartner",
+      "title": "Gartner Predicts 40% of Enterprise Apps Will Feature Task-Specific AI Agents by 2026, Up from Less Than 5% in 2025",
+      "year": 2025,
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2025-08-26-gartner-predicts-40-percent-of-enterprise-apps-will-feature-task-specific-ai-agents-by-2026-up-from-less-than-5-percent-in-2025",
+      "note": "Press release, 26 agosto 2025."
+    },
+    {
+      "id": 15,
+      "authors": "Gartner",
+      "title": "Gartner Predicts AI Coding Costs Will Surpass Average Developer’s Salary by 2028 as Token Consumption Surges",
+      "year": 2026,
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-06-24-gartner-predicts-ai-coding-costs-will-surpass-average-developer-salary-by-2028-as-token-consumption-surges",
+      "note": "Press release, 24 giugno 2026."
+    },
+    {
+      "id": 16,
+      "authors": "Gartner",
+      "title": "Gartner Predicts 60% of Organizations Will Adopt Smaller Software Engineering Teams by 2029",
+      "year": 2026,
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-07-07-gartner-predicts-60-percent-of-organizations-will-adopt-smaller-software-engineering-teams-by-2029",
+      "note": "Press release, 7 luglio 2026."
+    },
+    {
+      "id": 17,
+      "authors": "Gartner",
+      "title": "Gartner Predicts 70% of Enterprises Will Abandon Agentic AI Built by Vendor Forward-Deployed Engineering by 2028",
+      "year": 2026,
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-09-29-gartner-predicts-70-percent-of-enterprises-will-abandon-agentic-ai-built-by-vendor-forward-deployed-engineering-by-2028",
+      "note": "Press release, 29 settembre 2026."
+    }
+  ],
+  "footer": {
+    "license": "Testo CC BY 4.0 · Codice MIT",
+    "built": "Costruito con React, Recharts e una pipeline Python riproducibile.",
+    "ctaKicker": "Pronto a discuterne?",
+    "ctaHighlight": "Apri una issue sul repository",
+    "ctaPrimary": "Scarica il dataset",
+    "ctaSecondary": "Vedi la metodologia"
+  }
+}

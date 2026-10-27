@@ -1,0 +1,10 @@
+Copyright (c) 2026 yoxshin18
+
+The text of the paper (web-paper/src/locales/*.json) and the figures it
+produces are licensed under the Creative Commons Attribution 4.0 International
+License (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
+
+Data in data-pipeline/raw/ are transcribed from the third-party reports listed
+in data-pipeline/raw/sources.csv and remain subject to their original terms.
+
+All source code in this repository is licensed under the MIT License (LICENSE).

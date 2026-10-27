@@ -1,0 +1,18 @@
+id,key,publisher,title,year,url
+1,so2024,Stack Overflow,"2024 Developer Survey — AI",2024,https://survey.stackoverflow.co/2024/ai
+2,so2025,Stack Overflow,"2025 Developer Survey — AI & Work",2025,https://survey.stackoverflow.co/2025/ai
+3,so2026,Stack Overflow,"2026 Developer Survey — Results & AI",2026,https://survey.stackoverflow.co/2026/ai
+4,octo2024,GitHub,"Octoverse 2024: AI leads Python to top language",2024,https://github.blog/news-insights/octoverse/octoverse-2024/
+5,octo2025,GitHub,"Octoverse 2025: a new developer joins GitHub every second as AI leads TypeScript to #1",2025,https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/
+6,wef2025,World Economic Forum,"The Future of Jobs Report 2025",2025,https://www.weforum.org/publications/the-future-of-jobs-report-2025/
+7,bls_ooh,U.S. Bureau of Labor Statistics,"Occupational Outlook Handbook — Employment Projections 2025–35, wages May 2025",2026,https://www.bls.gov/ooh/computer-and-information-technology/
+8,bls_oews,U.S. Bureau of Labor Statistics,"Occupational Employment and Wage Statistics — 15-1252 Software Developers (May 2021–May 2023)",2024,https://www.bls.gov/oes/2023/may/oes151252.htm
+9,aiindex2025,Stanford HAI,"Artificial Intelligence Index Report 2025",2025,https://hai.stanford.edu/ai-index/2025
+10,aiindex2026,Stanford HAI,"Artificial Intelligence Index Report 2026 (Ch. 2 Technical Performance; Ch. 4 Economy)",2026,https://hai.stanford.edu/ai-index/2026-ai-index-report
+11,gartner_2024_04,Gartner,"Gartner Says 75% of Enterprise Software Engineers Will Use AI Code Assistants by 2028",2024,https://www.gartner.com/en/newsroom/press-releases/2024-04-11-gartner-says-75-percent-of-enterprise-software-engineers-will-use-ai-code-assistants-by-2028
+12,gartner_2024_10,Gartner,"Gartner Says Generative AI will Require 80% of Engineering Workforce to Upskill Through 2027",2024,https://www.gartner.com/en/newsroom/press-releases/2024-10-03-gartner-says-generative-ai-will-require-80-percent-of-engineering-workforce-to-upskill-through-2027
+13,gartner_2025_06,Gartner,"Gartner Predicts Over 40% of Agentic AI Projects Will Be Canceled by End of 2027",2025,https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027
+14,gartner_2025_08,Gartner,"Gartner Predicts 40% of Enterprise Apps Will Feature Task-Specific AI Agents by 2026, Up from Less Than 5% in 2025",2025,https://www.gartner.com/en/newsroom/press-releases/2025-08-26-gartner-predicts-40-percent-of-enterprise-apps-will-feature-task-specific-ai-agents-by-2026-up-from-less-than-5-percent-in-2025
+15,gartner_2026_06,Gartner,"Gartner Predicts AI Coding Costs Will Surpass Average Developer's Salary by 2028 as Token Consumption Surges",2026,https://www.gartner.com/en/newsroom/press-releases/2026-06-24-gartner-predicts-ai-coding-costs-will-surpass-average-developer-salary-by-2028-as-token-consumption-surges
+16,gartner_2026_07,Gartner,"Gartner Predicts 60% of Organizations Will Adopt Smaller Software Engineering Teams by 2029",2026,https://www.gartner.com/en/newsroom/press-releases/2026-07-07-gartner-predicts-60-percent-of-organizations-will-adopt-smaller-software-engineering-teams-by-2029
+17,gartner_2026_09,Gartner,"Gartner Predicts 70% of Enterprises Will Abandon Agentic AI Built by Vendor Forward-Deployed Engineering by 2028",2026,https://www.gartner.com/en/newsroom/press-releases/2026-09-29-gartner-predicts-70-percent-of-enterprises-will-abandon-agentic-ai-built-by-vendor-forward-deployed-engineering-by-2028

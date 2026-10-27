@@ -1,0 +1,10 @@
+key,dev_type,median_usd,change_vs_2024_pct,source_id
+fullstack,Full-stack developer,72509,12.5,2
+backend,Back-end developer,79742,15.1,2
+frontend,Front-end developer,62015,24.0,2
+ai_ml,AI/ML engineer,89427,,2
+data_scientist,Data scientist,82910,11.8,2
+data_engineer,Data engineer,81210,5.1,2
+cloud,Cloud infrastructure engineer,103112.5,6.7,2
+devops,DevOps engineer,87011,16.2,2
+eng_manager,Engineering manager,130000,10.8,2

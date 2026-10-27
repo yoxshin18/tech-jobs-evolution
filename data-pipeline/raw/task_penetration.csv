@@ -1,0 +1,8 @@
+task,share,measure,source_id
+code_generation,0.693,"Usa l'AI per generare codice in un'area familiare (SO 2026)",3
+debug_refactor,0.638,"Usa l'AI per debugging, troubleshooting o refactoring (SO 2026)",3
+testing,0.581,"Usa l'AI per scrivere o migliorare test (SO 2026)",3
+knowledge_qna,0.594,"Usa l'AI per domande tecniche semplici (SO 2026)",3
+design_architecture,0.50,"Trova l'AI utile per il design (SO 2026)",3
+communication,0.45,"Trova l'AI utile per la comunicazione di team (SO 2026)",3
+ops_production,0.20,"Usa l'AI per deploy/operare/troubleshooting in produzione (SO 2026)",3

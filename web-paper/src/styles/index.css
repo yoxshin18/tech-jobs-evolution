@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    --header-h: 4rem;
+  }
+
+  html {
+    scroll-padding-top: calc(var(--header-h) + 1.5rem);
+  }
+
+  body {
+    @apply bg-ink-950 font-sans text-fg;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: rgba(56, 189, 248, 0.28);
+    color: #f8fafc;
+  }
+
+  :focus-visible {
+    outline: 2px solid #38bdf8;
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Griglia strutturale a colonne visibile, come nel layout di riferimento. */
+  .structural-grid {
+    background-image: linear-gradient(to right, rgba(30, 41, 59, 0.75) 1px, transparent 1px);
+    background-size: calc(100% / 4) 100%;
+    background-position: -1px 0;
+  }
+
+  .hairline {
+    @apply border-line;
+  }
+
+  /* Angolo smussato per pulsanti e tag (clip-path). */
+  .chamfer {
+    clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+  }
+  .chamfer-sm {
+    clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 0 100%);
+  }
+
+  .label-mono {
+    @apply font-mono text-2xs uppercase tracking-[0.14em] text-fg-muted;
+  }
+
+  .paper-prose {
+    @apply font-serif text-[1.0625rem] leading-[1.75] text-fg/90;
+  }
+  .paper-prose strong {
+    @apply font-semibold text-fg;
+  }
+  .paper-prose em {
+    @apply italic text-fg;
+  }
+  .paper-prose code {
+    @apply rounded border border-line bg-surface px-1 py-0.5 font-mono text-[0.8em] text-accent-cyan;
+  }
+
+  .lead-prose {
+    @apply font-serif text-[1.2rem] leading-[1.7] text-fg sm:text-[1.3rem];
+  }
+
+  .card {
+    @apply border border-line bg-surface shadow-card;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 border border-line bg-surface-sunken px-2.5 py-1 font-mono text-2xs text-fg-muted transition-colors;
+  }
+  .chip[aria-pressed='true'],
+  .chip[aria-selected='true'] {
+    @apply border-fg bg-fg text-ink-950;
+  }
+  .chip:hover:not([aria-pressed='true']):not([aria-selected='true']) {
+    @apply border-line-strong text-fg;
+  }
+}
+
+/* --- Recharts: tema scuro ------------------------------------------------ */
+.recharts-cartesian-grid line {
+  stroke: #1e293b;
+}
+.recharts-text {
+  fill: #94a3b8;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 11px;
+}
+.recharts-cartesian-axis-line,
+.recharts-cartesian-axis-tick-line {
+  stroke: #2a3a55;
+}
+.recharts-polar-grid-angle line,
+.recharts-polar-grid-concentric path,
+.recharts-polar-grid-concentric polygon {
+  stroke: #1e293b;
+}
+.recharts-legend-item-text {
+  color: #94a3b8 !important;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 11px;
+}
+.recharts-tooltip-cursor {
+  stroke: #2a3a55;
+}
+.recharts-surface:focus,
+.recharts-wrapper:focus {
+  outline: none;
+}

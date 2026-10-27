@@ -1,0 +1,958 @@
+{
+  "meta": {
+    "lang": "de",
+    "title": "Tech jobs evolution",
+    "titleDisplay": [
+      "TECH_JOBS",
+      "EVOLUTION"
+    ],
+    "subtitle": "A perspective on the market's current state and what will change",
+    "kicker": "Arbeitspapier · Technologischer Arbeitsmarkt und Ökonomie der KI",
+    "author": "Raffaele",
+    "affiliation": "Universität Cagliari",
+    "date": "Oktober 2026",
+    "version": "v1.0",
+    "status": "Arbeitspapier",
+    "readingTime": "≈ 28 Min. Lesezeit",
+    "dataCutoff": "Datenstand: 26. Oktober 2026",
+    "pageTitle": "Tech jobs evolution — A perspective on the market's current state and what will change",
+    "description": "Interaktives Whitepaper zur Entwicklung technologischer Berufsbilder (SWE, KI/ML, Data, MLOps) auf Grundlage von Stack Overflow, GitHub Octoverse, WEF, BLS, Stanford AI Index und Gartner."
+  },
+  "ui": {
+    "skipToContent": "Zum Inhalt springen",
+    "nav": {
+      "abstract": "Abstract",
+      "market": "Markt",
+      "roles": "Berufsbilder",
+      "future": "Ausblick",
+      "sources": "Quellen"
+    },
+    "toc": "Inhalt",
+    "language": "Sprache",
+    "languages": {
+      "it": "Italiano",
+      "en": "English",
+      "fr": "Français",
+      "es": "Español",
+      "de": "Deutsch"
+    },
+    "languageBeta": "Beta",
+    "translationNotice": "Übersetzung in Arbeit: einige Abschnitte werden auf Italienisch angezeigt.",
+    "cite": "Zitieren",
+    "citeCopied": "Zitat kopiert",
+    "backToTop": "Nach oben",
+    "source": "Quelle",
+    "sources": "Quellen",
+    "figure": "Abb.",
+    "table": "Tab.",
+    "reported": "Berichteter Wert",
+    "derived": "Schätzung des Autors",
+    "projection": "Projektion",
+    "observed": "Beobachtet",
+    "proxy": "Proxy",
+    "all": "Alle",
+    "openSource": "Quelle öffnen",
+    "sectionsCount": "Abschnitte",
+    "sourcesCount": "Geprüfte Quellen",
+    "figuresCount": "Interaktive Abbildungen",
+    "readingProgress": "Lesefortschritt",
+    "generatedAt": "Datensatz erzeugt am",
+    "units": {
+      "M": "Mio.",
+      "B$": "Mrd. $",
+      "%": "%",
+      "pp": "%-Pkt."
+    },
+    "search": "Suchen",
+    "filterRoles": "Berufsbilder filtern"
+  },
+  "hero": {
+    "lead": "Der technologische Arbeitsmarkt schrumpft nicht, er setzt sich neu zusammen. Dieses Papier misst, wohin sich die Nachfrage verschiebt, welche Tätigkeiten generative KI bereits übernimmt und welche Kompetenzen die Berufsbilder zwischen 2027 und 2031 bestimmen werden.",
+    "featuredTag": "Zentrale Befunde",
+    "featuredTagAccent": "Neu",
+    "featuredTitle": "Neuzusammensetzung, nicht Schrumpfung",
+    "featuredText": "Die aggregierte Beschäftigung wächst weiter, doch die BLS-Projektionen für Entwickler haben sich über vier Zyklen mehr als halbiert, die Einstiege von Junioren gehen zurück und die KI-Nutzung ist nahezu universell.",
+    "stats": [
+      {
+        "value": "10 %",
+        "label": "SWE-Wachstum USA 2025–35",
+        "ref": 7
+      },
+      {
+        "value": "−15 %-Pkt.",
+        "label": "Revision gegenüber Zyklus 2022–32",
+        "ref": 7
+      },
+      {
+        "value": "≈ −20 %",
+        "label": "Beschäftigung der 22- bis 25-jährigen Entwickler",
+        "ref": 10
+      },
+      {
+        "value": "66 %",
+        "label": "Nutzen Coding-Assistenten oder -Agenten",
+        "ref": 3
+      }
+    ]
+  },
+  "figures": {
+    "adoption": {
+      "title": "Nutzung von KI-Werkzeugen unter Entwicklern, 2023–2030",
+      "caption": "Fläche und Punkte in Cyan: Anteil der Entwickler, die KI-Werkzeuge nutzen (Stack Overflow), beobachtet bis 2026. Ab 2026 ist die gestrichelte indigofarbene Linie die logistische Projektion, mit dem Szenarienband bei fixierter Sättigungskapazität K ∈ {0,87; 0,92; 0,97}. Die gepunktete bernsteinfarbene Linie mit quadratischen Markern ist der Anteil, der die Nutzung plante, erhoben bis 2025. Die weiße Strichpunktlinie mit dreieckigen Markern ist der Anteil, der sie nicht nutzt: 2026 ist dies der tatsächlich erhobene Wert (17,2 %), aus dem der Anteil „nutzen“ abgeleitet wurde. Die Schaltfläche „Externe Referenzen anzeigen“ ergänzt zwei Vergleichsgrößen, die an anderen Populationen gemessen wurden: den KI-Einsatz in Organisationen (AI Index) und den Gartner-Zielwert für Ingenieure in Unternehmen.",
+      "yAxis": "% der Entwickler",
+      "gartnerTarget": "Gartner-Zielwert",
+      "using": "Nutzen KI-Werkzeuge",
+      "planning": "Planen die Nutzung",
+      "notUsing": "Nutzen sie nicht",
+      "projection": "Projektion (K = 0,92)",
+      "band": "Szenarienband",
+      "org": "Organisationen mit KI-Einsatz (AI Index)",
+      "gartner": "Gartner: SWE in Unternehmen mit Code-Assistenten",
+      "toggleOrg": "Externe Referenzen anzeigen",
+      "note": "2026 wurde die Frage geändert: Der Anteil „nutzen“ wird als 100 % − 17,2 % Nichtnutzer berechnet, der Anteil „planen“ wurde nicht erhoben."
+    },
+    "employment": {
+      "title": "Beschäftigung und Löhne in technologischen Berufen in den USA",
+      "caption": "Reiter A: Verläufe, die sich aus den BLS-Projektionen 2025–35 ergeben (Index 2025 = 100, konstantes zusammengesetztes Wachstum). Reiter B: prognostiziertes Zehnjahreswachstum für Softwareentwickler über vier aufeinanderfolgende Projektionszyklen. Reiter C: mittleres Jahresgehalt der Softwareentwickler (OEWS), mit linearem Trend und Fortschreibung zur CAGR 2023–25.",
+      "tabs": {
+        "trajectories": "A · Verläufe 2025–35",
+        "revisions": "B · BLS-Revisionen",
+        "wages": "C · SWE-Gehälter"
+      },
+      "index": "Index (2025 = 100)",
+      "growth": "Prognostiziertes Wachstum über 10 Jahre",
+      "wage": "Medianlohn",
+      "trendLinear": "Linearer Trend 2021–25",
+      "trendRecent": "Fortschreibung der CAGR 2023–25",
+      "occupations": {
+        "data_scientists": "Data Scientists",
+        "research_scientists": "Research Scientists (Proxy KI/ML)",
+        "infosec_analysts": "Informationssicherheit",
+        "software_developers": "Softwareentwickler",
+        "database_architects": "Database Architects (Proxy DE)",
+        "network_architects": "Network Architects (Proxy Cloud)",
+        "web_developers": "Webentwickler",
+        "computer_programmers": "Programmierer"
+      }
+    },
+    "radar": {
+      "title": "Vergleichsprofil der Berufsbilder: Nachfrage, Vergütung und KI-Exposition",
+      "caption": "Fünf Achsen, normiert auf den Höchstwert über alle Berufsbilder (= 100). Die Achse „KI-Durchdringung“ ist der in §1.3 beschriebene zusammengesetzte Index, direkt auf einer Skala von 0 bis 100 ausgedrückt. Wählen Sie die zu vergleichenden Berufsbilder aus.",
+      "axes": {
+        "bls_growth": "Wachstum USA (BLS)",
+        "wef_growth": "Globales Wachstum (WEF)",
+        "us_pay": "Gehalt USA (BLS)",
+        "global_pay": "Globales Gehalt (SO)",
+        "ai_exposure": "KI-Durchdringung"
+      }
+    },
+    "salary": {
+      "title": "Medianlohn: Vereinigte Staaten und globale Stichprobe",
+      "caption": "Balken: Medianlohn in den USA nach BLS (Mai 2025, Beruf oder Proxy) und globaler Median der Stack-Overflow-Befragten 2025 nach Entwicklertyp. Die Beschriftung gibt das Verhältnis USA/global an.",
+      "us": "USA (BLS, Mai 2025)",
+      "global": "Global (SO 2025)",
+      "ratio": "Verhältnis"
+    },
+    "wef": {
+      "title": "Die 15 am schnellsten wachsenden Berufe, 2025–2030",
+      "caption": "Von Arbeitgebern erwartetes prozentuales Nettowachstum (WEF, Future of Jobs Report 2025). In Cyan die technologischen und digitalen Berufsbilder.",
+      "tech": "Technologisches Berufsbild",
+      "other": "Andere",
+      "growth": "Nettowachstum",
+      "jobs": {
+        "Big Data Specialists": "Big-Data-Spezialisten",
+        "FinTech Engineers": "FinTech-Ingenieure",
+        "AI and Machine Learning Specialists": "KI- und Machine-Learning-Spezialisten",
+        "Software and Applications Developers": "Software- und Anwendungsentwickler",
+        "Security Management Specialists": "Spezialisten für Sicherheitsmanagement",
+        "Data Warehousing Specialists": "Data-Warehousing-Spezialisten",
+        "Autonomous and Electric Vehicle Specialists": "Spezialisten für autonome und E-Fahrzeuge",
+        "UI and UX Designers": "UI- und UX-Designer",
+        "Light Truck or Delivery Services Drivers": "Fahrer von Lieferwagen und Zustelldiensten",
+        "Internet of Things Specialists": "Spezialisten für das Internet der Dinge",
+        "Data Analysts and Scientists": "Datenanalysten und Data Scientists",
+        "Environmental Engineers": "Umweltingenieure",
+        "Information Security Analysts": "Analysten für Informationssicherheit",
+        "DevOps Engineers": "DevOps-Ingenieure",
+        "Renewable Energy Engineers": "Ingenieure für erneuerbare Energien"
+      }
+    },
+    "exposure": {
+      "title": "Index der KI-Durchdringung der Tätigkeiten, nach Berufsbild",
+      "caption": "Schätzung des Autors: Mittelwert der KI-Nutzungsraten je Tätigkeitsart (Stack Overflow 2026), gewichtet mit der typischen Tätigkeitsverteilung des jeweiligen Berufsbildes. Ein höherer Wert bedeutet, dass ein größerer Anteil der täglichen Arbeit auf Tätigkeiten entfällt, in denen KI bereits verbreitet eingesetzt wird.",
+      "tasks": {
+        "code_generation": "Codegenerierung",
+        "debug_refactor": "Debugging und Refactoring",
+        "testing": "Tests",
+        "knowledge_qna": "Technische Fragen",
+        "design_architecture": "Design und Architektur",
+        "communication": "Kommunikation",
+        "ops_production": "Betrieb in Produktion"
+      },
+      "topTasks": "Am stärksten gewichtete Tätigkeiten"
+    },
+    "gartner": {
+      "title": "Gartner-Prognosen zur agentischen Softwareentwicklung",
+      "caption": "Jede Zeile nennt den prognostizierten Wert für das Zieljahr und, soweit verfügbar, den angegebenen Ausgangswert. Prognosen sind keine Messungen, sondern Einschätzungen von Analysten.",
+      "baseline": "Ausgangswert",
+      "target": "Zielwert",
+      "topics": {
+        "code_assistants": "Softwareingenieure in Unternehmen, die KI-Code-Assistenten nutzen",
+        "upskill": "Ingenieurbelegschaft, die sich für generative KI weiterqualifizieren muss",
+        "task_agents": "Unternehmensanwendungen mit aufgabenspezifischen KI-Agenten",
+        "agentic_apps": "Unternehmenssoftware, die agentische KI einbindet",
+        "autonomous_decisions": "Alltägliche Arbeitsentscheidungen, die agentische KI autonom trifft",
+        "agentic_canceled": "Bis Ende 2027 abgebrochene Projekte zu agentischer KI",
+        "small_teams": "Organisationen, die kleinere Entwicklungsteams in der Breite einführen",
+        "fde_abandon": "Unternehmen, die vom Forward-Deployed Engineering der Anbieter entwickelte agentische KI aufgeben"
+      },
+      "noBaseline": "Leerer Kreis = angegebener Ausgangswert; fehlt er, nennt die Quelle keinen."
+    }
+  },
+  "roles": {
+    "filters": {
+      "all": "Alle",
+      "core": "Software",
+      "ai": "KI / ML",
+      "data": "Data & Platform"
+    },
+    "families": {
+      "core": "Software",
+      "ai": "KI / ML",
+      "data": "Data & Platform"
+    },
+    "labels": {
+      "swe": "Software Engineer / Full-stack",
+      "frontend": "Frontend Developer",
+      "backend": "Backend Developer",
+      "ai_ml": "AI / ML Engineer",
+      "data_scientist": "Data Scientist",
+      "data_engineer": "Data Engineer",
+      "mlops_cloud": "MLOps / Cloud Architect"
+    },
+    "metrics": {
+      "usPay": "Gehalt USA",
+      "globalPay": "Globales Gehalt",
+      "blsGrowth": "BLS 2025–35",
+      "wefGrowth": "WEF 2025–30",
+      "aiIndex": "KI-Durchdringung",
+      "jobs": "Beschäftigte USA"
+    },
+    "table": {
+      "title": "Detaillierter Vergleich nach Berufsbild",
+      "caption": "Von den Quellen berichtete Werte, mit Ausnahme des Index der KI-Durchdringung (Schätzung). † = als Proxy verwendeter BLS-Beruf.",
+      "role": "Berufsbild",
+      "blsOccupation": "BLS-Beruf",
+      "demand": "Nachfrage",
+      "pay": "Vergütung",
+      "automation": "Automatisierung",
+      "skills": "Schlüsselkompetenzen"
+    },
+    "details": {
+      "swe": {
+        "summary": "Das zahlenmäßig stärkste Berufsbild und das am stärksten von der Kommodifizierung der Umsetzung betroffene.",
+        "skills": [
+          "Systementwurf",
+          "TypeScript / Python",
+          "Test und Verifikation",
+          "Prüfung KI-generierten Codes",
+          "Anwendungssicherheit"
+        ]
+      },
+      "frontend": {
+        "summary": "Höchste KI-Durchdringung der Tätigkeiten; verhaltenes BLS-Wachstum, aber global deutlich steigende Gehälter.",
+        "skills": [
+          "TypeScript",
+          "Designsysteme",
+          "Barrierefreiheit",
+          "Performance",
+          "UX für KI-Schnittstellen"
+        ]
+      },
+      "backend": {
+        "summary": "Stärkere Ausrichtung auf Daten, Integration und Betrieb, wo KI weniger durchdringend ist.",
+        "skills": [
+          "APIs und Verträge",
+          "Datenbanken",
+          "Observability",
+          "Sicherheit",
+          "LLM-Integration"
+        ]
+      },
+      "ai_ml": {
+        "summary": "Eine der dynamischsten Nachfragen, mit Kompetenzen, die vom Training zum Produkt wandern: RAG, Evaluation, Agenten.",
+        "skills": [
+          "Python",
+          "RAG",
+          "Evaluation (Evals)",
+          "Agentische Frameworks",
+          "Inferenzkosten"
+        ]
+      },
+      "data_scientist": {
+        "summary": "Das höchste BLS-Wachstum unter den untersuchten Berufen (+35 %), mit einer Verlagerung der Arbeit zu Versuchsplanung und Kommunikation.",
+        "skills": [
+          "Statistik",
+          "Versuchsplanung",
+          "SQL",
+          "Kausale Inferenz",
+          "Kommunikation"
+        ]
+      },
+      "data_engineer": {
+        "summary": "Dateninfrastruktur als Voraussetzung jedes KI-Systems; US-Gehalt unter den höchsten.",
+        "skills": [
+          "Pipelines und Orchestrierung",
+          "Data Warehousing",
+          "Qualität und Governance",
+          "Streaming",
+          "Datenverträge"
+        ]
+      },
+      "mlops_cloud": {
+        "summary": "Das am wenigsten exponierte Berufsbild: Der Betrieb in Produktion bleibt die Tätigkeit mit der geringsten KI-Nutzung.",
+        "skills": [
+          "Cloud und Container",
+          "IaC",
+          "Zuverlässigkeit (SRE)",
+          "FinOps / Token-Kosten",
+          "Sicherheit der Lieferkette"
+        ]
+      }
+    }
+  },
+  "emerging": [
+    {
+      "id": "orchestrator",
+      "title": "Agent Orchestration Engineer",
+      "tag": "Orchestrierung",
+      "text": "Entwirft Multi-Agenten-Abläufe, verteilt die Arbeit zwischen Agenten und Menschen und legt Berechtigungen, Übergaben und Abbruchkriterien fest.",
+      "signal": "Agentische KI: von 0,06 % auf 0,23 % der US-Stellenanzeigen innerhalb eines Jahres [10]; 33 % der Unternehmenssoftware mit agentischer KI bis 2028 [13].",
+      "skills": [
+        "Agentische Abläufe",
+        "Tool Calling",
+        "Zustandsverwaltung"
+      ]
+    },
+    {
+      "id": "evals",
+      "title": "AI Evaluation & Reliability Engineer",
+      "tag": "Verifikation",
+      "text": "Erstellt Evaluationssuiten, Regressionstests zum Modellverhalten und Zuverlässigkeitsmetriken für nichtdeterministische Systeme.",
+      "signal": "Agenten scheitern bei strukturierten Benchmarks noch an etwa jedem dritten Versuch [10]; nur 6,6 % der Entwickler vertrauen KI bei wichtigen Entscheidungen [3].",
+      "skills": [
+        "Eval-Harness",
+        "Statistik",
+        "Red Teaming"
+      ]
+    },
+    {
+      "id": "finops",
+      "title": "AI FinOps / Token Economist",
+      "tag": "Kosten",
+      "text": "Steuert den Token-Verbrauch, wählt für jede Aufgabe das passende Modell und misst den wirtschaftlichen Ertrag der Automatisierung.",
+      "signal": "Gartner prognostiziert, dass die Ausgaben für KI-gestütztes Programmieren bis 2028 das durchschnittliche Entwicklergehalt übersteigen [15].",
+      "skills": [
+        "Kostenmodellierung",
+        "Modell-Routing",
+        "Wertmetriken"
+      ]
+    },
+    {
+      "id": "context",
+      "title": "Context & Knowledge Engineer",
+      "tag": "Kontext",
+      "text": "Pflegt Anforderungen, Dokumentation und Wissensbasen als operative Eingaben für Agenten, mit Nachvollziehbarkeit der Quellen.",
+      "signal": "93 % der Entwickler verlangen Quellenangaben, um KI zu vertrauen; als verlässlichster Kontext gelten Projektziele und -anforderungen (85 %) [3].",
+      "skills": [
+        "Spezifikationen",
+        "Wissensgraphen",
+        "Retrieval"
+      ]
+    },
+    {
+      "id": "security",
+      "title": "AI Security Engineer",
+      "tag": "Sicherheit",
+      "text": "Sichert generierten Code, Agenten mit Werkzeugzugriff und die Lieferkette der Modelle ab.",
+      "signal": "Security Management Specialists +55 % (WEF) [6]; Information Security Analysts +21 % in den USA [7]; wegen Broken Access Control gemeldete Repositories +172 % [5].",
+      "skills": [
+        "Threat Modeling",
+        "Prompt Injection",
+        "Lieferkette"
+      ]
+    },
+    {
+      "id": "applied",
+      "title": "Applied / Forward-Deployed AI Engineer",
+      "tag": "Produkt",
+      "text": "Bringt KI-Systeme in die Prozesse des Kunden und verbindet dabei Engineering, Domänenwissen und Veränderungsmanagement.",
+      "signal": "Ein stark wachsendes, aber exponiertes Berufsbild: Gartner prognostiziert, dass 70 % der Unternehmen bis 2028 die vom Forward-Deployed Engineering der Anbieter entwickelte agentische KI aufgeben [17].",
+      "skills": [
+        "Domänenwissen",
+        "Integration",
+        "Veränderungsmanagement"
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "base",
+      "name": "Basis",
+      "tag": "Referenz",
+      "adoption": "≈ 90 % bis 2028",
+      "text": "Die Nutzung folgt der zentralen logistischen Kurve. Die Beschäftigung der Entwickler wächst nahe der BLS-Projektion (+10 % bis 2035), ihre Zusammensetzung verändert sich jedoch: weniger Einstiege von Junioren, mehr Stellen in Prüfung, Daten und Plattform.",
+      "indicators": [
+        "Tägliche Nutzung über 75 %",
+        "BLS-Projektion für SWE stabil",
+        "Anteil kleinerer Teams in Richtung 60 % [16]"
+      ]
+    },
+    {
+      "id": "accelerated",
+      "name": "Beschleunigt",
+      "tag": "Verlässliche Agenten",
+      "adoption": "≈ 93–96 % bis 2030",
+      "text": "Agenten werden bei mehrstündigen Aufgaben verlässlich. Teams von zwei bis fünf Personen verbreiten sich, die Nachfrage nach umsetzenden Profilen sinkt schneller, und die Nachfrage nach Orchestratoren, Evaluatoren und Architekten steigt.",
+      "indicators": [
+        "SWE-bench Verified über 90 %",
+        "Agenten im Produktivbetrieb in großem Maßstab",
+        "Erneute Abwärtsrevision des BLS"
+      ]
+    },
+    {
+      "id": "friction",
+      "name": "Reibung",
+      "tag": "Kosten und Risiken",
+      "adoption": "Plateau ≈ 87 %",
+      "text": "Token-Kosten, abgebrochene agentische Projekte und Sicherheitsvorfälle verlangsamen die Integration. KI bleibt ein Assistent, und der Markt honoriert wieder unmittelbare Entwicklungserfahrung.",
+      "indicators": [
+        "Abbrüche über 40 % [13]",
+        "Budgets für KI-gestütztes Programmieren streng kontrolliert",
+        "Sentiment sinkt unter 55 %"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "abstract",
+      "number": "01",
+      "navKey": "abstract",
+      "kicker": "Abstract und Methodik",
+      "title": "Zusammenfassung und Methode",
+      "blocks": [
+        {
+          "type": "h3",
+          "id": "abstract-summary",
+          "text": "1.1 Abstract"
+        },
+        {
+          "type": "p",
+          "lead": true,
+          "text": "Zwischen 2024 und 2026 ist der technologische Arbeitsmarkt von der Überhitzung der Pandemiezeit in eine Phase **struktureller Normalisierung** übergegangen. Die verfügbaren Daten zeigen keinen Einbruch der aggregierten Beschäftigung: Die Zahl der Softwareentwickler in den USA steigt zwischen 2021 und 2023 von 1,36 auf 1,66 Millionen [8], und das BLS prognostiziert bis 2035 weiterhin ein Wachstum von 10 % [7]. Sie zeigen jedoch eine **Neuzusammensetzung**: Das erwartete Wachstum für Entwickler ist über vier Projektionszyklen von 25 % auf 10 % gesunken [7], für Programmierer wird infolge der Automatisierung ein Rückgang um 7 % prognostiziert [7], und die Beschäftigung der 22- bis 25-jährigen Entwickler ist um fast 20 % zurückgegangen [10]."
+        },
+        {
+          "type": "p",
+          "text": "Im selben Zeitraum ist generative KI zur Arbeitsinfrastruktur geworden. Der Anteil der Entwickler, die KI-Werkzeuge nutzen, steigt von 44 % im Jahr 2023 auf 78,5 % im Jahr 2025 [1, 2]; 2026 nutzen 66 % Coding-Assistenten oder -Agenten, und 73 % von ihnen tun dies täglich [3]. Das Vertrauen folgt dem umgekehrten Verlauf: Der Anteil derjenigen, die der Genauigkeit der KI vertrauen, sinkt innerhalb eines Jahres von 43 % auf 32,7 % [1, 2]. Die vorliegende Arbeit vergleicht sieben Berufsbilder entlang von Nachfrage, Vergütung und Automatisierungsexposition und entwickelt drei Szenarien bis 2031, in denen sich der berufliche Wert vom Schreiben von Code zur **Spezifikation, Orchestrierung und Verifikation** von Multi-Agenten-Systemen verlagert."
+        },
+        {
+          "type": "keywords",
+          "label": "Schlagwörter",
+          "items": [
+            "IKT-Arbeitsmarkt",
+            "generative KI",
+            "KI-Agenten",
+            "Softwareentwicklung",
+            "Einstiegspositionen",
+            "Kompetenzverschiebung"
+          ]
+        },
+        {
+          "type": "h3",
+          "id": "abstract-method",
+          "text": "1.2 Quellen und Methodik"
+        },
+        {
+          "type": "p",
+          "text": "Die Analyse stützt sich ausschließlich auf sechs Familien öffentlicher und überprüfbarer Quellen: die **Stack Overflow Developer Survey** von 2024, 2025 und 2026 [1, 2, 3], die Berichte **GitHub Octoverse** von 2024 und 2025 [4, 5], den **WEF Future of Jobs Report 2025** [6], das **Occupational Outlook Handbook** und die OEWS-Statistiken des **U.S. Bureau of Labor Statistics** [7, 8], den **Stanford AI Index** von 2025 und 2026 [9, 10] sowie die von **Gartner** zwischen 2024 und 2026 veröffentlichten Prognosen [11–17]."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Extraktion.** Jeder Wert wurde manuell aus dem Originalbericht in eine CSV-Datei mit eigener Quellenkennung übertragen (`data-pipeline/raw/`).",
+            "**Trennung von Daten und Schätzungen.** Die Python-Pipeline unterscheidet *berichtete* von *abgeleiteten* Werten; in den Abbildungen sind letztere als Schätzung oder Projektion gekennzeichnet.",
+            "**Angegebene Proxys.** Das BLS führt keine Kategorien für AI/ML Engineer, Data Engineer und Cloud Architect: Verwendet werden entsprechend Computer and Information Research Scientists, Database Architects und Computer Network Architects.",
+            "**Projektionen.** Die KI-Nutzung wird mit einer logistischen Kurve mit fixierter Kapazität modelliert (drei Szenarien); die Beschäftigungsverläufe ergeben sich aus den Zehnjahresraten des BLS, umgerechnet in jährliches zusammengesetztes Wachstum."
+          ]
+        },
+        {
+          "type": "h3",
+          "id": "abstract-index",
+          "text": "1.3 Der Index der KI-Durchdringung"
+        },
+        {
+          "type": "p",
+          "text": "Keine der Quellen veröffentlicht eine „Automatisierungsrate des Codes“ nach Berufsbild. Um diese Lücke überprüfbar zu schließen, wird ein **zusammengesetzter Index** gebildet: Für sieben Tätigkeiten (Codegenerierung, Debugging, Tests, technische Fragen, Design, Kommunikation, Betrieb in Produktion) wird der Anteil der Entwickler verwendet, die KI einsetzen oder als nützlich bewerten, gemäß der Erhebung 2026 [3]; jedem Berufsbild ist ein Gewichtsvektor zugeordnet, der die erwartete Verteilung seiner Tätigkeiten annähert. Der Index misst somit, *welcher Anteil der Arbeit auf Tätigkeiten entfällt, in denen KI bereits verbreitet ist*, nicht wie viel Arbeit ersetzt wurde.",
+          "note": "Die Gewichte sind Annahmen des Autors und sind in role_task_weights.csv veröffentlicht: Werden sie geändert und die Pipeline erneut ausgeführt, aktualisieren sich Abbildungen und Tabellen automatisch."
+        },
+        {
+          "type": "figure",
+          "chart": "exposure"
+        },
+        {
+          "type": "callout",
+          "tag": "Grenzen",
+          "title": "Was diese Daten nicht aussagen",
+          "text": "Die Stack-Overflow-Erhebungen beruhen auf Selbstselektion, und die Stichprobe ist kleiner geworden (über 65.000 Befragte 2024, über 30.000 aus 169 Ländern 2026) [1, 3]; 2026 wurden einige Fragen zur KI geändert. Die BLS-Daten betreffen ausschließlich die Vereinigten Staaten, während das WEF Erwartungen von Arbeitgebern weltweit erhebt. Die Gartner-Prognosen sind Einschätzungen von Analysten, keine Messungen. Entlassungszahlen privater Tracker bleiben aus Konsistenzgründen mit dem Quellenrahmen unberücksichtigt."
+        }
+      ]
+    },
+    {
+      "id": "market",
+      "number": "02",
+      "navKey": "market",
+      "kicker": "Aktuelle Marktlage",
+      "title": "2024–2026: nach der Blase eine selektive Normalisierung",
+      "blocks": [
+        {
+          "type": "h3",
+          "id": "market-normalization",
+          "text": "2.1 Von der Pandemieblase zur Normalisierung"
+        },
+        {
+          "type": "p",
+          "text": "Die verbreitetste Lesart des Zeitraums 2022–2024, die eines schrumpfenden Sektors, wird von den amtlichen Daten nur teilweise gestützt. Die OEWS-Schätzungen (*Occupational Employment and Wage Statistics*) weisen ein kontinuierliches Wachstum der Softwareentwickler in den USA aus: **1.364.180** im Mai 2021, **1.534.790** im Jahr 2022 und **1.656.880** im Jahr 2023 [8]. Die Entlassungen der Welle 2022–2023 betrafen somit vor allem die großen Plattformen und einen Personalüberhang, ohne den aggregierten Trend umzukehren."
+        },
+        {
+          "type": "p",
+          "text": "Das Signal der Normalisierung zeigt sich stattdessen in den **Erwartungen** und in den **Preisen**. Das vom BLS prognostizierte Zehnjahreswachstum für Entwickler sinkt von 25 % (Zyklus 2022–32) auf 17 %, auf 15 % und schließlich auf 10 % (Zyklus 2025–35) [7]. Der Medianlohn steigt zwischen 2021 und 2025 von 120.730 auf 135.980 Dollar [7, 8], doch das jährliche Tempo halbiert sich: von durchschnittlich 3,0 % über den Gesamtzeitraum auf 1,4 % im Zweijahreszeitraum 2023–25 und damit unter die Inflationsrate.",
+          "note": "Jährliche zusammengesetzte Wachstumsraten (CAGR), von der Pipeline auf den nominalen Medianlöhnen von OEWS/OOH berechnet; abgeleitete Werte."
+        },
+        {
+          "type": "figure",
+          "chart": "employment"
+        },
+        {
+          "type": "h3",
+          "id": "market-entry",
+          "text": "2.2 Der Rückgang der Junior- und Einstiegspositionen"
+        },
+        {
+          "type": "p",
+          "text": "Die Neuzusammensetzung ist am Berufseinstieg am deutlichsten sichtbar. Nach dem AI Index 2026, der Analysen auf Grundlage von ADP-Gehaltsabrechnungsdaten aufgreift, ist die Beschäftigung der 22- bis 25-jährigen Softwareentwickler um **fast 20 %** gesunken, während die Beschäftigung erfahrenerer Arbeitskräfte in denselben KI-exponierten Berufen stabil blieb oder zunahm [10]. Das BLS prognostiziert für *Computer Programmers* einen Rückgang um 7 % und führt ihn ausdrücklich auf den Einsatz von Technologien, einschließlich KI, zur Automatisierung repetitiver Programmieraufgaben zurück [7]."
+        },
+        {
+          "type": "p",
+          "text": "Der Mechanismus ist mit dem Durchdringungsindex konsistent: Die traditionell Juniorprofilen zugewiesenen Tätigkeiten, also Routinecode, Tests und Fehlerbehebung, sind genau jene mit der höchsten KI-Nutzung (69,3 % bei der Codegenerierung in bekannten Bereichen, 58,1 % bei Tests) [3]. Gartner warnt, dass Organisationen, die KI bis 2028 zum Abbau von Juniorpositionen nutzen, **ihre eigene Talentpipeline aushöhlen** [16]. Ein Hinweis auf Umschichtung ergibt sich aus der Erhebung 2026: Der Anteil von Freelancern und Ein-Personen-Organisationen steigt von 4 % auf 11 % [3]."
+        },
+        {
+          "type": "kpis",
+          "items": [
+            {
+              "value": "≈ −20 %",
+              "label": "Beschäftigung der 22- bis 25-jährigen Entwickler",
+              "ref": 10
+            },
+            {
+              "value": "−7 %",
+              "label": "Computer Programmers 2025–35",
+              "ref": 7
+            },
+            {
+              "value": "4 % → 11 %",
+              "label": "Freelancer und Einzelgründer",
+              "ref": 3
+            },
+            {
+              "value": "2028",
+              "label": "Junior-Pipeline gefährdet (Gartner)",
+              "ref": 16
+            }
+          ]
+        },
+        {
+          "type": "h3",
+          "id": "market-genai",
+          "text": "2.3 Die Verfestigung generativer KI in den Arbeitsabläufen"
+        },
+        {
+          "type": "p",
+          "text": "In drei Jahren wird KI vom Experiment zum Alltagswerkzeug. Der Anteil der Entwickler, die sie nutzen, steigt von 44 % (2023) auf 61,8 % (2024) und 78,5 % (2025) [1, 2]; 2025 nutzen sie 50,6 % der Fachkräfte täglich [2]. 2026 ist die dominierende Kategorie die der **Coding-Assistenten und -Agenten** (66 %), die von 73 % derjenigen, die sie einsetzen, täglich genutzt werden; 31 % der täglichen Nutzer wenden dafür vier Stunden oder mehr pro Tag auf [3]."
+        },
+        {
+          "type": "figure",
+          "chart": "adoption"
+        },
+        {
+          "type": "p",
+          "text": "GitHub bestätigt die Verschiebung auf der Produktionsseite. 2024 überholt Python JavaScript als meistgenutzte Sprache, und öffentliche Projekte zu generativer KI wachsen um 98 % [4]. 2025 überschreitet die Plattform **180 Millionen** Entwickler, mit 36 Millionen neuen Konten innerhalb eines Jahres; rund 80 % der neuen Entwickler nutzen Copilot in der ersten Woche, und die Zahl öffentlicher Repositories, die ein LLM-SDK importieren, übersteigt 1,1 Millionen (+178 %) [5]. TypeScript wird nach Zahl der Beitragenden zur führenden Sprache, ein Effekt, den GitHub auf typisierte Sprachen zurückführt, die für generierten Code besser geeignet sind [5]."
+        },
+        {
+          "type": "p",
+          "text": "Bei den Fähigkeiten dokumentiert der AI Index einen deutlichen Sprung: Die Systeme lösten 2023 4,4 % der SWE-bench-Probleme und 2024 71,7 % [9]; im Februar 2026 liegt das beste Ergebnis bei SWE-bench Verified bei etwa 76,8 %, während Terminal-Bench 2.0 innerhalb eines Jahres von 20 % auf 77,3 % steigt [10]. In den Organisationen steigt der KI-Einsatz in mindestens einer Funktion von 55 % (2023) auf 78 % (2024) und 88 % (2025) [9, 10]."
+        },
+        {
+          "type": "h3",
+          "id": "market-trust",
+          "text": "2.4 Das Vertrauensparadox"
+        },
+        {
+          "type": "p",
+          "text": "Der steigenden Nutzung entspricht kein steigendes Vertrauen. Das positive Sentiment sinkt von 71,9 % (2024) auf 59,7 % (2025) [1, 2] und steigt 2026 wieder auf 62 % [3]. Der Anteil derjenigen, die der Genauigkeit vertrauen, sinkt von 43 % auf 32,7 %, während das Misstrauen auf 45,7 % steigt [1, 2]. 2026 geben 48 % an, der KI nur dann zu vertrauen, wenn die Antworten leicht zu überprüfen sind, und lediglich **6,6 %** bei wichtigen Entscheidungen [3]."
+        },
+        {
+          "type": "p",
+          "text": "Auch die Befunde zur Produktivität sind heterogen. Unter den im AI Index 2026 zusammengestellten Studien misst ein Experiment zu GitHub Copilot eine Zunahme der abgeschlossenen Pull Requests um 26 %, während eine METR-Studie bei erfahrenen Open-Source-Entwicklern eine Verlangsamung um 19 % feststellt [10]. Das Bild deutet darauf hin, dass der Wert weniger vom Werkzeug als von der **Fähigkeit zur Überprüfung seiner Ausgabe** abhängt, ein für die Projektionen in §4 zentraler Punkt."
+        },
+        {
+          "type": "callout",
+          "tag": "Lesart",
+          "title": "Nahezu universelle Nutzung, bedingtes Vertrauen",
+          "text": "Die nahezu universelle Nutzung geht mit einem bedingten Vertrauen einher: Der Einsatz ist intensiv, die Überprüfung bleibt systematisch. Es ist diese Kombination, mehr als die Automatisierung selbst, die die nachgefragten Kompetenzen neu bestimmt."
+        }
+      ]
+    },
+    {
+      "id": "roles",
+      "number": "03",
+      "navKey": "roles",
+      "kicker": "Detailanalyse nach Berufsbild",
+      "title": "Nachfrage, Kompetenzen, Vergütung und Automatisierung in sieben Berufsbildern",
+      "blocks": [
+        {
+          "type": "p",
+          "lead": true,
+          "text": "Die sieben untersuchten Berufsbilder sind in drei Familien gruppiert: **Software** (SWE/Full-stack, Frontend, Backend), **KI/ML** und **Data & Platform** (Data Scientist, Data Engineer, MLOps/Cloud Architect). Für jedes werden das prognostizierte Wachstum in den USA (BLS) und weltweit (WEF), der Medianlohn in den USA (BLS) und global (Stack Overflow) sowie der Index der KI-Durchdringung zusammengeführt."
+        },
+        {
+          "type": "roleCards"
+        },
+        {
+          "type": "h3",
+          "id": "roles-swe",
+          "text": "3.1 Software Engineer, Full-stack, Frontend und Backend"
+        },
+        {
+          "type": "p",
+          "text": "Softwareentwickler bleiben der zahlenmäßig stärkste technologische Beruf in den USA: **1.717.800 Beschäftigte** im Jahr 2025, ein Medianlohn von 135.980 Dollar und ein prognostiziertes Wachstum von 10 % bis 2035, entsprechend 174.700 Stellen [7]. *Web Developers* wachsen schwächer (+4 %) bei einem Median von 92.650 Dollar [7]. Weltweit platziert das WEF *Software and Applications Developers* beim prozentualen Wachstum auf dem vierten Platz (+60 %) und unter den Berufsbildern mit dem höchsten absoluten Wachstum [6]."
+        },
+        {
+          "type": "p",
+          "text": "Die globale Stack-Overflow-Stichprobe weist deutlich niedrigere, 2025 aber wieder steigende Gehälter aus: Full-stack 72.509 Dollar (+12,5 %), Back-end 79.742 (+15,1 %), Front-end 62.015 (+24 %) [2]. Es sind zugleich die Berufsbilder mit dem höchsten Index der KI-Durchdringung: Frontend 60,0, SWE 59,4 und Backend 57,6. Die Kompetenzen, deren relativer Wert zunimmt, sind mutmaßlich jene, die KI nicht ersetzt, sondern notwendiger macht: **Systementwurf, Tests, Prüfung und Sicherheit**. GitHub berichtet von einem Anstieg der Repositories mit Schwachstellen des Typs *Broken Access Control* um 172 % [5]; der Befund ist mit steigenden Verifikationskosten im Nachgang einer schnelleren Codeproduktion vereinbar, die Quellen belegen jedoch keinen kausalen Zusammenhang."
+        },
+        {
+          "type": "h3",
+          "id": "roles-ai",
+          "text": "3.2 AI Engineer und ML Engineer"
+        },
+        {
+          "type": "p",
+          "text": "Das BLS führt bislang keine Kategorie für den AI Engineer; der nächstliegende Proxy, *Computer and Information Research Scientists*, weist einen Medianlohn von 140.300 Dollar und ein prognostiziertes Wachstum von 22 % auf [7]. Das WEF platziert *AI and Machine Learning Specialists* auf dem dritten Platz der am schnellsten wachsenden Berufe (+85 %) [6], und bereits 2024 nannten 56 % der Engineering-Verantwortlichen den AI/ML Engineer als das am stärksten gesuchte Berufsbild [12]."
+        },
+        {
+          "type": "p",
+          "text": "Die Nachfrage verlagert sich vom *Training* zum **Produkt**. 2025 belaufen sich die US-Stellenanzeigen mit Kompetenzen in generativer KI auf 138.188 (+111 %), Python ist mit 258.674 Anzeigen die am häufigsten verlangte Spezialkompetenz, und das Cluster *Agentic AI* steigt von 0,06 % auf 0,23 % aller Anzeigen, etwa 90.000 Stellen [10]. Gartner beschreibt den AI Engineer als „eine neue Art von Softwarefachkraft“, die Engineering, Data Science und KI/ML verbindet, mit Kompetenzen wie RAG und Prompt Engineering [12]. Auch dieses Berufsbild ist jedoch nicht immun: Bei MLE-bench steigen Agenten bei ML-Engineering-Aufgaben von 17 % auf 64,4 % Erfolgsquote [10].",
+          "note": "Der globale SO-Lohn für AI/ML Engineers (89.427 $) ist der höchste unter den einzelnen Entwicklungsberufsbildern, nach dem Cloud Infrastructure Engineer [2]."
+        },
+        {
+          "type": "h3",
+          "id": "roles-data",
+          "text": "3.3 Data Scientist, Data Engineer und MLOps / Cloud Architect"
+        },
+        {
+          "type": "p",
+          "text": "Data Scientists weisen das höchste prognostizierte Wachstum im gesamten betrachteten BLS-Rahmen auf: **+35 %** bis 2035, 275.600 Beschäftigte und ein Median von 120.230 Dollar [7]. Das WEF bestätigt die Richtung: *Big Data Specialists* führen die Rangliste an (+110 %), gefolgt unter anderem von *Data Warehousing Specialists* (+50 %), *Data Analysts and Scientists* (+40 %) und *DevOps Engineers* (+40 %) [6]."
+        },
+        {
+          "type": "p",
+          "text": "Für die Plattformberufsbilder zeigen die BLS-Proxys ein moderates Wachstum, aber hohe Gehälter: Database Architects +9 % und 139.500 Dollar, Network Architects +8 % und 134.050 Dollar, wobei die Nachfrage von der Cloud-Expansion getragen wird [7]. In der globalen Stichprobe hat der *Cloud Infrastructure Engineer* den höchsten Median unter den einzelnen Berufsbildern (103.113 Dollar) [2]. Das unterscheidende Element ist der Automatisierungsgrad: Nur 20 % der Entwickler nutzen KI für den Betrieb von Produktivsystemen [3], und 2025 planten 75,8 % nicht, sie für Deployment und Überwachung einzusetzen [2]. Daraus ergibt sich der niedrigste Index der Stichprobe (**45,5** für MLOps/Cloud)."
+        },
+        {
+          "type": "figure",
+          "chart": "wef"
+        },
+        {
+          "type": "h3",
+          "id": "roles-synthesis",
+          "text": "3.4 Vergleichende Synthese"
+        },
+        {
+          "type": "roleTable"
+        },
+        {
+          "type": "figure",
+          "chart": "radar"
+        },
+        {
+          "type": "p",
+          "text": "Über die sieben verfügbaren Beobachtungen zeigt der Vergleich einen inversen Zusammenhang zwischen **KI-Exposition** und **Nachfragewachstum**: Die Berufsbilder der Anwendungsentwicklung weisen den höchsten Index und die niedrigsten BLS-Projektionen auf; Data Science und KI/ML verbinden hohes Wachstum mit einem mittleren Index; MLOps/Cloud hat die geringste Exposition und die höchsten globalen Vergütungen. Der Gehaltsabstand zwischen den Vereinigten Staaten und der globalen Stichprobe reicht vom 1,3- bis zum 1,9-Fachen und verringert sich gerade bei den Plattformberufsbildern, was auf einen internationaleren Markt für diese Kompetenzen hindeutet."
+        },
+        {
+          "type": "figure",
+          "chart": "salary"
+        }
+      ]
+    },
+    {
+      "id": "future",
+      "number": "04",
+      "navKey": "future",
+      "kicker": "Ausblick · Horizont 3–5 Jahre",
+      "title": "Vom Schreiben von Code zur Orchestrierung von Multi-Agenten-Systemen",
+      "blocks": [
+        {
+          "type": "h3",
+          "id": "future-agents",
+          "text": "4.1 Vom Assistenten zum Agenten"
+        },
+        {
+          "type": "p",
+          "lead": true,
+          "text": "Der deutlichste Verlauf in den Daten ist der Übergang von der Autovervollständigung zum **Agenten**. Gartner prognostiziert, dass 40 % der Unternehmensanwendungen bis 2026 aufgabenspezifische Agenten enthalten, gegenüber weniger als 5 % im Jahr 2025 [14]; und dass bis 2028 33 % der Unternehmenssoftware agentische KI einbinden und 15 % der alltäglichen Arbeitsentscheidungen autonom getroffen werden [13]. Mittelfristig wird nach Gartner der überwiegende Teil des Codes von KI generiert statt von Menschen geschrieben [12]."
+        },
+        {
+          "type": "p",
+          "text": "Die logistische Projektion dieser Arbeit ist mit diesen Prognosen konsistent: Im zentralen Szenario erreicht die Nutzung von KI-Werkzeugen unter Entwicklern **etwa 90 % im Jahr 2028** und stabilisiert sich 2030 bei rund 92 %, oberhalb des Gartner-Zielwerts von 75 % für Ingenieure in Unternehmen [11]. Die Beschränkung wird somit nicht die Nutzung sein, sondern die Zuverlässigkeit: Gartner prognostiziert, dass mehr als 40 % der Projekte zu agentischer KI bis Ende 2027 wegen Kosten, unklaren Nutzens oder unzureichender Kontrollen abgebrochen werden [13].",
+          "note": "Parameter der Anpassung (zentrales Szenario): K = 0,92; r ≈ 0,79; RMSE ≈ 1,6 %-Pkt. bei vier Beobachtungen. Die Projektion ist illustrativ."
+        },
+        {
+          "type": "figure",
+          "chart": "gartner"
+        },
+        {
+          "type": "h3",
+          "id": "future-reviewer",
+          "text": "4.2 Der Aufstieg des architektonischen Prüfers"
+        },
+        {
+          "type": "p",
+          "text": "Wird die Codegenerierung im Übermaß verfügbar, so wird die **Verifikation** zur knappen Ressource. 93 % der Entwickler verlangen Quellenangaben, um der KI zu vertrauen, und als verlässlichster Kontext gelten Projektziele und -anforderungen (85 %) [3]. Von denjenigen, die die Code-Review von Copilot nutzen, berichten 72,6 % von einer Verbesserung der Wirksamkeit ihrer Arbeit [5]: Die Prüfung verschwindet nicht, sie verlagert sich auf eine andere Ebene."
+        },
+        {
+          "type": "p",
+          "text": "Das Ergebnis ist ein hier als **architektonischer Prüfer** bezeichnetes Profil: Es legt Verträge und Invarianten fest, entwirft die Testfälle und Evaluationssuiten, pflegt das Bedrohungsmodell und entscheidet, was ein Agent verändern darf. Gartner prognostiziert, dass bis 2029 60 % der Organisationen kleinere Entwicklungsteams in der Breite einführen, heute typischerweise mit vier bis fünf Personen, gegenüber 15 % im Jahr 2026 [16]. In Teams dieser Größe fällt die Prüfung der von Agenten erzeugten Arbeit tendenziell jedem Mitglied zu."
+        },
+        {
+          "type": "callout",
+          "tag": "Kompetenzverschiebung",
+          "title": "Die Kompetenzen, die an Wert gewinnen",
+          "text": "Anforderungsspezifikation · Systementwurf · Test und Evaluation · Sicherheit generierten Codes · Kostensteuerung · Kommunikation mit der Fachdomäne. Gartner schätzt, dass sich 80 % der Ingenieurbelegschaft bis 2027 weiterqualifizieren müssen [12]; 79 % der Entwickler geben an, sich im Bereich KI weiterbilden zu wollen [3]."
+        },
+        {
+          "type": "h3",
+          "id": "future-emerging",
+          "text": "4.3 Neue, entstehende Berufsbilder"
+        },
+        {
+          "type": "p",
+          "text": "Die folgenden Profile sind noch keine amtlichen statistischen Kategorien. Jedes ist an ein in den Quellen messbares Signal gebunden; die Bezeichnungen sind konventionell und werden zwischen Organisationen variieren."
+        },
+        {
+          "type": "emerging"
+        },
+        {
+          "type": "h3",
+          "id": "future-scenarios",
+          "text": "4.4 Drei Szenarien bis 2031"
+        },
+        {
+          "type": "p",
+          "text": "Die Szenarien verbinden die Nutzungsprojektion (§2.3), die Beschäftigungsverläufe des BLS (§2.1) und die Gartner-Prognosen. Für jedes werden die Indikatoren genannt, die in den kommenden Ausgaben der Quellen zu beobachten sind."
+        },
+        {
+          "type": "scenarios"
+        },
+        {
+          "type": "h3",
+          "id": "future-implications",
+          "text": "4.5 Implikationen für Berufseinsteiger"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Verifikationsfähigkeit nachweisen, nicht nur Produktionsfähigkeit.** Tests, Evaluationen und Code-Reviews sind der glaubwürdigste Kompetenznachweis, wenn Code generiert wird.",
+            "**Tätigkeiten mit geringer KI-Durchdringung vorziehen.** Daten, Plattform und Betrieb in Produktion verbinden solide Nachfrage mit geringerer Exposition.",
+            "**Die Arbeit mit Agenten erlernen.** Orchestrierungs-Frameworks, Kontextverwaltung und Kostenkontrolle finden Eingang in die Stellenanzeigen [10].",
+            "**In die Fachdomäne investieren.** Berufsbilder, die KI mit realen Prozessen verbinden, wachsen, honorieren aber jene, die das Problem vor dem Werkzeug verstehen."
+          ]
+        },
+        {
+          "type": "h3",
+          "id": "future-conclusions",
+          "text": "4.6 Schlussfolgerungen"
+        },
+        {
+          "type": "p",
+          "text": "Die Daten für 2024–2026 beschreiben einen Markt, der in aggregierter Betrachtung keine technologischen Arbeitsplätze verliert, sie aber **umverteilt**: von der Umsetzung zu Daten, Plattform, Sicherheit und Verifikation; von Juniorprofilen zu erfahrenen Profilen; von großen Teams zu kleineren Teams, die von Agenten begleitet werden. Die kommenden Ausgaben der Quellen werden zeigen, welches Szenario sich durchsetzt. Die vorgeschlagene Methode, die berichtete Daten von Schätzungen trennt und auf einer reproduzierbaren Pipeline beruht, erlaubt es, die Analyse bei jeder neuen Veröffentlichung zu aktualisieren."
+        }
+      ]
+    },
+    {
+      "id": "sources",
+      "number": "05",
+      "navKey": "sources",
+      "kicker": "Geprüfte Quellen und Bibliografie",
+      "title": "Literaturverzeichnis",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Alle Quellen sind öffentlich und wurden im Oktober 2026 konsultiert. Die extrahierten Werte sind mit ihrer Quellenkennung in den CSV-Dateien der Pipeline und im Datensatz `market_data.json` verfügbar."
+        },
+        {
+          "type": "references"
+        },
+        {
+          "type": "cite",
+          "label": "Zitierweise",
+          "text": "Raffaele (2026). Tech jobs evolution — A perspective on the market's current state and what will change. Arbeitspapier v1.0, Oktober 2026."
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": 1,
+      "authors": "Stack Overflow",
+      "title": "2024 Developer Survey — AI",
+      "year": 2024,
+      "url": "https://survey.stackoverflow.co/2024/ai",
+      "note": "Nutzung, Sentiment und Vertrauen in KI-Werkzeuge."
+    },
+    {
+      "id": 2,
+      "authors": "Stack Overflow",
+      "title": "2025 Developer Survey — AI; Work",
+      "year": 2025,
+      "url": "https://survey.stackoverflow.co/2025/ai",
+      "note": "Nutzungshäufigkeit, Agenten, Vertrauen; Medianlöhne nach Entwicklertyp (survey.stackoverflow.co/2025/work)."
+    },
+    {
+      "id": 3,
+      "authors": "Stack Overflow",
+      "title": "2026 Developer Survey — Results; AI",
+      "year": 2026,
+      "url": "https://survey.stackoverflow.co/2026/ai",
+      "note": "Veröffentlicht am 6. Oktober 2026; über 30.000 Befragte aus 169 Ländern."
+    },
+    {
+      "id": 4,
+      "authors": "GitHub",
+      "title": "Octoverse 2024: AI leads Python to top language as the number of global developers surges",
+      "year": 2024,
+      "url": "https://github.blog/news-insights/octoverse/octoverse-2024/",
+      "note": "Python als führende Sprache; Projekte zu generativer KI +98 %."
+    },
+    {
+      "id": 5,
+      "authors": "GitHub",
+      "title": "Octoverse 2025: A new developer joins GitHub every second as AI leads TypeScript to #1",
+      "year": 2025,
+      "url": "https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/",
+      "note": "Zeitraum 1. Sep. 2024 bis 31. Aug. 2025."
+    },
+    {
+      "id": 6,
+      "authors": "World Economic Forum",
+      "title": "The Future of Jobs Report 2025",
+      "year": 2025,
+      "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/",
+      "note": "Über 1.000 Unternehmen, 22 Branchencluster, 14 Millionen repräsentierte Beschäftigte."
+    },
+    {
+      "id": 7,
+      "authors": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Outlook Handbook — Computer and Information Technology; Data Scientists (Projektionen 2025–35, Löhne Mai 2025)",
+      "year": 2026,
+      "url": "https://www.bls.gov/ooh/computer-and-information-technology/",
+      "note": "Enthält die Wachstumsraten der vorangegangenen Zyklen (2022–32, 2023–33, 2024–34)."
+    },
+    {
+      "id": 8,
+      "authors": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Employment and Wage Statistics — 15-1252 Software Developers, May 2021–May 2023",
+      "year": 2024,
+      "url": "https://www.bls.gov/oes/2023/may/oes151252.htm",
+      "note": "Beschäftigung und Medianlohn auf nationaler Ebene."
+    },
+    {
+      "id": 9,
+      "authors": "Stanford Institute for Human-Centered AI",
+      "title": "Artificial Intelligence Index Report 2025",
+      "year": 2025,
+      "url": "https://hai.stanford.edu/ai-index/2025",
+      "note": "SWE-bench 2023–2024; KI-Einsatz in Organisationen."
+    },
+    {
+      "id": 10,
+      "authors": "Stanford Institute for Human-Centered AI",
+      "title": "Artificial Intelligence Index Report 2026 — Ch. 2 Technical Performance; Ch. 4 Economy",
+      "year": 2026,
+      "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
+      "note": "Stellenanzeigen (Lightcast), Beschäftigung am Karrierebeginn, Produktivitätsstudien, Coding-Benchmarks."
+    },
+    {
+      "id": 11,
+      "authors": "Gartner",
+      "title": "Gartner Says 75% of Enterprise Software Engineers Will Use AI Code Assistants by 2028",
+      "year": 2024,
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2024-04-11-gartner-says-75-percent-of-enterprise-software-engineers-will-use-ai-code-assistants-by-2028",
+      "note": "Pressemitteilung, 11. April 2024."
+    },
+    {
+      "id": 12,
+      "authors": "Gartner",
+      "title": "Gartner Says Generative AI will Require 80% of Engineering Workforce to Upskill Through 2027",
+      "year": 2024,
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2024-10-03-gartner-says-generative-ai-will-require-80-percent-of-engineering-workforce-to-upskill-through-2027",
+      "note": "Pressemitteilung, 3. Oktober 2024."
+    },
+    {
+      "id": 13,
+      "authors": "Gartner",
+      "title": "Gartner Predicts Over 40% of Agentic AI Projects Will Be Canceled by End of 2027",
+      "year": 2025,
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027",
+      "note": "Pressemitteilung, 25. Juni 2025."
+    },
+    {
+      "id": 14,
+      "authors": "Gartner",
+      "title": "Gartner Predicts 40% of Enterprise Apps Will Feature Task-Specific AI Agents by 2026, Up from Less Than 5% in 2025",
+      "year": 2025,
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2025-08-26-gartner-predicts-40-percent-of-enterprise-apps-will-feature-task-specific-ai-agents-by-2026-up-from-less-than-5-percent-in-2025",
+      "note": "Pressemitteilung, 26. August 2025."
+    },
+    {
+      "id": 15,
+      "authors": "Gartner",
+      "title": "Gartner Predicts AI Coding Costs Will Surpass Average Developer’s Salary by 2028 as Token Consumption Surges",
+      "year": 2026,
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-06-24-gartner-predicts-ai-coding-costs-will-surpass-average-developer-salary-by-2028-as-token-consumption-surges",
+      "note": "Pressemitteilung, 24. Juni 2026."
+    },
+    {
+      "id": 16,
+      "authors": "Gartner",
+      "title": "Gartner Predicts 60% of Organizations Will Adopt Smaller Software Engineering Teams by 2029",
+      "year": 2026,
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-07-07-gartner-predicts-60-percent-of-organizations-will-adopt-smaller-software-engineering-teams-by-2029",
+      "note": "Pressemitteilung, 7. Juli 2026."
+    },
+    {
+      "id": 17,
+      "authors": "Gartner",
+      "title": "Gartner Predicts 70% of Enterprises Will Abandon Agentic AI Built by Vendor Forward-Deployed Engineering by 2028",
+      "year": 2026,
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-09-29-gartner-predicts-70-percent-of-enterprises-will-abandon-agentic-ai-built-by-vendor-forward-deployed-engineering-by-2028",
+      "note": "Pressemitteilung, 29. September 2026."
+    }
+  ],
+  "footer": {
+    "license": "Text CC BY 4.0 · Code MIT",
+    "built": "Erstellt mit React, Recharts und einer reproduzierbaren Python-Pipeline.",
+    "ctaKicker": "Bereit zur Diskussion?",
+    "ctaHighlight": "Ein Issue im Repository eröffnen",
+    "ctaPrimary": "Datensatz herunterladen",
+    "ctaSecondary": "Methodik ansehen"
+  }
+}

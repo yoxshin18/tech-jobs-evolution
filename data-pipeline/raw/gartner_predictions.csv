@@ -1,0 +1,9 @@
+id,target_year,value_pct,baseline_pct,baseline_year,topic,source_id
+code_assistants,2028,75,10,2023,"Ingegneri software enterprise che usano assistenti AI al codice",11
+upskill,2027,80,,,"Forza lavoro ingegneristica che dovrà riqualificarsi per la GenAI",12
+task_agents,2026,40,5,2025,"App enterprise con agenti AI task-specific",14
+agentic_apps,2028,33,1,2024,"Software enterprise con AI agentica",13
+autonomous_decisions,2028,15,0,2024,"Decisioni lavorative quotidiane prese in autonomia da AI agentica",13
+agentic_canceled,2027,40,,,"Progetti di AI agentica cancellati entro fine 2027",13
+small_teams,2029,60,15,2026,"Organizzazioni con team di software engineering ridotti su scala",16
+fde_abandon,2028,70,,,"Imprese che abbandoneranno AI agentica costruita da forward-deployed engineering del vendor",17

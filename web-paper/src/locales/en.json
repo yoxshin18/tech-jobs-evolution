@@ -1,0 +1,958 @@
+{
+  "meta": {
+    "lang": "en",
+    "title": "Tech jobs evolution",
+    "titleDisplay": [
+      "TECH_JOBS",
+      "EVOLUTION"
+    ],
+    "subtitle": "A perspective on the market's current state and what will change",
+    "kicker": "Working paper · Tech labour market and the economics of AI",
+    "author": "Raffaele",
+    "affiliation": "University of Cagliari",
+    "date": "October 2026",
+    "version": "v1.0",
+    "status": "Working paper",
+    "readingTime": "≈ 28 min read",
+    "dataCutoff": "Data as of 26 October 2026",
+    "pageTitle": "Tech jobs evolution — A perspective on the market's current state and what will change",
+    "description": "Interactive whitepaper on how tech roles (SWE, AI/ML, Data, MLOps) are evolving, based on Stack Overflow, GitHub Octoverse, WEF, BLS, Stanford AI Index and Gartner."
+  },
+  "ui": {
+    "skipToContent": "Skip to content",
+    "nav": {
+      "abstract": "Abstract",
+      "market": "Market",
+      "roles": "Roles",
+      "future": "Outlook",
+      "sources": "Sources"
+    },
+    "toc": "Contents",
+    "language": "Language",
+    "languages": {
+      "it": "Italiano",
+      "en": "English",
+      "fr": "Français",
+      "es": "Español",
+      "de": "Deutsch"
+    },
+    "languageBeta": "beta",
+    "translationNotice": "Translation in progress: some sections are shown in Italian.",
+    "cite": "Cite",
+    "citeCopied": "Citation copied",
+    "backToTop": "Back to top",
+    "source": "Source",
+    "sources": "Sources",
+    "figure": "Fig.",
+    "table": "Table",
+    "reported": "Reported value",
+    "derived": "Author's estimate",
+    "projection": "Projection",
+    "observed": "Observed",
+    "proxy": "proxy",
+    "all": "All",
+    "openSource": "Open source",
+    "sectionsCount": "Sections",
+    "sourcesCount": "Certified sources",
+    "figuresCount": "Interactive figures",
+    "readingProgress": "Reading progress",
+    "generatedAt": "Dataset generated on",
+    "units": {
+      "M": "M",
+      "B$": "$B",
+      "%": "%",
+      "pp": "pp"
+    },
+    "search": "Search",
+    "filterRoles": "Filter roles"
+  },
+  "hero": {
+    "lead": "The tech labour market is not shrinking: it is recomposing. This paper measures where demand is moving, which activities generative AI is already absorbing, and which skills will define roles between 2027 and 2031.",
+    "featuredTag": "Key findings",
+    "featuredTagAccent": "New",
+    "featuredTitle": "Recomposition, not contraction",
+    "featuredText": "Aggregate employment is still growing, but BLS projections for developers have more than halved across four projection cycles, junior entry is declining and AI adoption is close to universal.",
+    "stats": [
+      {
+        "value": "10%",
+        "label": "US SWE growth 2025–35",
+        "ref": 7
+      },
+      {
+        "value": "−15 pp",
+        "label": "Revision vs 2022–32 cycle",
+        "ref": 7
+      },
+      {
+        "value": "≈ −20%",
+        "label": "Developers aged 22–25",
+        "ref": 10
+      },
+      {
+        "value": "66%",
+        "label": "Use coding assistants or agents",
+        "ref": 3
+      }
+    ]
+  },
+  "figures": {
+    "adoption": {
+      "title": "AI tool adoption among developers, 2023–2030",
+      "caption": "Cyan area and dots: share of developers using AI tools (Stack Overflow), observed through 2026. From 2026 onwards, the dashed indigo line is the logistic projection, with the scenario band at saturation capacity K ∈ {0.87; 0.92; 0.97}. The dotted amber line, with square markers, is the share who reported planning to use them, collected through 2025. The white dash-dot line, with triangular markers, is the share not using them: in 2026 this is the value actually measured (17.2%), from which the “using” share was derived. The “Show external references” button adds two comparators measured on different populations: organisational AI adoption (AI Index) and the Gartner target for enterprise engineers.",
+      "yAxis": "% of developers",
+      "gartnerTarget": "Gartner target",
+      "using": "Using AI tools",
+      "planning": "Planning to use",
+      "notUsing": "Not using",
+      "projection": "Projection (K = 0.92)",
+      "band": "Scenario band",
+      "org": "Organisations using AI (AI Index)",
+      "gartner": "Gartner: enterprise SWEs with code assistants",
+      "toggleOrg": "Show external references",
+      "note": "In 2026 the question changed: “using” is computed as 100% − 17.2% non-users, and the “planning” share was not collected."
+    },
+    "employment": {
+      "title": "US employment and wages in tech occupations",
+      "caption": "Tab A: trajectories implied by the BLS 2025–35 projections (index 2025 = 100, constant compound growth). Tab B: projected ten-year growth for software developers across four consecutive projection cycles. Tab C: median annual wage of software developers (OEWS), with linear trend and continuation at the 2023–25 CAGR.",
+      "tabs": {
+        "trajectories": "A · Trajectories 2025–35",
+        "revisions": "B · BLS revisions",
+        "wages": "C · SWE wages"
+      },
+      "index": "Index (2025 = 100)",
+      "growth": "Projected 10-year growth",
+      "wage": "Median wage",
+      "trendLinear": "Linear trend 2021–25",
+      "trendRecent": "2023–25 CAGR continued",
+      "occupations": {
+        "data_scientists": "Data Scientists",
+        "research_scientists": "Research Scientists (AI/ML proxy)",
+        "infosec_analysts": "Information Security",
+        "software_developers": "Software Developers",
+        "database_architects": "Database Architects (DE proxy)",
+        "network_architects": "Network Architects (Cloud proxy)",
+        "web_developers": "Web Developers",
+        "computer_programmers": "Computer Programmers"
+      }
+    },
+    "radar": {
+      "title": "Comparative role profile: demand, pay and AI exposure",
+      "caption": "Five axes normalised to the maximum across roles (= 100). The “AI penetration” axis is the composite index described in §1.3, expressed directly on a 0–100 scale. Select the roles to compare.",
+      "axes": {
+        "bls_growth": "US growth (BLS)",
+        "wef_growth": "Global growth (WEF)",
+        "us_pay": "US pay (BLS)",
+        "global_pay": "Global pay (SO)",
+        "ai_exposure": "AI penetration"
+      }
+    },
+    "salary": {
+      "title": "Median pay: United States vs global sample",
+      "caption": "Bars: US median wage from BLS (May 2025, occupation or proxy) and global median of Stack Overflow 2025 respondents by developer type. The label reports the US/global ratio.",
+      "us": "US (BLS, May 2025)",
+      "global": "Global (SO 2025)",
+      "ratio": "Ratio"
+    },
+    "wef": {
+      "title": "The 15 fastest-growing jobs, 2025–2030",
+      "caption": "Net percentage growth expected by employers (WEF, Future of Jobs Report 2025). Tech and digital roles in cyan.",
+      "tech": "Tech role",
+      "other": "Other",
+      "growth": "Net growth",
+      "jobs": {
+        "Big Data Specialists": "Big Data Specialists",
+        "FinTech Engineers": "FinTech Engineers",
+        "AI and Machine Learning Specialists": "AI and Machine Learning Specialists",
+        "Software and Applications Developers": "Software and Applications Developers",
+        "Security Management Specialists": "Security Management Specialists",
+        "Data Warehousing Specialists": "Data Warehousing Specialists",
+        "Autonomous and Electric Vehicle Specialists": "Autonomous and Electric Vehicle Specialists",
+        "UI and UX Designers": "UI and UX Designers",
+        "Light Truck or Delivery Services Drivers": "Light Truck or Delivery Services Drivers",
+        "Internet of Things Specialists": "Internet of Things Specialists",
+        "Data Analysts and Scientists": "Data Analysts and Scientists",
+        "Environmental Engineers": "Environmental Engineers",
+        "Information Security Analysts": "Information Security Analysts",
+        "DevOps Engineers": "DevOps Engineers",
+        "Renewable Energy Engineers": "Renewable Energy Engineers"
+      }
+    },
+    "exposure": {
+      "title": "AI task-penetration index by role",
+      "caption": "Author's estimate: mean AI usage rate per activity type (Stack Overflow 2026) weighted by each role's typical activity mix. A higher value indicates that a larger share of daily work falls in activities where AI is already widely used.",
+      "tasks": {
+        "code_generation": "Code generation",
+        "debug_refactor": "Debugging and refactoring",
+        "testing": "Testing",
+        "knowledge_qna": "Technical questions",
+        "design_architecture": "Design and architecture",
+        "communication": "Communication",
+        "ops_production": "Production operations"
+      },
+      "topTasks": "Heaviest tasks"
+    },
+    "gartner": {
+      "title": "Gartner predictions on agentic software engineering",
+      "caption": "Each row reports the predicted value for the target year and, where available, the stated baseline. Predictions are analyst judgements, not measurements.",
+      "baseline": "Baseline",
+      "target": "Target",
+      "topics": {
+        "code_assistants": "Enterprise software engineers using AI code assistants",
+        "upskill": "Engineering workforce required to upskill for GenAI",
+        "task_agents": "Enterprise apps featuring task-specific AI agents",
+        "agentic_apps": "Enterprise software embedding agentic AI",
+        "autonomous_decisions": "Day-to-day work decisions made autonomously by agentic AI",
+        "agentic_canceled": "Agentic AI projects cancelled by end of 2027",
+        "small_teams": "Organisations adopting smaller software engineering teams at scale",
+        "fde_abandon": "Enterprises abandoning agentic AI built by vendor forward-deployed engineering"
+      },
+      "noBaseline": "Hollow circle = stated baseline; where absent, the source gives none."
+    }
+  },
+  "roles": {
+    "filters": {
+      "all": "All",
+      "core": "Software",
+      "ai": "AI / ML",
+      "data": "Data & Platform"
+    },
+    "families": {
+      "core": "Software",
+      "ai": "AI / ML",
+      "data": "Data & Platform"
+    },
+    "labels": {
+      "swe": "Software Engineer / Full-stack",
+      "frontend": "Frontend Developer",
+      "backend": "Backend Developer",
+      "ai_ml": "AI / ML Engineer",
+      "data_scientist": "Data Scientist",
+      "data_engineer": "Data Engineer",
+      "mlops_cloud": "MLOps / Cloud Architect"
+    },
+    "metrics": {
+      "usPay": "US pay",
+      "globalPay": "Global pay",
+      "blsGrowth": "BLS 2025–35",
+      "wefGrowth": "WEF 2025–30",
+      "aiIndex": "AI penetration",
+      "jobs": "US jobs"
+    },
+    "table": {
+      "title": "Role-by-role comparison",
+      "caption": "Values as reported by the sources, except the AI penetration index (estimate). † = BLS occupation used as proxy.",
+      "role": "Role",
+      "blsOccupation": "BLS occupation",
+      "demand": "Demand",
+      "pay": "Pay",
+      "automation": "Automation",
+      "skills": "Key skills"
+    },
+    "details": {
+      "swe": {
+        "summary": "The largest role and the one most exposed to the commoditisation of implementation.",
+        "skills": [
+          "System design",
+          "TypeScript / Python",
+          "Testing and verification",
+          "Review of AI-generated code",
+          "Application security"
+        ]
+      },
+      "frontend": {
+        "summary": "The highest AI task penetration; modest BLS growth, but global pay rising sharply.",
+        "skills": [
+          "TypeScript",
+          "Design systems",
+          "Accessibility",
+          "Performance",
+          "UX for AI interfaces"
+        ]
+      },
+      "backend": {
+        "summary": "Greater exposure to data, integration and operations, where AI is less pervasive.",
+        "skills": [
+          "APIs and contracts",
+          "Databases",
+          "Observability",
+          "Security",
+          "LLM integration"
+        ]
+      },
+      "ai_ml": {
+        "summary": "Among the most dynamic sources of demand, with skills migrating from training to product: RAG, evaluation, agents.",
+        "skills": [
+          "Python",
+          "RAG",
+          "Evaluation (evals)",
+          "Agent frameworks",
+          "Inference costs"
+        ]
+      },
+      "data_scientist": {
+        "summary": "The highest BLS growth among the occupations analysed (+35%), with work shifting towards experimental design and communication.",
+        "skills": [
+          "Statistics",
+          "Experimental design",
+          "SQL",
+          "Causal inference",
+          "Communication"
+        ]
+      },
+      "data_engineer": {
+        "summary": "Data infrastructure as a prerequisite for every AI system; among the highest US salaries.",
+        "skills": [
+          "Pipelines and orchestration",
+          "Data warehousing",
+          "Quality and governance",
+          "Streaming",
+          "Data contracts"
+        ]
+      },
+      "mlops_cloud": {
+        "summary": "The least exposed role: production operations remain the activity with the lowest AI adoption.",
+        "skills": [
+          "Cloud and containers",
+          "IaC",
+          "Reliability (SRE)",
+          "FinOps / token costs",
+          "Supply chain security"
+        ]
+      }
+    }
+  },
+  "emerging": [
+    {
+      "id": "orchestrator",
+      "title": "Agent Orchestration Engineer",
+      "tag": "Orchestration",
+      "text": "Designs multi-agent workflows, allocates work between agents and humans, and defines permissions, handoffs and stopping criteria.",
+      "signal": "Agentic AI: from 0.06% to 0.23% of US job postings in one year [10]; 33% of enterprise software embedding agentic AI by 2028 [13].",
+      "skills": [
+        "Agentic workflows",
+        "Tool calling",
+        "State management"
+      ]
+    },
+    {
+      "id": "evals",
+      "title": "AI Evaluation & Reliability Engineer",
+      "tag": "Verification",
+      "text": "Builds evaluation suites, regression tests on model behaviour and reliability metrics for non-deterministic systems.",
+      "signal": "Agents still fail roughly one attempt in three on structured benchmarks [10]; only 6.6% of developers trust AI for important decisions [3].",
+      "skills": [
+        "Eval harnesses",
+        "Statistics",
+        "Red teaming"
+      ]
+    },
+    {
+      "id": "finops",
+      "title": "AI FinOps / Token Economist",
+      "tag": "Costs",
+      "text": "Governs token consumption, selects the appropriate model for each task and measures the economic return of automation.",
+      "signal": "Gartner predicts that by 2028 AI coding spend will exceed the average developer's salary [15].",
+      "skills": [
+        "Cost modelling",
+        "Model routing",
+        "Value metrics"
+      ]
+    },
+    {
+      "id": "context",
+      "title": "Context & Knowledge Engineer",
+      "tag": "Context",
+      "text": "Curates requirements, documentation and knowledge bases as operational inputs for agents, with source traceability.",
+      "signal": "93% of developers require source attribution in order to trust AI; the most reliable context is project goals and requirements (85%) [3].",
+      "skills": [
+        "Specifications",
+        "Knowledge graphs",
+        "Retrieval"
+      ]
+    },
+    {
+      "id": "security",
+      "title": "AI Security Engineer",
+      "tag": "Security",
+      "text": "Secures generated code, agents with tool access and the model supply chain.",
+      "signal": "Security management specialists +55% (WEF) [6]; information security analysts +21% in the US [7]; repositories flagged for Broken Access Control +172% [5].",
+      "skills": [
+        "Threat modelling",
+        "Prompt injection",
+        "Supply chain"
+      ]
+    },
+    {
+      "id": "applied",
+      "title": "Applied / Forward-Deployed AI Engineer",
+      "tag": "Product",
+      "text": "Embeds AI systems into client processes, combining engineering, domain knowledge and change management.",
+      "signal": "A rapidly expanding but exposed role: Gartner predicts that by 2028, 70% of enterprises will abandon agentic AI built by vendor forward-deployed engineering [17].",
+      "skills": [
+        "Domain knowledge",
+        "Integration",
+        "Change management"
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "base",
+      "name": "Base",
+      "tag": "Reference",
+      "adoption": "≈ 90% by 2028",
+      "text": "Adoption follows the central logistic curve. Developer employment grows close to the BLS projection (+10% by 2035), but its composition changes: fewer junior entrants, more review, data and platform roles.",
+      "indicators": [
+        "Daily use above 75%",
+        "BLS SWE projection stable",
+        "Share of smaller teams towards 60% [16]"
+      ]
+    },
+    {
+      "id": "accelerated",
+      "name": "Accelerated",
+      "tag": "Reliable agents",
+      "adoption": "≈ 93–96% by 2030",
+      "text": "Agents become reliable on multi-hour tasks. Teams of two to five people spread, demand for implementers falls more rapidly, and demand for orchestrators, evaluators and architects rises.",
+      "indicators": [
+        "SWE-bench Verified above 90%",
+        "Agents in production at scale",
+        "A further downward BLS revision"
+      ]
+    },
+    {
+      "id": "friction",
+      "name": "Friction",
+      "tag": "Costs and risks",
+      "adoption": "plateau ≈ 87%",
+      "text": "Token costs, cancelled agentic projects and security incidents slow integration. AI remains an assistant, and the market returns to rewarding direct development experience.",
+      "indicators": [
+        "Cancellations above 40% [13]",
+        "AI coding budgets tightly controlled",
+        "Sentiment falling below 55%"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "abstract",
+      "number": "01",
+      "navKey": "abstract",
+      "kicker": "Abstract & Methodology",
+      "title": "Executive summary and method",
+      "blocks": [
+        {
+          "type": "h3",
+          "id": "abstract-summary",
+          "text": "1.1 Abstract"
+        },
+        {
+          "type": "p",
+          "lead": true,
+          "text": "Between 2024 and 2026 the tech labour market moved from pandemic-era over-hiring to a phase of **structural normalisation**. The available data do not show a collapse in aggregate employment: software developers in the United States rose from 1.36 to 1.66 million between 2021 and 2023 [8], and the BLS still projects 10% growth to 2035 [7]. They do, however, show a **recomposition**: projected growth for developers fell from 25% to 10% across four projection cycles [7], programmers are projected to decline by 7% as a result of automation [7], and employment of developers aged 22 to 25 has fallen by almost 20% [10]."
+        },
+        {
+          "type": "p",
+          "text": "Over the same period, generative AI became working infrastructure. The share of developers using AI tools rose from 44% in 2023 to 78.5% in 2025 [1, 2]; in 2026, 66% use coding assistants or agents, and 73% of those do so every day [3]. Trust follows the opposite trajectory: the share trusting the accuracy of AI output fell from 43% to 32.7% in one year [1, 2]. This paper compares seven roles along demand, pay and exposure to automation, and sets out three scenarios to 2031 in which professional value shifts from writing code to the **specification, orchestration and verification** of multi-agent systems."
+        },
+        {
+          "type": "keywords",
+          "label": "Keywords",
+          "items": [
+            "ICT labour market",
+            "generative AI",
+            "AI agents",
+            "software engineering",
+            "entry-level",
+            "skill shift"
+          ]
+        },
+        {
+          "type": "h3",
+          "id": "abstract-method",
+          "text": "1.2 Sources and methodology"
+        },
+        {
+          "type": "p",
+          "text": "The analysis draws exclusively on six families of public, verifiable sources: the **Stack Overflow Developer Survey** for 2024, 2025 and 2026 [1, 2, 3], the **GitHub Octoverse** reports for 2024 and 2025 [4, 5], the **WEF Future of Jobs Report 2025** [6], the **Occupational Outlook Handbook** and OEWS statistics of the **U.S. Bureau of Labor Statistics** [7, 8], the **Stanford AI Index** for 2025 and 2026 [9, 10], and the forecasts published by **Gartner** between 2024 and 2026 [11–17]."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Extraction.** Every value was transcribed manually from the original report into a CSV file carrying its own source identifier (`data-pipeline/raw/`).",
+            "**Separation of data and estimates.** The Python pipeline distinguishes *reported* values from *derived* ones; in the figures, the latter are marked as estimates or projections.",
+            "**Declared proxies.** The BLS has no categories for AI/ML engineer, data engineer and cloud architect: Computer and Information Research Scientists, Database Architects and Computer Network Architects are used respectively.",
+            "**Projections.** AI adoption is modelled with a fixed-capacity logistic curve (three scenarios); employment trajectories derive from the BLS ten-year rates converted into annual compound growth."
+          ]
+        },
+        {
+          "type": "h3",
+          "id": "abstract-index",
+          "text": "1.3 The AI penetration index"
+        },
+        {
+          "type": "p",
+          "text": "None of the sources publishes a “code automation rate” by role. To fill that gap in a verifiable way, a **composite index** is constructed: for seven activities (code generation, debugging, testing, technical questions, design, communication, production operations), the index uses the share of developers who employ or find AI useful according to the 2026 survey [3]; each role is assigned a weight vector approximating the expected distribution of its activities. The index therefore measures *how much of the work falls in activities where AI is already widespread*, not how much work has been replaced.",
+          "note": "The weights are the author's assumptions and are published in role_task_weights.csv: editing them and re-running the pipeline automatically updates the figures and tables."
+        },
+        {
+          "type": "figure",
+          "chart": "exposure"
+        },
+        {
+          "type": "callout",
+          "tag": "Limitations",
+          "title": "What these data do not say",
+          "text": "The Stack Overflow surveys are self-selected and the sample has shrunk (over 65,000 respondents in 2024, over 30,000 from 169 countries in 2026) [1, 3]; in 2026 some AI questions changed. The BLS data cover the United States only, whereas the WEF collects employer expectations worldwide. The Gartner forecasts are analyst judgements, not measurements. Layoff counts from private trackers are excluded for consistency with the source perimeter."
+        }
+      ]
+    },
+    {
+      "id": "market",
+      "number": "02",
+      "navKey": "market",
+      "kicker": "Current state of the market",
+      "title": "2024–2026: after the bubble, a selective normalisation",
+      "blocks": [
+        {
+          "type": "h3",
+          "id": "market-normalization",
+          "text": "2.1 From the pandemic bubble to normalisation"
+        },
+        {
+          "type": "p",
+          "text": "The most common reading of the 2022–2024 period, that of a contracting sector, is only partly supported by official data. OEWS (*Occupational Employment and Wage Statistics*) estimates record continuous growth in software developers in the United States: **1,364,180** in May 2021, **1,534,790** in 2022 and **1,656,880** in 2023 [8]. The layoffs of the 2022–2023 wave therefore affected mainly the large platforms and excess headcount, without reversing the aggregate trend."
+        },
+        {
+          "type": "p",
+          "text": "The normalisation signal appears instead in **expectations** and in **prices**. The ten-year growth projected by the BLS for developers falls from 25% (2022–32 cycle) to 17%, to 15% and finally to 10% (2025–35 cycle) [7]. The median wage rises from 120,730 to 135,980 dollars between 2021 and 2025 [7, 8], but the annual pace halves: from 3.0% on average over the whole period to 1.4% in 2023–25, below inflation.",
+          "note": "Compound annual growth rates (CAGR) computed by the pipeline on nominal OEWS/OOH median wages; derived values."
+        },
+        {
+          "type": "figure",
+          "chart": "employment"
+        },
+        {
+          "type": "h3",
+          "id": "market-entry",
+          "text": "2.2 The contraction of junior and entry-level roles"
+        },
+        {
+          "type": "p",
+          "text": "The recomposition is most visible at the entry point of the profession. According to the AI Index 2026, drawing on analyses of ADP payroll data, employment of software developers aged 22 to 25 fell by **almost 20%**, while employment of more experienced workers in the same AI-exposed occupations remained stable or grew [10]. The BLS projects a 7% decline for *computer programmers*, attributing it explicitly to the use of technologies, including AI, to automate repetitive programming tasks [7]."
+        },
+        {
+          "type": "p",
+          "text": "The mechanism is consistent with the penetration index: the activities traditionally assigned to junior profiles — routine code, testing and bug fixing — are precisely those with the highest AI usage (69.3% for code generation in familiar areas, 58.1% for testing) [3]. Gartner warns that by 2028, organisations using AI to cut junior roles will **hollow out their own talent pipeline** [16]. A signal of reallocation emerges from the 2026 survey: the share of freelancers and single-person organisations rises from 4% to 11% [3]."
+        },
+        {
+          "type": "kpis",
+          "items": [
+            {
+              "value": "≈ −20%",
+              "label": "Employment of developers aged 22–25",
+              "ref": 10
+            },
+            {
+              "value": "−7%",
+              "label": "Computer programmers 2025–35",
+              "ref": 7
+            },
+            {
+              "value": "4% → 11%",
+              "label": "Freelancers and solo founders",
+              "ref": 3
+            },
+            {
+              "value": "2028",
+              "label": "Junior pipeline at risk (Gartner)",
+              "ref": 16
+            }
+          ]
+        },
+        {
+          "type": "h3",
+          "id": "market-genai",
+          "text": "2.3 The consolidation of generative AI in workflows"
+        },
+        {
+          "type": "p",
+          "text": "In three years AI moved from experiment to daily tool. Developers using it rise from 44% (2023) to 61.8% (2024) and 78.5% (2025) [1, 2]; in 2025, 50.6% of professionals use it every day [2]. In 2026 the dominant category is **coding assistants and agents** (66%), used daily by 73% of those who adopt them; 31% of daily users devote four or more hours a day to them [3]."
+        },
+        {
+          "type": "figure",
+          "chart": "adoption"
+        },
+        {
+          "type": "p",
+          "text": "GitHub confirms the shift on the production side. In 2024 Python overtook JavaScript as the most used language and public generative AI projects grew by 98% [4]. In 2025 the platform passed **180 million** developers, with 36 million new accounts in one year; about 80% of new developers use Copilot in their first week, and public repositories importing an LLM SDK exceed 1.1 million (+178%) [5]. TypeScript became the leading language by contributors, an effect GitHub links to typed languages being better suited to generated code [5]."
+        },
+        {
+          "type": "p",
+          "text": "On capability, the AI Index documents a marked jump: systems solved 4.4% of SWE-bench problems in 2023 and 71.7% in 2024 [9]; as of February 2026 the best result on SWE-bench Verified is about 76.8%, while Terminal-Bench 2.0 rose from 20% to 77.3% in one year [10]. Within organisations, the use of AI in at least one function rises from 55% (2023) to 78% (2024) and 88% (2025) [9, 10]."
+        },
+        {
+          "type": "h3",
+          "id": "market-trust",
+          "text": "2.4 The trust paradox"
+        },
+        {
+          "type": "p",
+          "text": "Rising use is not matched by rising trust. Favourable sentiment falls from 71.9% (2024) to 59.7% (2025) [1, 2], then recovers to 62% in 2026 [3]. Those trusting accuracy fall from 43% to 32.7%, while distrust rises to 45.7% [1, 2]. In 2026, 48% report trusting AI only when answers are easy to verify, and just **6.6%** for important decisions [3]."
+        },
+        {
+          "type": "p",
+          "text": "The evidence on productivity is likewise heterogeneous. Among the studies collected by the AI Index 2026, an experiment on GitHub Copilot measures a 26% increase in completed pull requests, while a METR study finds a 19% slowdown for experienced open source developers [10]. The picture suggests that value depends less on the tool and more on the **capacity to verify its output**, a point central to the projections in §4."
+        },
+        {
+          "type": "callout",
+          "tag": "Reading",
+          "title": "Near-universal use, conditional trust",
+          "text": "Near-universal adoption is accompanied by conditional trust: use is intensive, verification remains systematic. It is this combination, rather than automation itself, that redefines the skills in demand."
+        }
+      ]
+    },
+    {
+      "id": "roles",
+      "number": "03",
+      "navKey": "roles",
+      "kicker": "Role-level analysis",
+      "title": "Demand, skills, pay and automation across seven roles",
+      "blocks": [
+        {
+          "type": "p",
+          "lead": true,
+          "text": "The seven roles analysed are grouped into three families: **Software** (SWE/Full-stack, Frontend, Backend), **AI/ML**, and **Data & Platform** (Data Scientist, Data Engineer, MLOps/Cloud Architect). For each, the analysis combines projected growth in the United States (BLS) and worldwide (WEF), median US pay (BLS) and global pay (Stack Overflow), and the AI penetration index."
+        },
+        {
+          "type": "roleCards"
+        },
+        {
+          "type": "h3",
+          "id": "roles-swe",
+          "text": "3.1 Software Engineer, Full-stack, Frontend and Backend"
+        },
+        {
+          "type": "p",
+          "text": "Software developers remain the largest tech occupation in the United States: **1,717,800 employed** in 2025, a median wage of 135,980 dollars and projected growth of 10% to 2035, equal to 174,700 positions [7]. *Web developers* grow less (+4%) with a median of 92,650 dollars [7]. Worldwide, the WEF ranks *Software and Applications Developers* fourth by percentage growth (+60%) and among the roles with the largest absolute growth [6]."
+        },
+        {
+          "type": "p",
+          "text": "The global Stack Overflow sample shows much lower but rising pay in 2025: full-stack 72,509 dollars (+12.5%), back-end 79,742 (+15.1%), front-end 62,015 (+24%) [2]. These are also the roles with the highest AI penetration index: frontend 60.0, SWE 59.4 and backend 57.6. The skills whose relative value is increasing are plausibly those AI does not replace but makes more necessary: **system design, testing, review and security**. GitHub reports a 172% increase in repositories with *Broken Access Control* vulnerabilities [5]; the figure is consistent with a rising verification cost downstream of faster code production, but the sources do not establish a causal link."
+        },
+        {
+          "type": "h3",
+          "id": "roles-ai",
+          "text": "3.2 AI Engineer and ML Engineer"
+        },
+        {
+          "type": "p",
+          "text": "The BLS still has no category for the AI engineer; the closest proxy, *Computer and Information Research Scientists*, has a median wage of 140,300 dollars and projected growth of 22% [7]. The WEF ranks *AI and Machine Learning Specialists* third among the fastest-growing jobs (+85%) [6], and as early as 2024, 56% of engineering leaders identified the AI/ML engineer as the most sought-after role [12]."
+        },
+        {
+          "type": "p",
+          "text": "Demand is shifting from *training* to **product**. In 2025, US postings requiring generative AI skills numbered 138,188 (+111%), Python was the most requested specialist skill with 258,674 postings, and the *Agentic AI* cluster rose from 0.06% to 0.23% of all postings, about 90,000 positions [10]. Gartner describes the AI engineer as “a new breed of software professional” combining engineering, data science and AI/ML, with skills such as RAG and prompt engineering [12]. This role is not immune either: on MLE-bench, agents rose from 17% to 64.4% success on ML engineering tasks [10].",
+          "note": "The global SO wage for AI/ML engineers ($89,427) is the highest among individual development roles, after cloud infrastructure engineer [2]."
+        },
+        {
+          "type": "h3",
+          "id": "roles-data",
+          "text": "3.3 Data Scientist, Data Engineer and MLOps / Cloud Architect"
+        },
+        {
+          "type": "p",
+          "text": "Data scientists show the highest projected growth across the BLS perimeter considered here: **+35%** to 2035, 275,600 employed and a median of 120,230 dollars [7]. The WEF confirms the direction, with *Big Data Specialists* leading the ranking (+110%), followed among others by *Data Warehousing Specialists* (+50%), *Data Analysts and Scientists* (+40%) and *DevOps Engineers* (+40%) [6]."
+        },
+        {
+          "type": "p",
+          "text": "For platform roles, the BLS proxies show moderate growth but high pay: database architects +9% and 139,500 dollars, network architects +8% and 134,050 dollars, with demand driven by cloud expansion [7]. In the global sample, the *cloud infrastructure engineer* has the highest median among individual roles (103,113 dollars) [2]. The discriminating factor is the degree of automation: only 20% of developers use AI to operate production systems [3], and in 2025, 75.8% did not plan to use it for deployment and monitoring [2]. The result is the lowest index in the sample (**45.5** for MLOps/Cloud)."
+        },
+        {
+          "type": "figure",
+          "chart": "wef"
+        },
+        {
+          "type": "h3",
+          "id": "roles-synthesis",
+          "text": "3.4 Comparative synthesis"
+        },
+        {
+          "type": "roleTable"
+        },
+        {
+          "type": "figure",
+          "chart": "radar"
+        },
+        {
+          "type": "p",
+          "text": "Across the seven observations available, the comparison indicates an inverse association between **AI exposure** and **demand growth**: application development roles have the highest index and the lowest BLS projections; data science and AI/ML combine high growth with an intermediate index; MLOps/Cloud has the lowest exposure and the highest global pay. The pay gap between the United States and the global sample ranges from 1.3 to 1.9 times and narrows precisely in platform roles, indicating a more international market for those skills."
+        },
+        {
+          "type": "figure",
+          "chart": "salary"
+        }
+      ]
+    },
+    {
+      "id": "future",
+      "number": "04",
+      "navKey": "future",
+      "kicker": "Outlook · 3–5 year horizon",
+      "title": "From writing code to orchestrating multi-agent systems",
+      "blocks": [
+        {
+          "type": "h3",
+          "id": "future-agents",
+          "text": "4.1 From assistant to agent"
+        },
+        {
+          "type": "p",
+          "lead": true,
+          "text": "The clearest trajectory in the data is the shift from autocompletion to the **agent**. Gartner predicts that 40% of enterprise applications will include task-specific agents by 2026, against less than 5% in 2025 [14]; and that by 2028, 33% of enterprise software will embed agentic AI and 15% of day-to-day work decisions will be taken autonomously [13]. Over the medium term, according to Gartner, most code will be generated by AI rather than written by people [12]."
+        },
+        {
+          "type": "p",
+          "text": "The logistic projection in this paper is consistent with those forecasts: in the central scenario, AI tool use among developers reaches about **90% in 2028** and stabilises around 92% in 2030, above the Gartner target of 75% for enterprise engineers [11]. The constraint will therefore not be adoption but reliability: Gartner predicts that more than 40% of agentic AI projects will be cancelled by the end of 2027 because of costs, unclear value or inadequate controls [13].",
+          "note": "Fit parameters (central scenario): K = 0.92; r ≈ 0.79; RMSE ≈ 1.6 pp on four observations. The projection is illustrative."
+        },
+        {
+          "type": "figure",
+          "chart": "gartner"
+        },
+        {
+          "type": "h3",
+          "id": "future-reviewer",
+          "text": "4.2 The rise of the architectural reviewer"
+        },
+        {
+          "type": "p",
+          "text": "If code generation becomes abundant, the scarce resource becomes **verification**. 93% of developers require source attribution in order to trust AI, and the context considered most reliable is project goals and requirements (85%) [3]. Of those using Copilot code review, 72.6% report an improvement in the effectiveness of their work [5]: review does not disappear, it moves up a level."
+        },
+        {
+          "type": "p",
+          "text": "The result is a profile defined here as the **architectural reviewer**: they specify contracts and invariants, design test cases and evaluation suites, maintain the threat model and decide what an agent may modify. Gartner predicts that by 2029, 60% of organisations will adopt smaller engineering teams at scale, today typically of four to five people, against 15% in 2026 [16]. In teams of that size, the review of agent-produced work tends to fall to every member."
+        },
+        {
+          "type": "callout",
+          "tag": "Skill shift",
+          "title": "The skills rising in value",
+          "text": "Requirements specification · system design · testing and evaluation · security of generated code · cost governance · communication with the domain. Gartner estimates that 80% of the engineering workforce will need to upskill through 2027 [12]; 79% of developers report wanting to build their AI skills [3]."
+        },
+        {
+          "type": "h3",
+          "id": "future-emerging",
+          "text": "4.3 Emerging roles"
+        },
+        {
+          "type": "p",
+          "text": "The profiles below are not yet official statistical categories. Each is anchored to a measurable signal in the sources; the names are conventional and will vary across organisations."
+        },
+        {
+          "type": "emerging"
+        },
+        {
+          "type": "h3",
+          "id": "future-scenarios",
+          "text": "4.4 Three scenarios to 2031"
+        },
+        {
+          "type": "p",
+          "text": "The scenarios combine the adoption projection (§2.3), the BLS employment trajectories (§2.1) and the Gartner forecasts. For each, the indicators to monitor in forthcoming editions of the sources are listed."
+        },
+        {
+          "type": "scenarios"
+        },
+        {
+          "type": "h3",
+          "id": "future-implications",
+          "text": "4.5 Implications for new entrants"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Demonstrate verification capability, not only production.** Tests, evaluations and code review are the most credible evidence of competence when code is generated.",
+            "**Favour activities with low AI penetration.** Data, platform and production operations combine solid demand with lower exposure.",
+            "**Learn to work with agents.** Orchestration frameworks, context management and cost control are entering job postings [10].",
+            "**Invest in the domain.** Roles connecting AI to real processes are growing, but they reward those who understand the problem before the tool."
+          ]
+        },
+        {
+          "type": "h3",
+          "id": "future-conclusions",
+          "text": "4.6 Conclusions"
+        },
+        {
+          "type": "p",
+          "text": "The 2024–2026 data describe a market that is not losing tech work in aggregate terms but **redistributing** it: from implementation towards data, platform, security and verification; from junior profiles towards experienced ones; from large teams towards smaller teams working alongside agents. Forthcoming editions of the sources will show which scenario prevails. The method proposed here, with reported data kept separate from estimates and a reproducible pipeline, allows the analysis to be updated at every new release."
+        }
+      ]
+    },
+    {
+      "id": "sources",
+      "number": "05",
+      "navKey": "sources",
+      "kicker": "Certified sources & bibliography",
+      "title": "References",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "All sources are public and were consulted in October 2026. The extracted values, with their source identifiers, are available in the pipeline CSV files and in the `market_data.json` dataset."
+        },
+        {
+          "type": "references"
+        },
+        {
+          "type": "cite",
+          "label": "How to cite",
+          "text": "Raffaele (2026). Tech jobs evolution — A perspective on the market's current state and what will change. Working paper v1.0, October 2026."
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": 1,
+      "authors": "Stack Overflow",
+      "title": "2024 Developer Survey — AI",
+      "year": 2024,
+      "url": "https://survey.stackoverflow.co/2024/ai",
+      "note": "Use, sentiment and trust in AI tools."
+    },
+    {
+      "id": 2,
+      "authors": "Stack Overflow",
+      "title": "2025 Developer Survey — AI; Work",
+      "year": 2025,
+      "url": "https://survey.stackoverflow.co/2025/ai",
+      "note": "Usage frequency, agents, trust; median wages by developer type (survey.stackoverflow.co/2025/work)."
+    },
+    {
+      "id": 3,
+      "authors": "Stack Overflow",
+      "title": "2026 Developer Survey — Results; AI",
+      "year": 2026,
+      "url": "https://survey.stackoverflow.co/2026/ai",
+      "note": "Published 6 October 2026; over 30,000 respondents from 169 countries."
+    },
+    {
+      "id": 4,
+      "authors": "GitHub",
+      "title": "Octoverse 2024: AI leads Python to top language as the number of global developers surges",
+      "year": 2024,
+      "url": "https://github.blog/news-insights/octoverse/octoverse-2024/",
+      "note": "Python as leading language; GenAI projects +98%."
+    },
+    {
+      "id": 5,
+      "authors": "GitHub",
+      "title": "Octoverse 2025: A new developer joins GitHub every second as AI leads TypeScript to #1",
+      "year": 2025,
+      "url": "https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/",
+      "note": "Period 1 Sep 2024 – 31 Aug 2025."
+    },
+    {
+      "id": 6,
+      "authors": "World Economic Forum",
+      "title": "The Future of Jobs Report 2025",
+      "year": 2025,
+      "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/",
+      "note": "Over 1,000 firms, 22 industry clusters, 14 million workers represented."
+    },
+    {
+      "id": 7,
+      "authors": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Outlook Handbook — Computer and Information Technology; Data Scientists (2025–35 projections, May 2025 wages)",
+      "year": 2026,
+      "url": "https://www.bls.gov/ooh/computer-and-information-technology/",
+      "note": "Includes the growth rates of the previous cycles (2022–32, 2023–33, 2024–34)."
+    },
+    {
+      "id": 8,
+      "authors": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Employment and Wage Statistics — 15-1252 Software Developers, May 2021–May 2023",
+      "year": 2024,
+      "url": "https://www.bls.gov/oes/2023/may/oes151252.htm",
+      "note": "National employment and median wage."
+    },
+    {
+      "id": 9,
+      "authors": "Stanford Institute for Human-Centered AI",
+      "title": "Artificial Intelligence Index Report 2025",
+      "year": 2025,
+      "url": "https://hai.stanford.edu/ai-index/2025",
+      "note": "SWE-bench 2023–2024; AI adoption in organisations."
+    },
+    {
+      "id": 10,
+      "authors": "Stanford Institute for Human-Centered AI",
+      "title": "Artificial Intelligence Index Report 2026 — Ch. 2 Technical Performance; Ch. 4 Economy",
+      "year": 2026,
+      "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
+      "note": "Job postings (Lightcast), early-career employment, productivity studies, coding benchmarks."
+    },
+    {
+      "id": 11,
+      "authors": "Gartner",
+      "title": "Gartner Says 75% of Enterprise Software Engineers Will Use AI Code Assistants by 2028",
+      "year": 2024,
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2024-04-11-gartner-says-75-percent-of-enterprise-software-engineers-will-use-ai-code-assistants-by-2028",
+      "note": "Press release, 11 April 2024."
+    },
+    {
+      "id": 12,
+      "authors": "Gartner",
+      "title": "Gartner Says Generative AI will Require 80% of Engineering Workforce to Upskill Through 2027",
+      "year": 2024,
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2024-10-03-gartner-says-generative-ai-will-require-80-percent-of-engineering-workforce-to-upskill-through-2027",
+      "note": "Press release, 3 October 2024."
+    },
+    {
+      "id": 13,
+      "authors": "Gartner",
+      "title": "Gartner Predicts Over 40% of Agentic AI Projects Will Be Canceled by End of 2027",
+      "year": 2025,
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027",
+      "note": "Press release, 25 June 2025."
+    },
+    {
+      "id": 14,
+      "authors": "Gartner",
+      "title": "Gartner Predicts 40% of Enterprise Apps Will Feature Task-Specific AI Agents by 2026, Up from Less Than 5% in 2025",
+      "year": 2025,
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2025-08-26-gartner-predicts-40-percent-of-enterprise-apps-will-feature-task-specific-ai-agents-by-2026-up-from-less-than-5-percent-in-2025",
+      "note": "Press release, 26 August 2025."
+    },
+    {
+      "id": 15,
+      "authors": "Gartner",
+      "title": "Gartner Predicts AI Coding Costs Will Surpass Average Developer’s Salary by 2028 as Token Consumption Surges",
+      "year": 2026,
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-06-24-gartner-predicts-ai-coding-costs-will-surpass-average-developer-salary-by-2028-as-token-consumption-surges",
+      "note": "Press release, 24 June 2026."
+    },
+    {
+      "id": 16,
+      "authors": "Gartner",
+      "title": "Gartner Predicts 60% of Organizations Will Adopt Smaller Software Engineering Teams by 2029",
+      "year": 2026,
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-07-07-gartner-predicts-60-percent-of-organizations-will-adopt-smaller-software-engineering-teams-by-2029",
+      "note": "Press release, 7 July 2026."
+    },
+    {
+      "id": 17,
+      "authors": "Gartner",
+      "title": "Gartner Predicts 70% of Enterprises Will Abandon Agentic AI Built by Vendor Forward-Deployed Engineering by 2028",
+      "year": 2026,
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-09-29-gartner-predicts-70-percent-of-enterprises-will-abandon-agentic-ai-built-by-vendor-forward-deployed-engineering-by-2028",
+      "note": "Press release, 29 September 2026."
+    }
+  ],
+  "footer": {
+    "license": "Text CC BY 4.0 · Code MIT",
+    "built": "Built with React, Recharts and a reproducible Python pipeline.",
+    "ctaKicker": "Ready to discuss?",
+    "ctaHighlight": "Open an issue on the repository",
+    "ctaPrimary": "Download the dataset",
+    "ctaSecondary": "See the methodology"
+  }
+}

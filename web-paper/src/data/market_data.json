@@ -1,0 +1,1587 @@
+{
+  "meta": {
+    "title": "Tech jobs evolution — market data",
+    "version": "1.0.0",
+    "data_cutoff": "2026-10-26",
+    "generated_at": "2026-10-27T16:32:23Z",
+    "generator": "data-pipeline/generate_data.py",
+    "notes": "Valori 'reported' = dalle fonti; valori 'derived' = calcolati da questo script."
+  },
+  "sources": [
+    {
+      "id": 1,
+      "key": "so2024",
+      "publisher": "Stack Overflow",
+      "title": "2024 Developer Survey — AI",
+      "year": 2024,
+      "url": "https://survey.stackoverflow.co/2024/ai"
+    },
+    {
+      "id": 2,
+      "key": "so2025",
+      "publisher": "Stack Overflow",
+      "title": "2025 Developer Survey — AI & Work",
+      "year": 2025,
+      "url": "https://survey.stackoverflow.co/2025/ai"
+    },
+    {
+      "id": 3,
+      "key": "so2026",
+      "publisher": "Stack Overflow",
+      "title": "2026 Developer Survey — Results & AI",
+      "year": 2026,
+      "url": "https://survey.stackoverflow.co/2026/ai"
+    },
+    {
+      "id": 4,
+      "key": "octo2024",
+      "publisher": "GitHub",
+      "title": "Octoverse 2024: AI leads Python to top language",
+      "year": 2024,
+      "url": "https://github.blog/news-insights/octoverse/octoverse-2024/"
+    },
+    {
+      "id": 5,
+      "key": "octo2025",
+      "publisher": "GitHub",
+      "title": "Octoverse 2025: a new developer joins GitHub every second as AI leads TypeScript to #1",
+      "year": 2025,
+      "url": "https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/"
+    },
+    {
+      "id": 6,
+      "key": "wef2025",
+      "publisher": "World Economic Forum",
+      "title": "The Future of Jobs Report 2025",
+      "year": 2025,
+      "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/"
+    },
+    {
+      "id": 7,
+      "key": "bls_ooh",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Outlook Handbook — Employment Projections 2025–35, wages May 2025",
+      "year": 2026,
+      "url": "https://www.bls.gov/ooh/computer-and-information-technology/"
+    },
+    {
+      "id": 8,
+      "key": "bls_oews",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Employment and Wage Statistics — 15-1252 Software Developers (May 2021–May 2023)",
+      "year": 2024,
+      "url": "https://www.bls.gov/oes/2023/may/oes151252.htm"
+    },
+    {
+      "id": 9,
+      "key": "aiindex2025",
+      "publisher": "Stanford HAI",
+      "title": "Artificial Intelligence Index Report 2025",
+      "year": 2025,
+      "url": "https://hai.stanford.edu/ai-index/2025"
+    },
+    {
+      "id": 10,
+      "key": "aiindex2026",
+      "publisher": "Stanford HAI",
+      "title": "Artificial Intelligence Index Report 2026 (Ch. 2 Technical Performance; Ch. 4 Economy)",
+      "year": 2026,
+      "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report"
+    },
+    {
+      "id": 11,
+      "key": "gartner_2024_04",
+      "publisher": "Gartner",
+      "title": "Gartner Says 75% of Enterprise Software Engineers Will Use AI Code Assistants by 2028",
+      "year": 2024,
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2024-04-11-gartner-says-75-percent-of-enterprise-software-engineers-will-use-ai-code-assistants-by-2028"
+    },
+    {
+      "id": 12,
+      "key": "gartner_2024_10",
+      "publisher": "Gartner",
+      "title": "Gartner Says Generative AI will Require 80% of Engineering Workforce to Upskill Through 2027",
+      "year": 2024,
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2024-10-03-gartner-says-generative-ai-will-require-80-percent-of-engineering-workforce-to-upskill-through-2027"
+    },
+    {
+      "id": 13,
+      "key": "gartner_2025_06",
+      "publisher": "Gartner",
+      "title": "Gartner Predicts Over 40% of Agentic AI Projects Will Be Canceled by End of 2027",
+      "year": 2025,
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027"
+    },
+    {
+      "id": 14,
+      "key": "gartner_2025_08",
+      "publisher": "Gartner",
+      "title": "Gartner Predicts 40% of Enterprise Apps Will Feature Task-Specific AI Agents by 2026, Up from Less Than 5% in 2025",
+      "year": 2025,
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2025-08-26-gartner-predicts-40-percent-of-enterprise-apps-will-feature-task-specific-ai-agents-by-2026-up-from-less-than-5-percent-in-2025"
+    },
+    {
+      "id": 15,
+      "key": "gartner_2026_06",
+      "publisher": "Gartner",
+      "title": "Gartner Predicts AI Coding Costs Will Surpass Average Developer's Salary by 2028 as Token Consumption Surges",
+      "year": 2026,
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-06-24-gartner-predicts-ai-coding-costs-will-surpass-average-developer-salary-by-2028-as-token-consumption-surges"
+    },
+    {
+      "id": 16,
+      "key": "gartner_2026_07",
+      "publisher": "Gartner",
+      "title": "Gartner Predicts 60% of Organizations Will Adopt Smaller Software Engineering Teams by 2029",
+      "year": 2026,
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-07-07-gartner-predicts-60-percent-of-organizations-will-adopt-smaller-software-engineering-teams-by-2029"
+    },
+    {
+      "id": 17,
+      "key": "gartner_2026_09",
+      "publisher": "Gartner",
+      "title": "Gartner Predicts 70% of Enterprises Will Abandon Agentic AI Built by Vendor Forward-Deployed Engineering by 2028",
+      "year": 2026,
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-09-29-gartner-predicts-70-percent-of-enterprises-will-abandon-agentic-ai-built-by-vendor-forward-deployed-engineering-by-2028"
+    }
+  ],
+  "kpis": {
+    "github_developers": {
+      "value": 180.0,
+      "unit": "M",
+      "year": 2025,
+      "source_id": 5,
+      "label": "Sviluppatori su GitHub"
+    },
+    "github_new_developers": {
+      "value": 36.2,
+      "unit": "M",
+      "year": 2025,
+      "source_id": 5,
+      "label": "Nuovi sviluppatori in 12 mesi"
+    },
+    "github_new_dev_copilot": {
+      "value": 80.0,
+      "unit": "%",
+      "year": 2025,
+      "source_id": 5,
+      "label": "Nuovi sviluppatori che usano Copilot nella prima settimana"
+    },
+    "github_llm_sdk_repos": {
+      "value": 1.13,
+      "unit": "M",
+      "year": 2025,
+      "source_id": 5,
+      "label": "Repository pubblici che importano un SDK LLM"
+    },
+    "github_llm_sdk_growth": {
+      "value": 178.0,
+      "unit": "%",
+      "year": 2025,
+      "source_id": 5,
+      "label": "Crescita YoY repository con SDK LLM"
+    },
+    "github_genai_projects_growth": {
+      "value": 98.0,
+      "unit": "%",
+      "year": 2024,
+      "source_id": 4,
+      "label": "Crescita progetti GenAI pubblici (Octoverse 2024)"
+    },
+    "github_prs_merged_month": {
+      "value": 43.2,
+      "unit": "M",
+      "year": 2025,
+      "source_id": 5,
+      "label": "PR unite al mese (media)"
+    },
+    "github_copilot_agent_prs": {
+      "value": 1.0,
+      "unit": "M",
+      "year": 2025,
+      "source_id": 5,
+      "label": "PR aperte dal Copilot coding agent (mag–set 2025)"
+    },
+    "swebench_2023": {
+      "value": 4.4,
+      "unit": "%",
+      "year": 2023,
+      "source_id": 9,
+      "label": "SWE-bench: problemi risolti (2023)"
+    },
+    "swebench_2024": {
+      "value": 71.7,
+      "unit": "%",
+      "year": 2024,
+      "source_id": 9,
+      "label": "SWE-bench: problemi risolti (2024)"
+    },
+    "swebench_verified_top": {
+      "value": 76.8,
+      "unit": "%",
+      "year": 2026,
+      "source_id": 10,
+      "label": "SWE-bench Verified: miglior punteggio (feb 2026)"
+    },
+    "terminal_bench_2025": {
+      "value": 20.0,
+      "unit": "%",
+      "year": 2025,
+      "source_id": 10,
+      "label": "Terminal-Bench 2.0 (feb 2025)"
+    },
+    "terminal_bench_2026": {
+      "value": 77.3,
+      "unit": "%",
+      "year": 2026,
+      "source_id": 10,
+      "label": "Terminal-Bench 2.0 (inizio 2026)"
+    },
+    "osworld_2025": {
+      "value": 66.3,
+      "unit": "%",
+      "year": 2025,
+      "source_id": 10,
+      "label": "OSWorld: accuratezza miglior agente (umano 72.35%)"
+    },
+    "ai_postings_us_2025": {
+      "value": 2.56,
+      "unit": "%",
+      "year": 2025,
+      "source_id": 10,
+      "label": "Offerte di lavoro USA che richiedono skill AI"
+    },
+    "genai_postings_us_2025": {
+      "value": 138188.0,
+      "unit": "n",
+      "year": 2025,
+      "source_id": 10,
+      "label": "Offerte USA con skill GenAI"
+    },
+    "genai_postings_growth": {
+      "value": 111.0,
+      "unit": "%",
+      "year": 2025,
+      "source_id": 10,
+      "label": "Crescita offerte con skill GenAI vs 2024"
+    },
+    "agentic_share_2024": {
+      "value": 0.06,
+      "unit": "%",
+      "year": 2024,
+      "source_id": 10,
+      "label": "Quota offerte USA con cluster 'Agentic AI' (2024)"
+    },
+    "agentic_share_2025": {
+      "value": 0.23,
+      "unit": "%",
+      "year": 2025,
+      "source_id": 10,
+      "label": "Quota offerte USA con cluster 'Agentic AI' (2025)"
+    },
+    "young_dev_employment_drop": {
+      "value": 20.0,
+      "unit": "%",
+      "year": 2025,
+      "source_id": 10,
+      "label": "Calo occupazione sviluppatori 22–25 anni (circa)"
+    },
+    "us_private_ai_investment": {
+      "value": 285.88,
+      "unit": "B$",
+      "year": 2025,
+      "source_id": 10,
+      "label": "Investimento privato AI negli USA"
+    },
+    "global_private_ai_investment": {
+      "value": 344.66,
+      "unit": "B$",
+      "year": 2025,
+      "source_id": 10,
+      "label": "Investimento privato AI globale"
+    },
+    "wef_jobs_created": {
+      "value": 170.0,
+      "unit": "M",
+      "year": 2030,
+      "source_id": 6,
+      "label": "Posti creati 2025–30"
+    },
+    "wef_jobs_displaced": {
+      "value": 92.0,
+      "unit": "M",
+      "year": 2030,
+      "source_id": 6,
+      "label": "Posti sostituiti 2025–30"
+    },
+    "wef_net_jobs": {
+      "value": 78.0,
+      "unit": "M",
+      "year": 2030,
+      "source_id": 6,
+      "label": "Saldo netto 2025–30"
+    },
+    "wef_churn": {
+      "value": 22.0,
+      "unit": "%",
+      "year": 2030,
+      "source_id": 6,
+      "label": "Churn strutturale"
+    },
+    "wef_skills_change": {
+      "value": 39.0,
+      "unit": "%",
+      "year": 2030,
+      "source_id": 6,
+      "label": "Competenze chiave che cambieranno"
+    },
+    "wef_ai_transform": {
+      "value": 86.0,
+      "unit": "%",
+      "year": 2030,
+      "source_id": 6,
+      "label": "Datori che si aspettano trasformazione da AI"
+    },
+    "so2024_threat_yes": {
+      "value": 12.1,
+      "unit": "%",
+      "year": 2024,
+      "source_id": 1,
+      "label": "Vede l'AI come minaccia al proprio lavoro"
+    },
+    "so2024_trust": {
+      "value": 43.0,
+      "unit": "%",
+      "year": 2024,
+      "source_id": 1,
+      "label": "Si fida dell'accuratezza dell'AI (2024)"
+    },
+    "so2025_trust": {
+      "value": 32.7,
+      "unit": "%",
+      "year": 2025,
+      "source_id": 2,
+      "label": "Si fida dell'accuratezza dell'AI (2025)"
+    },
+    "so2025_distrust": {
+      "value": 45.7,
+      "unit": "%",
+      "year": 2025,
+      "source_id": 2,
+      "label": "Diffida dell'accuratezza dell'AI (2025)"
+    },
+    "so2024_favorable": {
+      "value": 71.9,
+      "unit": "%",
+      "year": 2024,
+      "source_id": 1,
+      "label": "Sentiment favorevole (2024)"
+    },
+    "so2025_favorable": {
+      "value": 59.7,
+      "unit": "%",
+      "year": 2025,
+      "source_id": 2,
+      "label": "Sentiment favorevole (2025)"
+    },
+    "so2026_positive": {
+      "value": 62.0,
+      "unit": "%",
+      "year": 2026,
+      "source_id": 3,
+      "label": "Visione almeno in parte positiva (2026)"
+    },
+    "so2025_pro_daily": {
+      "value": 50.6,
+      "unit": "%",
+      "year": 2025,
+      "source_id": 2,
+      "label": "Professionisti che usano l'AI ogni giorno (2025)"
+    },
+    "so2025_agents_pro": {
+      "value": 31.8,
+      "unit": "%",
+      "year": 2025,
+      "source_id": 2,
+      "label": "Professionisti che usano agenti AI al lavoro (2025)"
+    },
+    "so2026_agents": {
+      "value": 66.0,
+      "unit": "%",
+      "year": 2026,
+      "source_id": 3,
+      "label": "Usa assistenti o agenti di coding (2026)"
+    },
+    "so2026_daily_agents": {
+      "value": 73.0,
+      "unit": "%",
+      "year": 2026,
+      "source_id": 3,
+      "label": "Utenti di assistenti/agenti che li usano ogni giorno"
+    },
+    "so2026_4h": {
+      "value": 31.0,
+      "unit": "%",
+      "year": 2026,
+      "source_id": 3,
+      "label": "Utenti giornalieri con 4+ ore/giorno di AI"
+    },
+    "so2026_trust_important": {
+      "value": 6.6,
+      "unit": "%",
+      "year": 2026,
+      "source_id": 3,
+      "label": "Si fida dell'AI per decisioni importanti"
+    },
+    "so2026_attribution": {
+      "value": 93.0,
+      "unit": "%",
+      "year": 2026,
+      "source_id": 3,
+      "label": "Richiede l'attribuzione delle fonti per fidarsi"
+    },
+    "so2026_freelance": {
+      "value": 11.0,
+      "unit": "%",
+      "year": 2026,
+      "source_id": 3,
+      "label": "Freelance / organizzazione di una persona (4% nel 2025)"
+    },
+    "so2026_upskill_ai": {
+      "value": 79.0,
+      "unit": "%",
+      "year": 2026,
+      "source_id": 3,
+      "label": "Vuole aggiornarsi sull'AI"
+    }
+  },
+  "adoption": {
+    "reported": [
+      {
+        "year": 2023,
+        "using": 44.0,
+        "planning": 26.0,
+        "not_using": 30.0,
+        "source_id": 1,
+        "note": "Valori 2023 riportati nel confronto della survey 2024 (44% usa; 70% usa o pianifica)"
+      },
+      {
+        "year": 2024,
+        "using": 61.8,
+        "planning": 13.8,
+        "not_using": 24.4,
+        "source_id": 1,
+        "note": "Tutti i rispondenti"
+      },
+      {
+        "year": 2025,
+        "using": 78.5,
+        "planning": 5.3,
+        "not_using": 16.2,
+        "source_id": 2,
+        "note": "Somma di uso giornaliero (47.1), settimanale (17.7), mensile/occasionale (13.7)"
+      },
+      {
+        "year": 2026,
+        "using": 82.8,
+        "planning": null,
+        "not_using": 17.2,
+        "source_id": 3,
+        "note": "Metodologia cambiata: 17.2% dichiara di non usare strumenti AI; quota 'pianifica' non rilevata"
+      }
+    ],
+    "organizations": [
+      {
+        "year": 2023,
+        "any_ai_pct": 55,
+        "genai_pct": 33,
+        "source_id": 9
+      },
+      {
+        "year": 2024,
+        "any_ai_pct": 78,
+        "genai_pct": 71,
+        "source_id": 9
+      },
+      {
+        "year": 2025,
+        "any_ai_pct": 88,
+        "genai_pct": 79,
+        "source_id": 10
+      }
+    ],
+    "series": [
+      {
+        "year": 2023,
+        "using": 44.0,
+        "planning": 26.0,
+        "not_using": 30.0,
+        "observed": true,
+        "proj_low": 43.5,
+        "proj_central": 45.1,
+        "proj_high": 45.8,
+        "proj_band": [
+          43.5,
+          45.8
+        ],
+        "gartner_enterprise": 10.0,
+        "org_any_ai": 55,
+        "org_genai": 33
+      },
+      {
+        "year": 2024,
+        "using": 61.8,
+        "planning": 13.8,
+        "not_using": 24.4,
+        "observed": true,
+        "proj_low": 64.0,
+        "proj_central": 62.5,
+        "proj_high": 61.7,
+        "proj_band": [
+          61.7,
+          64.0
+        ],
+        "org_any_ai": 78,
+        "org_genai": 71
+      },
+      {
+        "year": 2025,
+        "using": 78.5,
+        "planning": 5.3,
+        "not_using": 16.2,
+        "observed": true,
+        "proj_low": 77.0,
+        "proj_central": 75.8,
+        "proj_high": 75.1,
+        "proj_band": [
+          75.1,
+          77.0
+        ],
+        "org_any_ai": 88,
+        "org_genai": 79
+      },
+      {
+        "year": 2026,
+        "using": 82.8,
+        "planning": null,
+        "not_using": 17.2,
+        "observed": true,
+        "proj_low": 83.1,
+        "proj_central": 83.9,
+        "proj_high": 84.4,
+        "proj_band": [
+          83.1,
+          84.4
+        ]
+      },
+      {
+        "year": 2027,
+        "observed": false,
+        "proj_low": 85.6,
+        "proj_central": 88.1,
+        "proj_high": 90.2,
+        "proj_band": [
+          85.6,
+          90.2
+        ]
+      },
+      {
+        "year": 2028,
+        "observed": false,
+        "proj_low": 86.5,
+        "proj_central": 90.2,
+        "proj_high": 93.4,
+        "proj_band": [
+          86.5,
+          93.4
+        ],
+        "gartner_enterprise": 75
+      },
+      {
+        "year": 2029,
+        "observed": false,
+        "proj_low": 86.8,
+        "proj_central": 91.2,
+        "proj_high": 95.1,
+        "proj_band": [
+          86.8,
+          95.1
+        ]
+      },
+      {
+        "year": 2030,
+        "observed": false,
+        "proj_low": 86.9,
+        "proj_central": 91.6,
+        "proj_high": 96.0,
+        "proj_band": [
+          86.9,
+          96.0
+        ]
+      }
+    ],
+    "derived": {
+      "method": "Logistica a capacità K fissata; r e t0 stimati con OLS sul logit di 4 osservazioni (2023–2026).",
+      "params": {
+        "low": {
+          "K": 0.87,
+          "r": 1.0201,
+          "t0": 2022.999,
+          "rmse_pp": 1.35
+        },
+        "central": {
+          "K": 0.92,
+          "r": 0.7897,
+          "t0": 2023.048,
+          "rmse_pp": 1.6
+        },
+        "high": {
+          "K": 0.97,
+          "r": 0.673,
+          "t0": 2023.168,
+          "rmse_pp": 2.08
+        }
+      },
+      "caveat": "Il 2026 usa una domanda diversa (quota che non usa strumenti AI). Proiezione illustrativa, non previsione puntuale."
+    }
+  },
+  "employment": {
+    "trajectories": [
+      {
+        "year": 2025,
+        "data_scientists": 100.0,
+        "research_scientists": 100.0,
+        "infosec_analysts": 100.0,
+        "software_developers": 100.0,
+        "database_architects": 100.0,
+        "network_architects": 100.0,
+        "web_developers": 100.0,
+        "computer_programmers": 100.0
+      },
+      {
+        "year": 2026,
+        "data_scientists": 103.05,
+        "research_scientists": 102.01,
+        "infosec_analysts": 101.92,
+        "software_developers": 100.96,
+        "database_architects": 100.87,
+        "network_architects": 100.77,
+        "web_developers": 100.39,
+        "computer_programmers": 99.28
+      },
+      {
+        "year": 2027,
+        "data_scientists": 106.19,
+        "research_scientists": 104.06,
+        "infosec_analysts": 103.89,
+        "software_developers": 101.92,
+        "database_architects": 101.74,
+        "network_architects": 101.55,
+        "web_developers": 100.79,
+        "computer_programmers": 98.56
+      },
+      {
+        "year": 2028,
+        "data_scientists": 109.42,
+        "research_scientists": 106.15,
+        "infosec_analysts": 105.89,
+        "software_developers": 102.9,
+        "database_architects": 102.62,
+        "network_architects": 102.34,
+        "web_developers": 101.18,
+        "computer_programmers": 97.85
+      },
+      {
+        "year": 2029,
+        "data_scientists": 112.75,
+        "research_scientists": 108.28,
+        "infosec_analysts": 107.92,
+        "software_developers": 103.89,
+        "database_architects": 103.51,
+        "network_architects": 103.13,
+        "web_developers": 101.58,
+        "computer_programmers": 97.14
+      },
+      {
+        "year": 2030,
+        "data_scientists": 116.19,
+        "research_scientists": 110.45,
+        "infosec_analysts": 110.0,
+        "software_developers": 104.88,
+        "database_architects": 104.4,
+        "network_architects": 103.92,
+        "web_developers": 101.98,
+        "computer_programmers": 96.44
+      },
+      {
+        "year": 2031,
+        "data_scientists": 119.73,
+        "research_scientists": 112.67,
+        "infosec_analysts": 112.12,
+        "software_developers": 105.89,
+        "database_architects": 105.31,
+        "network_architects": 104.73,
+        "web_developers": 102.38,
+        "computer_programmers": 95.74
+      },
+      {
+        "year": 2032,
+        "data_scientists": 123.38,
+        "research_scientists": 114.93,
+        "infosec_analysts": 114.27,
+        "software_developers": 106.9,
+        "database_architects": 106.22,
+        "network_architects": 105.54,
+        "web_developers": 102.78,
+        "computer_programmers": 95.05
+      },
+      {
+        "year": 2033,
+        "data_scientists": 127.14,
+        "research_scientists": 117.24,
+        "infosec_analysts": 116.47,
+        "software_developers": 107.92,
+        "database_architects": 107.14,
+        "network_architects": 106.35,
+        "web_developers": 103.19,
+        "computer_programmers": 94.36
+      },
+      {
+        "year": 2034,
+        "data_scientists": 131.01,
+        "research_scientists": 119.6,
+        "infosec_analysts": 118.72,
+        "software_developers": 108.96,
+        "database_architects": 108.06,
+        "network_architects": 107.17,
+        "web_developers": 103.59,
+        "computer_programmers": 93.68
+      },
+      {
+        "year": 2035,
+        "data_scientists": 135.0,
+        "research_scientists": 122.0,
+        "infosec_analysts": 121.0,
+        "software_developers": 110.0,
+        "database_architects": 109.0,
+        "network_architects": 108.0,
+        "web_developers": 104.0,
+        "computer_programmers": 93.0
+      }
+    ],
+    "cagr": [
+      {
+        "key": "data_scientists",
+        "occupation": "Data Scientists",
+        "growth_2025_35": 35,
+        "cagr_pct": 3.05,
+        "jobs_2025": 275600,
+        "jobs_2035": 371000
+      },
+      {
+        "key": "research_scientists",
+        "occupation": "Computer and Information Research Scientists",
+        "growth_2025_35": 22,
+        "cagr_pct": 2.01,
+        "jobs_2025": 38600,
+        "jobs_2035": 47000
+      },
+      {
+        "key": "infosec_analysts",
+        "occupation": "Information Security Analysts",
+        "growth_2025_35": 21,
+        "cagr_pct": 1.92,
+        "jobs_2025": 192900,
+        "jobs_2035": 233500
+      },
+      {
+        "key": "software_developers",
+        "occupation": "Software Developers",
+        "growth_2025_35": 10,
+        "cagr_pct": 0.96,
+        "jobs_2025": 1717800,
+        "jobs_2035": 1892500
+      },
+      {
+        "key": "database_architects",
+        "occupation": "Database Architects",
+        "growth_2025_35": 9,
+        "cagr_pct": 0.87,
+        "jobs_2025": 69500,
+        "jobs_2035": 76000
+      },
+      {
+        "key": "network_architects",
+        "occupation": "Computer Network Architects",
+        "growth_2025_35": 8,
+        "cagr_pct": 0.77,
+        "jobs_2025": 181800,
+        "jobs_2035": 195900
+      },
+      {
+        "key": "web_developers",
+        "occupation": "Web Developers",
+        "growth_2025_35": 4,
+        "cagr_pct": 0.39,
+        "jobs_2025": 87400,
+        "jobs_2035": 90700
+      },
+      {
+        "key": "computer_programmers",
+        "occupation": "Computer Programmers",
+        "growth_2025_35": -7,
+        "cagr_pct": -0.72,
+        "jobs_2025": 110800,
+        "jobs_2035": 102700
+      }
+    ],
+    "swe_revisions": [
+      {
+        "cycle": "2022–32",
+        "start_year": 2022,
+        "growth_pct": 25,
+        "source_id": 7,
+        "note": "OOH, ciclo di proiezioni 2022–32"
+      },
+      {
+        "cycle": "2023–33",
+        "start_year": 2023,
+        "growth_pct": 17,
+        "source_id": 7,
+        "note": "OOH, ciclo di proiezioni 2023–33"
+      },
+      {
+        "cycle": "2024–34",
+        "start_year": 2024,
+        "growth_pct": 15,
+        "source_id": 7,
+        "note": "OOH, ciclo di proiezioni 2024–34"
+      },
+      {
+        "cycle": "2025–35",
+        "start_year": 2025,
+        "growth_pct": 10,
+        "source_id": 7,
+        "note": "OOH, ciclo di proiezioni 2025–35 (attuale)"
+      }
+    ],
+    "swe_wages": {
+      "reported": [
+        {
+          "year": 2021,
+          "median_wage": 120730,
+          "employment": 1364180.0,
+          "source_id": 8
+        },
+        {
+          "year": 2022,
+          "median_wage": 127260,
+          "employment": 1534790.0,
+          "source_id": 8
+        },
+        {
+          "year": 2023,
+          "median_wage": 132270,
+          "employment": 1656880.0,
+          "source_id": 8
+        },
+        {
+          "year": 2024,
+          "median_wage": 133080,
+          "employment": null,
+          "source_id": 7
+        },
+        {
+          "year": 2025,
+          "median_wage": 135980,
+          "employment": null,
+          "source_id": 7
+        }
+      ],
+      "series": [
+        {
+          "year": 2021,
+          "median_wage": 120730.0,
+          "trend_linear": 122600,
+          "trend_recent_cagr": null
+        },
+        {
+          "year": 2022,
+          "median_wage": 127260.0,
+          "trend_linear": 126232,
+          "trend_recent_cagr": null
+        },
+        {
+          "year": 2023,
+          "median_wage": 132270.0,
+          "trend_linear": 129864,
+          "trend_recent_cagr": null
+        },
+        {
+          "year": 2024,
+          "median_wage": 133080.0,
+          "trend_linear": 133496,
+          "trend_recent_cagr": null
+        },
+        {
+          "year": 2025,
+          "median_wage": 135980.0,
+          "trend_linear": 137128,
+          "trend_recent_cagr": 135980
+        },
+        {
+          "year": 2026,
+          "median_wage": null,
+          "trend_linear": 140760,
+          "trend_recent_cagr": 137874
+        },
+        {
+          "year": 2027,
+          "median_wage": null,
+          "trend_linear": 144392,
+          "trend_recent_cagr": 139794
+        },
+        {
+          "year": 2028,
+          "median_wage": null,
+          "trend_linear": 148024,
+          "trend_recent_cagr": 141741
+        },
+        {
+          "year": 2029,
+          "median_wage": null,
+          "trend_linear": 151656,
+          "trend_recent_cagr": 143715
+        },
+        {
+          "year": 2030,
+          "median_wage": null,
+          "trend_linear": 155288,
+          "trend_recent_cagr": 145717
+        }
+      ],
+      "derived": {
+        "linear_slope_usd_per_year": 3632,
+        "cagr_2021_2025_pct": 3.02,
+        "cagr_2023_2025_pct": 1.39,
+        "revision_drop_pp": 15
+      }
+    }
+  },
+  "exposure": {
+    "method": "Indice = Σ_task peso(ruolo, task) × quota di sviluppatori che usa (o trova utile) l'AI per quel task (SO 2026). I pesi del mix di attività sono ipotesi dell'autore.",
+    "tasks": [
+      {
+        "task": "code_generation",
+        "share": 0.693,
+        "measure": "Usa l'AI per generare codice in un'area familiare (SO 2026)",
+        "source_id": 3
+      },
+      {
+        "task": "debug_refactor",
+        "share": 0.638,
+        "measure": "Usa l'AI per debugging, troubleshooting o refactoring (SO 2026)",
+        "source_id": 3
+      },
+      {
+        "task": "testing",
+        "share": 0.581,
+        "measure": "Usa l'AI per scrivere o migliorare test (SO 2026)",
+        "source_id": 3
+      },
+      {
+        "task": "knowledge_qna",
+        "share": 0.594,
+        "measure": "Usa l'AI per domande tecniche semplici (SO 2026)",
+        "source_id": 3
+      },
+      {
+        "task": "design_architecture",
+        "share": 0.5,
+        "measure": "Trova l'AI utile per il design (SO 2026)",
+        "source_id": 3
+      },
+      {
+        "task": "communication",
+        "share": 0.45,
+        "measure": "Trova l'AI utile per la comunicazione di team (SO 2026)",
+        "source_id": 3
+      },
+      {
+        "task": "ops_production",
+        "share": 0.2,
+        "measure": "Usa l'AI per deploy/operare/troubleshooting in produzione (SO 2026)",
+        "source_id": 3
+      }
+    ],
+    "weights": [
+      {
+        "role": "swe",
+        "code_generation": 0.35,
+        "debug_refactor": 0.2,
+        "testing": 0.15,
+        "knowledge_qna": 0.05,
+        "design_architecture": 0.15,
+        "communication": 0.05,
+        "ops_production": 0.05
+      },
+      {
+        "role": "frontend",
+        "code_generation": 0.4,
+        "debug_refactor": 0.2,
+        "testing": 0.1,
+        "knowledge_qna": 0.05,
+        "design_architecture": 0.15,
+        "communication": 0.05,
+        "ops_production": 0.05
+      },
+      {
+        "role": "backend",
+        "code_generation": 0.33,
+        "debug_refactor": 0.2,
+        "testing": 0.15,
+        "knowledge_qna": 0.05,
+        "design_architecture": 0.12,
+        "communication": 0.05,
+        "ops_production": 0.1
+      },
+      {
+        "role": "ai_ml",
+        "code_generation": 0.25,
+        "debug_refactor": 0.15,
+        "testing": 0.1,
+        "knowledge_qna": 0.1,
+        "design_architecture": 0.2,
+        "communication": 0.1,
+        "ops_production": 0.1
+      },
+      {
+        "role": "data_scientist",
+        "code_generation": 0.2,
+        "debug_refactor": 0.1,
+        "testing": 0.05,
+        "knowledge_qna": 0.15,
+        "design_architecture": 0.25,
+        "communication": 0.2,
+        "ops_production": 0.05
+      },
+      {
+        "role": "data_engineer",
+        "code_generation": 0.3,
+        "debug_refactor": 0.2,
+        "testing": 0.1,
+        "knowledge_qna": 0.05,
+        "design_architecture": 0.1,
+        "communication": 0.05,
+        "ops_production": 0.2
+      },
+      {
+        "role": "mlops_cloud",
+        "code_generation": 0.15,
+        "debug_refactor": 0.15,
+        "testing": 0.1,
+        "knowledge_qna": 0.05,
+        "design_architecture": 0.15,
+        "communication": 0.05,
+        "ops_production": 0.35
+      }
+    ],
+    "roles": [
+      {
+        "role": "frontend",
+        "label": "Frontend Developer",
+        "index": 60.0,
+        "top_tasks": [
+          "code_generation",
+          "debug_refactor",
+          "design_architecture"
+        ],
+        "ops_weight": 0.05
+      },
+      {
+        "role": "swe",
+        "label": "Software Engineer / Full-stack",
+        "index": 59.4,
+        "top_tasks": [
+          "code_generation",
+          "debug_refactor",
+          "testing"
+        ],
+        "ops_weight": 0.05
+      },
+      {
+        "role": "backend",
+        "label": "Backend Developer",
+        "index": 57.6,
+        "top_tasks": [
+          "code_generation",
+          "debug_refactor",
+          "testing"
+        ],
+        "ops_weight": 0.1
+      },
+      {
+        "role": "ai_ml",
+        "label": "AI / ML Engineer",
+        "index": 55.1,
+        "top_tasks": [
+          "code_generation",
+          "design_architecture",
+          "debug_refactor"
+        ],
+        "ops_weight": 0.1
+      },
+      {
+        "role": "data_scientist",
+        "label": "Data Scientist",
+        "index": 54.6,
+        "top_tasks": [
+          "code_generation",
+          "design_architecture",
+          "communication"
+        ],
+        "ops_weight": 0.05
+      },
+      {
+        "role": "data_engineer",
+        "label": "Data Engineer",
+        "index": 53.6,
+        "top_tasks": [
+          "code_generation",
+          "debug_refactor",
+          "testing"
+        ],
+        "ops_weight": 0.2
+      },
+      {
+        "role": "mlops_cloud",
+        "label": "MLOps / Cloud Architect",
+        "index": 45.5,
+        "top_tasks": [
+          "code_generation",
+          "debug_refactor",
+          "design_architecture"
+        ],
+        "ops_weight": 0.35
+      }
+    ]
+  },
+  "roles": {
+    "table": [
+      {
+        "role": "swe",
+        "label": "Software Engineer / Full-stack",
+        "family": "core",
+        "bls_occupation": "Software Developers",
+        "bls_is_proxy": false,
+        "bls_median_pay": 135980,
+        "bls_jobs_2025": 1717800,
+        "bls_growth_2025_35": 10,
+        "so_dev_type": "Full-stack developer",
+        "so_median_usd": 72509.0,
+        "so_change_vs_2024": 12.5,
+        "wef_category": "Software and Applications Developers",
+        "wef_growth_2025_30": 60,
+        "ai_task_index": 59.4
+      },
+      {
+        "role": "frontend",
+        "label": "Frontend Developer",
+        "family": "core",
+        "bls_occupation": "Web Developers",
+        "bls_is_proxy": false,
+        "bls_median_pay": 92650,
+        "bls_jobs_2025": 87400,
+        "bls_growth_2025_35": 4,
+        "so_dev_type": "Front-end developer",
+        "so_median_usd": 62015.0,
+        "so_change_vs_2024": 24.0,
+        "wef_category": "Software and Applications Developers",
+        "wef_growth_2025_30": 60,
+        "ai_task_index": 60.0
+      },
+      {
+        "role": "backend",
+        "label": "Backend Developer",
+        "family": "core",
+        "bls_occupation": "Software Developers",
+        "bls_is_proxy": false,
+        "bls_median_pay": 135980,
+        "bls_jobs_2025": 1717800,
+        "bls_growth_2025_35": 10,
+        "so_dev_type": "Back-end developer",
+        "so_median_usd": 79742.0,
+        "so_change_vs_2024": 15.1,
+        "wef_category": "Software and Applications Developers",
+        "wef_growth_2025_30": 60,
+        "ai_task_index": 57.6
+      },
+      {
+        "role": "ai_ml",
+        "label": "AI / ML Engineer",
+        "family": "ai",
+        "bls_occupation": "Computer and Information Research Scientists",
+        "bls_is_proxy": true,
+        "bls_median_pay": 140300,
+        "bls_jobs_2025": 38600,
+        "bls_growth_2025_35": 22,
+        "so_dev_type": "AI/ML engineer",
+        "so_median_usd": 89427.0,
+        "so_change_vs_2024": null,
+        "wef_category": "AI and Machine Learning Specialists",
+        "wef_growth_2025_30": 85,
+        "ai_task_index": 55.1
+      },
+      {
+        "role": "data_scientist",
+        "label": "Data Scientist",
+        "family": "data",
+        "bls_occupation": "Data Scientists",
+        "bls_is_proxy": false,
+        "bls_median_pay": 120230,
+        "bls_jobs_2025": 275600,
+        "bls_growth_2025_35": 35,
+        "so_dev_type": "Data scientist",
+        "so_median_usd": 82910.0,
+        "so_change_vs_2024": 11.8,
+        "wef_category": "Data Analysts and Scientists",
+        "wef_growth_2025_30": 40,
+        "ai_task_index": 54.6
+      },
+      {
+        "role": "data_engineer",
+        "label": "Data Engineer",
+        "family": "data",
+        "bls_occupation": "Database Architects",
+        "bls_is_proxy": true,
+        "bls_median_pay": 139500,
+        "bls_jobs_2025": 69500,
+        "bls_growth_2025_35": 9,
+        "so_dev_type": "Data engineer",
+        "so_median_usd": 81210.0,
+        "so_change_vs_2024": 5.1,
+        "wef_category": "Data Warehousing Specialists",
+        "wef_growth_2025_30": 50,
+        "ai_task_index": 53.6
+      },
+      {
+        "role": "mlops_cloud",
+        "label": "MLOps / Cloud Architect",
+        "family": "data",
+        "bls_occupation": "Computer Network Architects",
+        "bls_is_proxy": true,
+        "bls_median_pay": 134050,
+        "bls_jobs_2025": 181800,
+        "bls_growth_2025_35": 8,
+        "so_dev_type": "Cloud infrastructure engineer",
+        "so_median_usd": 103112.5,
+        "so_change_vs_2024": 6.7,
+        "wef_category": "DevOps Engineers",
+        "wef_growth_2025_30": 40,
+        "ai_task_index": 45.5
+      }
+    ],
+    "radar": [
+      {
+        "axis": "bls_growth",
+        "swe": 28.6,
+        "ai_ml": 62.9,
+        "data_scientist": 100.0,
+        "data_engineer": 25.7,
+        "mlops_cloud": 22.9
+      },
+      {
+        "axis": "wef_growth",
+        "swe": 70.6,
+        "ai_ml": 100.0,
+        "data_scientist": 47.1,
+        "data_engineer": 58.8,
+        "mlops_cloud": 47.1
+      },
+      {
+        "axis": "us_pay",
+        "swe": 96.9,
+        "ai_ml": 100.0,
+        "data_scientist": 85.7,
+        "data_engineer": 99.4,
+        "mlops_cloud": 95.5
+      },
+      {
+        "axis": "global_pay",
+        "swe": 70.3,
+        "ai_ml": 86.7,
+        "data_scientist": 80.4,
+        "data_engineer": 78.8,
+        "mlops_cloud": 100.0
+      },
+      {
+        "axis": "ai_exposure",
+        "swe": 59.4,
+        "ai_ml": 55.1,
+        "data_scientist": 54.6,
+        "data_engineer": 53.6,
+        "mlops_cloud": 45.5
+      }
+    ],
+    "radar_roles": [
+      "swe",
+      "ai_ml",
+      "data_scientist",
+      "data_engineer",
+      "mlops_cloud"
+    ],
+    "radar_method": "Assi normalizzati sul massimo tra i 5 ruoli (=100); esposizione AI espressa direttamente in 0–100.",
+    "salaries": [
+      {
+        "role": "swe",
+        "label": "Software Engineer / Full-stack",
+        "us_bls": 135980,
+        "global_so": 72509.0,
+        "ratio": 1.88
+      },
+      {
+        "role": "frontend",
+        "label": "Frontend Developer",
+        "us_bls": 92650,
+        "global_so": 62015.0,
+        "ratio": 1.49
+      },
+      {
+        "role": "backend",
+        "label": "Backend Developer",
+        "us_bls": 135980,
+        "global_so": 79742.0,
+        "ratio": 1.71
+      },
+      {
+        "role": "ai_ml",
+        "label": "AI / ML Engineer",
+        "us_bls": 140300,
+        "global_so": 89427.0,
+        "ratio": 1.57
+      },
+      {
+        "role": "data_scientist",
+        "label": "Data Scientist",
+        "us_bls": 120230,
+        "global_so": 82910.0,
+        "ratio": 1.45
+      },
+      {
+        "role": "data_engineer",
+        "label": "Data Engineer",
+        "us_bls": 139500,
+        "global_so": 81210.0,
+        "ratio": 1.72
+      },
+      {
+        "role": "mlops_cloud",
+        "label": "MLOps / Cloud Architect",
+        "us_bls": 134050,
+        "global_so": 103112.5,
+        "ratio": 1.3
+      }
+    ],
+    "reference": [
+      {
+        "key": "infosec_analysts",
+        "occupation": "Information Security Analysts",
+        "median_pay_2025": 129180,
+        "jobs_2025": 192900,
+        "growth_2025_35": 21,
+        "change_2025_35": 40600,
+        "proxy_for": "Riferimento",
+        "source_id": 7
+      },
+      {
+        "key": "qa_testers",
+        "occupation": "Software QA Analysts and Testers",
+        "median_pay_2025": 104300,
+        "jobs_2025": 187600,
+        "growth_2025_35": 6,
+        "change_2025_35": 10600,
+        "proxy_for": "Riferimento",
+        "source_id": 7
+      },
+      {
+        "key": "computer_programmers",
+        "occupation": "Computer Programmers",
+        "median_pay_2025": 100390,
+        "jobs_2025": 110800,
+        "growth_2025_35": -7,
+        "change_2025_35": -8100,
+        "proxy_for": "Riferimento",
+        "source_id": 7
+      }
+    ]
+  },
+  "wef": {
+    "fastest_growing": [
+      {
+        "rank": 1,
+        "job": "Big Data Specialists",
+        "growth_pct": 110,
+        "tech": 1
+      },
+      {
+        "rank": 2,
+        "job": "FinTech Engineers",
+        "growth_pct": 95,
+        "tech": 1
+      },
+      {
+        "rank": 3,
+        "job": "AI and Machine Learning Specialists",
+        "growth_pct": 85,
+        "tech": 1
+      },
+      {
+        "rank": 4,
+        "job": "Software and Applications Developers",
+        "growth_pct": 60,
+        "tech": 1
+      },
+      {
+        "rank": 5,
+        "job": "Security Management Specialists",
+        "growth_pct": 55,
+        "tech": 1
+      },
+      {
+        "rank": 6,
+        "job": "Data Warehousing Specialists",
+        "growth_pct": 50,
+        "tech": 1
+      },
+      {
+        "rank": 7,
+        "job": "Autonomous and Electric Vehicle Specialists",
+        "growth_pct": 45,
+        "tech": 0
+      },
+      {
+        "rank": 8,
+        "job": "UI and UX Designers",
+        "growth_pct": 45,
+        "tech": 1
+      },
+      {
+        "rank": 9,
+        "job": "Light Truck or Delivery Services Drivers",
+        "growth_pct": 45,
+        "tech": 0
+      },
+      {
+        "rank": 10,
+        "job": "Internet of Things Specialists",
+        "growth_pct": 40,
+        "tech": 1
+      },
+      {
+        "rank": 11,
+        "job": "Data Analysts and Scientists",
+        "growth_pct": 40,
+        "tech": 1
+      },
+      {
+        "rank": 12,
+        "job": "Environmental Engineers",
+        "growth_pct": 40,
+        "tech": 0
+      },
+      {
+        "rank": 13,
+        "job": "Information Security Analysts",
+        "growth_pct": 40,
+        "tech": 1
+      },
+      {
+        "rank": 14,
+        "job": "DevOps Engineers",
+        "growth_pct": 40,
+        "tech": 1
+      },
+      {
+        "rank": 15,
+        "job": "Renewable Energy Engineers",
+        "growth_pct": 40,
+        "tech": 0
+      }
+    ],
+    "tech_share_top15": 11
+  },
+  "gartner": [
+    {
+      "id": "task_agents",
+      "target_year": 2026,
+      "value_pct": 40,
+      "baseline_pct": 5.0,
+      "baseline_year": 2025.0,
+      "topic": "App enterprise con agenti AI task-specific",
+      "source_id": 14
+    },
+    {
+      "id": "agentic_canceled",
+      "target_year": 2027,
+      "value_pct": 40,
+      "baseline_pct": null,
+      "baseline_year": null,
+      "topic": "Progetti di AI agentica cancellati entro fine 2027",
+      "source_id": 13
+    },
+    {
+      "id": "upskill",
+      "target_year": 2027,
+      "value_pct": 80,
+      "baseline_pct": null,
+      "baseline_year": null,
+      "topic": "Forza lavoro ingegneristica che dovrà riqualificarsi per la GenAI",
+      "source_id": 12
+    },
+    {
+      "id": "autonomous_decisions",
+      "target_year": 2028,
+      "value_pct": 15,
+      "baseline_pct": 0.0,
+      "baseline_year": 2024.0,
+      "topic": "Decisioni lavorative quotidiane prese in autonomia da AI agentica",
+      "source_id": 13
+    },
+    {
+      "id": "agentic_apps",
+      "target_year": 2028,
+      "value_pct": 33,
+      "baseline_pct": 1.0,
+      "baseline_year": 2024.0,
+      "topic": "Software enterprise con AI agentica",
+      "source_id": 13
+    },
+    {
+      "id": "fde_abandon",
+      "target_year": 2028,
+      "value_pct": 70,
+      "baseline_pct": null,
+      "baseline_year": null,
+      "topic": "Imprese che abbandoneranno AI agentica costruita da forward-deployed engineering del vendor",
+      "source_id": 17
+    },
+    {
+      "id": "code_assistants",
+      "target_year": 2028,
+      "value_pct": 75,
+      "baseline_pct": 10.0,
+      "baseline_year": 2023.0,
+      "topic": "Ingegneri software enterprise che usano assistenti AI al codice",
+      "source_id": 11
+    },
+    {
+      "id": "small_teams",
+      "target_year": 2029,
+      "value_pct": 60,
+      "baseline_pct": 15.0,
+      "baseline_year": 2026.0,
+      "topic": "Organizzazioni con team di software engineering ridotti su scala",
+      "source_id": 16
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+key,occupation,median_pay_2025,jobs_2025,growth_2025_35,change_2025_35,proxy_for,source_id
+software_developers,Software Developers,135980,1717800,10,174700,"SWE · Full-stack · Backend",7
+web_developers,Web Developers,92650,87400,4,3300,Frontend,7
+research_scientists,Computer and Information Research Scientists,140300,38600,22,8400,"AI/ML Engineer (proxy)",7
+data_scientists,Data Scientists,120230,275600,35,95400,Data Scientist,7
+database_architects,Database Architects,139500,69500,9,6500,"Data Engineer (proxy)",7
+network_architects,Computer Network Architects,134050,181800,8,14100,"Cloud Architect / MLOps (proxy)",7
+infosec_analysts,Information Security Analysts,129180,192900,21,40600,Riferimento,7
+qa_testers,Software QA Analysts and Testers,104300,187600,6,10600,Riferimento,7
+computer_programmers,Computer Programmers,100390,110800,-7,-8100,Riferimento,7
